@@ -1,6 +1,6 @@
-Burnout 3: Takedown (SLES-52585) 
-Widescreen Fix (v2.1) by Aero_
-SLES-52585 conversion by Nehalem
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Widescreen Fix, SLES-52585 conversion by Nehalem
+author=Aero_
 
 // FOV (16:9)
 patch=1,EE,0066634D,byte,01 // enables widescreen FOV values
