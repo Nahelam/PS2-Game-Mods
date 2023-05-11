@@ -1,7 +1,8 @@
 # PCSX2 Burnout 3: Takedown Cheats
 
-Various cheats I made for **Burnout 3: Takedown** on **PCSX2**.
+Various cheats/pacthes I made/ported for **Burnout 3: Takedown** on **PCSX2**.
 
-Available cheats:
-- Widescreen fix (SLES-52585 port)
+Features:
+- Widescreen patches ported to SLES-52585
+- No interlacing patches for the PAL version of the game (SLES-52585)
 - Hidden development menu
