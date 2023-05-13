@@ -1,4 +1,4 @@
-# PCSX2 Burnout 3: Takedown Cheats
+# PCSX2 Burnout 3: Takedown Mods
 
 Various cheats/pacthes I made/ported for **Burnout 3: Takedown** on **PCSX2**.
 
