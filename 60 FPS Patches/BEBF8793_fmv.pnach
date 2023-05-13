@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLUS-21050] (U)
-comment=Fix FMVs playing speed while using 60 FPS everywhere patches
+comment=Fix FMVs playback speed while using 60 FPS everywhere patches
 author=Nehalem
 
 patch=1,EE,20130DD8,extended,C7958074
