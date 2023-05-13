@@ -1,6 +1,6 @@
-# PCSX2 Burnout 3: Takedown Cheats
+# PCSX2 Burnout 3: Takedown Mods
 
-This folder contains various cheats I made for Burnout 3: Takedown.
+This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 
-Available cheats:
-- N/A
+Features:
+- Speedometer unit patches (mph on SLES, kph on SLUS)
