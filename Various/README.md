@@ -3,4 +3,4 @@
 This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 
 Features:
-- Speedometer unit patches (mph on SLES, kph on SLUS)
+- Speedometer HUD unit patches (mph->kph on SLES, kph->mph on SLUS)
