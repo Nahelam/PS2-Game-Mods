@@ -4,3 +4,4 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 
 Features:
 - Speedometer HUD unit patches (mph->kph on SLES, kph->mph on SLUS)
+- Allow heavyweights class to be chosen in all online game modes (all players must enable it)
