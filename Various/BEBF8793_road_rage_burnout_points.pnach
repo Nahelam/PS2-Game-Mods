@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Enable non-takedown burnout points in road rage
+author=Nehalem
+
+patch=0,EE,2038C024,extended,24020001
