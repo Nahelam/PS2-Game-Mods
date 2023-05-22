@@ -8,3 +8,4 @@ Features:
 - Allow online games to be started even you're the only player in the lobby
 - AI road rage behavior in normal races
 - Turn all cars (except traffic) into tuk-tuks
+- Enable non-takedown burnout points in road rage mode
