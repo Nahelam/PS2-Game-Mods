@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLES-52585] (E)
 comment=Allow heavyweights class to be chosen in all game modes (ported by Nehalem)
-author=?
+author=escape209
 
 patch=1,EE,01E8F314,extended,00000001

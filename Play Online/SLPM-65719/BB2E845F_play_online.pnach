@@ -1,6 +1,6 @@
 gametitle=Burnout 3: Takedown [SLPM-65719] (J)
 comment=Burnout 3 Server Emulator By No23 (ported by Nehalem)
-author=?
+author=No23
 
 // DNAS patch
 patch=0,EE,2026BDCC,extended,10000003 // Bypass DNAS can be disabled if using DNASrep's DNS
