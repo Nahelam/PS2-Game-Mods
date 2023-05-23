@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLPM-65719] (J)
+comment=Enables an hidden dev menu by replacing the EXTRAS menu
+author=Nehalem
+
+patch=0,EE,20504A68,extended,00425B20

@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLKA-25206] (K)
+comment=Road rage AI in race mode
+author=Nehalem
+
+patch=0,EE,20134304,extended,24020001

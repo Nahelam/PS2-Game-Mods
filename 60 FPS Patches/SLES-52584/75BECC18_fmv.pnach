@@ -1,0 +1,9 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Fix FMVs playback speed while using 60 FPS patches
+author=Nehalem
+
+patch=0,EE,20130E28,extended,C7958074
+patch=0,EE,20130E2C,extended,3C084000
+patch=0,EE,20130E30,extended,4488A000
+patch=0,EE,20130E34,extended,4614AD03
+patch=0,EE,20130E38,extended,00000000

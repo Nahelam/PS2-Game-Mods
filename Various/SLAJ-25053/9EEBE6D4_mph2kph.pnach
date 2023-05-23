@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLAJ-25053] (A)
+comment=Change speedometer unit to kph
+author=Nehalem
+
+patch=0,EE,101A3B60,extended,000082F0
+patch=0,EE,101A3D38,extended,000007D7

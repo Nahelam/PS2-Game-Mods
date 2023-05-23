@@ -1,0 +1,12 @@
+gametitle=Burnout 3: Takedown [SLPM-65719] (J)
+comment=Turn all cars into tuk-tuks
+author=Nehalem
+
+patch=0,EE,20485FEC,extended,68657670
+patch=0,EE,20485FF0,extended,4D4F432F
+patch=0,EE,20485FF4,extended,41432F50
+patch=0,EE,20485FF8,extended,2E383152
+patch=0,EE,20485FFC,extended,00767462
+patch=0,EE,20152CB0,extended,3C080048
+patch=0,EE,20152CB4,extended,25085FEC
+patch=0,EE,20152CD8,extended,01002825

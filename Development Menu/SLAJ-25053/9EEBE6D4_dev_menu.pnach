@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLAJ-25053] (A)
+comment=Enables an hidden dev menu by replacing the EXTRAS menu
+author=Nehalem
+
+patch=0,EE,204E0278,extended,004254E0

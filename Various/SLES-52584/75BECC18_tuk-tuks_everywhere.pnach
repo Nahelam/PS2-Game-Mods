@@ -1,0 +1,12 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Turn all cars into tuk-tuks
+author=Nehalem
+
+patch=0,EE,20485E6C,extended,68657670
+patch=0,EE,20485E70,extended,4D4F432F
+patch=0,EE,20485E74,extended,41432F50
+patch=0,EE,20485E78,extended,2E383152
+patch=0,EE,20485E7C,extended,00767462
+patch=0,EE,20152C90,extended,3C080048
+patch=0,EE,20152C94,extended,25085E6C
+patch=0,EE,20152CB8,extended,01002825

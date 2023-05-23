@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Allow heavyweights class to be chosen in all game modes
+author=?
+
+patch=1,EE,01E8EE94,extended,00000001

@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLPM-65719] (J)
+comment=Change speedometer unit to mph
+author=Nehalem
+
+patch=0,EE,101A3B48,extended,00008128
+patch=0,EE,101A3D20,extended,000007D8

@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLKA-25206] (K)
+comment=Allow online games to be started even you're the only player in the lobby
+author=Nehalem
+
+patch=0,EE,20312E00,extended,1000FF4E // Start game always enabled in the online options menu
+patch=0,EE,201A31B0,extended,00000000 // Disable display of the orange connection error message
