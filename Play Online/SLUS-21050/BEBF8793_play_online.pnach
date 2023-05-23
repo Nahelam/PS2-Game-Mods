@@ -1,0 +1,14 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Burnout 3 Server Emulator By No23
+author=?
+
+// DNAS patch
+patch=0,EE,2026BEFC,extended,10000003 // Bypass DNAS can be disabled if using DNASrep's DNS
+
+// URL patch
+patch=0,EE,204C6E60,extended,736F622A // Replace Server URL to bosrv.org
+patch=0,EE,204C6E64,extended,6F2E7672 // Replace Server URL to bosrv.org
+patch=0,EE,204C6E68,extended,00006772 // Replace Server URL to bosrv.org
+
+// Cert Validation patch
+patch=1,IOP,0012B180,word,06410004 // Bypass Cert Validation check

@@ -1,0 +1,14 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Burnout 3 Server Emulator By No23 (ported by Nehalem)
+author=?
+
+// DNAS patch
+patch=0,EE,2026BF0C,extended,10000003 // Bypass DNAS can be disabled if using DNASrep's DNS
+
+// URL patch
+patch=0,EE,204C72F0,extended,736F622A // Replace Server URL to bosrv.org
+patch=0,EE,204C72F4,extended,6F2E7672 // Replace Server URL to bosrv.org
+patch=0,EE,204C72F8,extended,00006772 // Replace Server URL to bosrv.org
+
+// Cert Validation patch
+patch=1,IOP,0012B180,word,06410004 // Bypass Cert Validation check
