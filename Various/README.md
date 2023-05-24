@@ -10,6 +10,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - AI road rage behavior in normal races
 - Turn all cars (except traffic) into tuk-tuks
 - Enable non-takedown burnout points in road rage mode
+- Force standing start in offline modes
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working

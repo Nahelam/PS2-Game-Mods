@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Force standing start in offline modes
+author=Nehalem
+
+patch=0,EE,00135174,extended,00000000
