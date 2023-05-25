@@ -11,7 +11,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Turn all cars (except traffic) into tuk-tuks
 - Enable non-takedown burnout points in road rage mode
 - Force standing start in offline modes
-- Change deformation scale (set the float value of your choice on line 6)
+- Change deformation impulse scale (set the float value of your choice on line 6)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working

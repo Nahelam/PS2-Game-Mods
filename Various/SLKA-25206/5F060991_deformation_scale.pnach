@@ -1,8 +1,8 @@
 gametitle=Burnout 3: Takedown [SLKA-25206] (K)
-comment=Change the deformation scale
+comment=Change the deformation impulse scale
 author=Nehalem
 
-// Write deformation scale float (default value is 1.2, hex: 3F99999A)
+// Write deformation impusle scale float (default value is 1.2, hex: 3F99999A)
 patch=1,EE,200B3000,extended,3F99999A
 
 // Load the float into $f0 then return
