@@ -1,0 +1,8 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Make your car crash on demand while boosting by pressing SELECT
+author=Nehalem
+
+patch=1,EE,D057C280,extended,01010001
+patch=1,EE,005805F2,extended,00000000
+patch=1,EE,D04F58EF,extended,01010001
+patch=1,EE,005805F2,extended,00000001
