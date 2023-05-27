@@ -12,6 +12,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Enable non-takedown burnout points in road rage mode
 - Force standing start in offline modes
 - Change deformation impulse scale (set the float value of your choice on line 6)
+- Make your car crash on demand while boosting by pressing SELECT (SLES-52585 & SLUS-21050 only for the moment)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working
