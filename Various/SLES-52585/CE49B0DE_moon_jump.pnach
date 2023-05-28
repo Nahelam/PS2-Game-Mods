@@ -1,0 +1,27 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Moon jump (DPAD UP)
+author=Nehalem
+
+// Z axis increment float (current value is 1.0, hex: 3F800000)
+patch=1,EE,200B3018,extended,3F800000
+
+// jump to stub
+patch=0,EE,201BDE40,extended,0802CC07
+
+// stub
+patch=1,EE,200B301C,extended,3C080058
+patch=1,EE,200B3020,extended,9108C180
+patch=1,EE,200B3024,extended,1500000B
+patch=1,EE,200B3028,extended,00000000
+patch=1,EE,200B302C,extended,3C08004F
+patch=1,EE,200B3030,extended,910857EA
+patch=1,EE,200B3034,extended,11000007
+patch=1,EE,200B3038,extended,00000000
+patch=1,EE,200B303C,extended,3C08000B
+patch=1,EE,200B3040,extended,C5003018
+patch=1,EE,200B3044,extended,3C080065
+patch=1,EE,200B3048,extended,C501D864
+patch=1,EE,200B304C,extended,46010000
+patch=1,EE,200B3050,extended,E500D864
+patch=1,EE,200B3054,extended,03E00008
+patch=1,EE,200B3058,extended,00000000

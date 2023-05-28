@@ -11,8 +11,9 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Turn all cars (except traffic) into tuk-tuks
 - Enable non-takedown burnout points in road rage mode
 - Force standing start in offline modes
-- Change deformation impulse scale (set the float value of your choice on line 6)
+- Change deformation impulse scale (set the float value of your choice on line 6, current value is default)
 - Make your car crash on demand while boosting by pressing SELECT (SLES-52584, SLES-52585 & SLUS-21050 for the moment)
+- Moon jump by pressing DPAD UP (you can set the float value of your choice on line 6, current value is 1.0, SLES-52584, SLES-52585 & SLUS-21050 for the moment)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working
