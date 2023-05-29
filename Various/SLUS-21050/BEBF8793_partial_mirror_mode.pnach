@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Partial mirror mode (everything is mirrored but controls work)
+author=Nehalem
+
+patch=0,EE,2019EFA4,extended,A212000C

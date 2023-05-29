@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLPM-65719] (J)
+comment=Partial mirror mode (everything is mirrored but controls work)
+author=Nehalem
+
+patch=0,EE,2019EFC4,extended,A212000C

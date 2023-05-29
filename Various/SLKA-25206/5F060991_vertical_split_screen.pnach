@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLKA-25206] (K)
+comment=Vertical split screen
+author=Nehalem
+
+patch=0,EE,2019EF6C,extended,A212000F

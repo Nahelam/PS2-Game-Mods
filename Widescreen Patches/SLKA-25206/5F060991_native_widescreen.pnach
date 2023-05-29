@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLKA-25206] (K)
+comment=Force native widescreen
+author=Nehalem
+
+patch=0,EE,20436994,extended,00000000
