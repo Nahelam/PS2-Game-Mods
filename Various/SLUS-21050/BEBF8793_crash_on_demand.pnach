@@ -1,8 +1,24 @@
 gametitle=Burnout 3: Takedown [SLUS-21050] (U)
-comment=Make your car crash on demand while boosting by pressing SELECT
+comment=Crash your car on demand by pressing SELECT
 author=Nehalem
 
-patch=1,EE,D057BD00,extended,01010001
-patch=1,EE,00580072,extended,00000000
-patch=1,EE,D04F536F,extended,01010001
-patch=1,EE,00580072,extended,00000001
+// jump to stub
+patch=0,EE,201BD1E4,extended,0C02CC17
+patch=0,EE,201BD1E8,extended,00000000
+patch=0,EE,201BD1EC,extended,104000E3
+
+// stub
+patch=1,EE,200B305C,extended,92424582
+patch=1,EE,200B3060,extended,1440000A
+patch=1,EE,200B3064,extended,00000000
+patch=1,EE,200B3068,extended,3C080058
+patch=1,EE,200B306C,extended,9108BD00
+patch=1,EE,200B3070,extended,1500000B
+patch=1,EE,200B3074,extended,00000000
+patch=1,EE,200B3078,extended,3C02004F
+patch=1,EE,200B307C,extended,9042536F
+patch=1,EE,200B3080,extended,10400002
+patch=1,EE,200B3084,extended,00000000
+patch=1,EE,200B3088,extended,27FF0138
+patch=1,EE,200B308C,extended,03E00008
+patch=1,EE,200B3090,extended,00000000
