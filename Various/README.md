@@ -14,6 +14,8 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Change deformation impulse scale (set the float value of your choice on line 6, current value is default)
 - Crash your car on demand by pressing SELECT\*
 - Moon jump by pressing DPAD UP (you can set the float value of your choice on line 6, current value is 1.0)\*
+- Partial mirror mode (everything is mirrored but controls work)
+- Vertical split screen
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only
 
