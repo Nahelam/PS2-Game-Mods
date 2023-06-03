@@ -4,7 +4,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 
 ## Features
 - Speedometer HUD unit patches (mph->kph & kph->mph)
-- Heavyweights class always available in garage
+- Heavyweights class always available in garage (ported, original SLUS patch made by [escape209](https://github.com/escape209))
 - Allow heavyweights class to be chosen in all online game modes (all players must enable it)
 - Allow online games to be started even you're the only player in the lobby
 - AI road rage behavior in normal races
