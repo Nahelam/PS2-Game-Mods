@@ -1,0 +1,20 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Enable time limit in single event road rage
+author=Nehalem
+
+// Time limit float in seconds (default: 180, hex: 43340000)
+patch=1,EE,200B3094,extended,43340000
+
+patch=0,EE,2038C884,extended,0C02CC26
+patch=0,EE,201A0D20,extended,00000000
+patch=1,EE,200B3098,extended,14400007
+patch=1,EE,200B309C,extended,00000000
+patch=1,EE,200B30A0,extended,3C03000B
+patch=1,EE,200B30A4,extended,8C633094
+patch=1,EE,200B30A8,extended,AE601140
+patch=1,EE,200B30AC,extended,AE631390
+patch=1,EE,200B30B0,extended,10000002
+patch=1,EE,200B30B4,extended,00000000
+patch=1,EE,200B30B8,extended,27FF0080
+patch=1,EE,200B30BC,extended,03E00008
+patch=1,EE,200B30C0,extended,00000000
