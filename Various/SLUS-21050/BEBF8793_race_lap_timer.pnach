@@ -1,0 +1,44 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Enable lap timer in race mode
+author=Nehalem
+
+// Lap Timer HUD Y coordinate (currently set to 88.0, hex: 42B00000)
+patch=1,EE,200B3100,extended,42B00000
+
+patch=0,EE,2015BEC0,extended,00000000
+patch=0,EE,201A035C,extended,0802CC41
+patch=0,EE,201A0BC0,extended,0C02CC31
+patch=0,EE,201A0BC4,extended,00000000
+patch=1,EE,200B30C4,extended,27BDFFF0
+patch=1,EE,200B30C8,extended,FFBF0000
+patch=1,EE,200B30CC,extended,24060001
+patch=1,EE,200B30D0,extended,3C040067
+patch=1,EE,200B30D4,extended,0040482D
+patch=1,EE,200B30D8,extended,2484AE60
+patch=1,EE,200B30DC,extended,0000282D
+patch=1,EE,200B30E0,extended,00C0382D
+patch=1,EE,200B30E4,extended,0C0E521C
+patch=1,EE,200B30E8,extended,00C0402D
+patch=1,EE,200B30EC,extended,3C030065
+patch=1,EE,200B30F0,extended,9063D378
+patch=1,EE,200B30F4,extended,DFBF0000
+patch=1,EE,200B30F8,extended,03E00008
+patch=1,EE,200B30FC,extended,27BD0010
+patch=1,EE,200B3104,extended,3C020067
+patch=1,EE,200B3108,extended,8C42A544 
+patch=1,EE,200B310C,extended,24030001
+patch=1,EE,200B3110,extended,10430004
+patch=1,EE,200B3114,extended,00000000
+patch=1,EE,200B3118,extended,24030003
+patch=1,EE,200B311C,extended,14430009
+patch=1,EE,200B3120,extended,00000000
+patch=1,EE,200B3124,extended,8E020000
+patch=1,EE,200B3128,extended,3C03004D
+patch=1,EE,200B312C,extended,3463F480
+patch=1,EE,200B3130,extended,14430004
+patch=1,EE,200B3134,extended,00000000
+patch=1,EE,200B3138,extended,3C02000B
+patch=1,EE,200B313C,extended,8C423100
+patch=1,EE,200B3140,extended,AC820004
+patch=1,EE,200B3144,extended,03E00008
+patch=1,EE,200B3148,extended,00000000

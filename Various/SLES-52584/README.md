@@ -16,7 +16,8 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Moon jump by pressing DPAD UP (you can set the float value of your choice on line 6, current value is 1.0)
 - Partial mirror mode (everything is mirrored but controls work)
 - Vertical split screen
-- Enable time limit in single event road rage (set the float value of your choice on line 6, current value is default)
+- Enable time limit in single event road rage (you can set the float value of your choice on line 6, current value is default)
+- Enable lap timer in race mode (you can set the float value of your choice on line 6, current value is 88.0)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working
