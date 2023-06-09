@@ -3,4 +3,3 @@ comment=Force standing start in offline modes
 author=Nehalem
 
 patch=0,EE,00135184,extended,00000000
-patch=0,EE,2015BEC0,extended,00000000

@@ -5,7 +5,6 @@ author=Nehalem
 // Lap Timer HUD Y coordinate (currently set to 88.0, hex: 42B00000)
 patch=1,EE,200B3100,extended,42B00000
 
-patch=0,EE,2015BEC0,extended,00000000
 patch=0,EE,201A035C,extended,0802CC41
 patch=0,EE,201A0BC0,extended,0C02CC31
 patch=0,EE,201A0BC4,extended,00000000
