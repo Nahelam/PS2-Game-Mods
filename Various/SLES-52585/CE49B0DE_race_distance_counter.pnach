@@ -6,6 +6,7 @@ patch=1,EE,D066A9C4,extended,01000003
 patch=1,EE,2064EB70,extended,40400000
 patch=0,EE,003CB0FC,extended,00000002
 patch=0,EE,204DEE34,extended,000B3174
+patch=0,EE,204DF194,extended,000B3174
 patch=0,EE,204DEF54,extended,000B3180
 patch=0,EE,204DFFB8,extended,000B318C
 patch=1,EE,200B314C,extended,27BDFFE0
