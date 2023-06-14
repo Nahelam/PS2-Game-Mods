@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Disable traffic
+author=Nehalem
+
+patch=1,EE,0055DC7B,extended,00000000

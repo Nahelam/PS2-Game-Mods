@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Disable traffic
+author=Nehalem
+
+patch=1,EE,0055D7FB,extended,00000000
