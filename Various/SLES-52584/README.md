@@ -18,6 +18,7 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Vertical split screen
 - Enable time limit in single event road rage (you can set the float value of your choice on line 6, current value is default)
 - Enable lap timer in race mode (you can set the float value of your choice on line 6, current value is 88.0)
+- Show distance between you and other drivers in races\* (use **_ws** file if you're using PCSX2 widescreen patches)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working
