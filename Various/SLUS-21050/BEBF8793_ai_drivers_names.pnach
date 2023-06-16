@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Show AI drivers names
+author=Nehalem
+
+patch=0,EE,20153C24,extended,00000000
