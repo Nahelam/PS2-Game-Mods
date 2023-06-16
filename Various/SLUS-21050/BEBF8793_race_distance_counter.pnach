@@ -8,6 +8,7 @@ author=Nehalem
 patch=1,EE,D066A544,extended,01000003
 patch=1,EE,2064E6F0,extended,40400000
 patch=0,EE,201A0B54,extended,00000000
+patch=0,EE,201A0C08,extended,00000000
 patch=0,EE,003CAD8C,extended,00000002
 patch=0,EE,204DE9A4,extended,000B3174
 patch=0,EE,204DED04,extended,000B3174
