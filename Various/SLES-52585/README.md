@@ -21,6 +21,7 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Show distance between you and other drivers in races\* (use **_ws** file if you're using PCSX2 widescreen patches)
 - Disable traffic
 - Show AI drivers names
+- Draw all checkpoints on the track
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working

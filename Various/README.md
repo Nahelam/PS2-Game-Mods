@@ -21,6 +21,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Show distance between you and other drivers in races\*
 - Disable traffic\*
 - Show AI drivers names\*
+- Draw all checkpoints on the track\*
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only
 
