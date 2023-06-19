@@ -22,6 +22,7 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Disable traffic
 - Show AI drivers names
 - Draw all checkpoints on the track
+- 5 AI rivals in road rage
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working
