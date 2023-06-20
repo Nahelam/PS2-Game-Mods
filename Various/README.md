@@ -23,6 +23,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Show AI drivers names\*
 - Draw all checkpoints on the track\*
 - 5 AI rivals in road rage\*
+- Rivals number in road rage options\*
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only
 

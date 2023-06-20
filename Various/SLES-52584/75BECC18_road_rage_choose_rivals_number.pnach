@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Add rivals number in road rage options
+author=Nehalem
+
+patch=0,EE,00433118,extended,00000004
+patch=0,EE,004329F4,extended,00000004
