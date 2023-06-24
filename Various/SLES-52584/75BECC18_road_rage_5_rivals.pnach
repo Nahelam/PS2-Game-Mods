@@ -1,5 +1,0 @@
-gametitle=Burnout 3: Takedown [SLES-52584] (E)
-comment=Road rage against 5 AI rivals
-author=Nehalem
-
-patch=0,EE,0030C394,extended,00000005

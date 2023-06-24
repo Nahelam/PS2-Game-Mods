@@ -22,7 +22,6 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Disable traffic\*
 - Show AI drivers names\* [\[demo\]](https://i.imgur.com/RwdDiob.jpg)
 - Draw all checkpoints on the track\* [\[demo\]](https://i.imgur.com/n1puKRi.jpg)
-- 5 AI rivals in road rage\* [\[demo\]](https://i.imgur.com/kCf2qxO.mp4)
 - Rivals number in road rage options\* [\[demo\]](https://i.imgur.com/IUVA81H.png)
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only
