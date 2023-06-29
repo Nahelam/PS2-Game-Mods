@@ -93,4 +93,4 @@ patch=1,EE,200B3424,extended,080C2DD4
 patch=1,EE,200B3428,extended,00000000
 patch=1,EE,200B342C,extended,3C02000B
 patch=1,EE,200B3430,extended,080C355C
-patch=1,EE,200B3434,extended,AC4032F0
+patch=1,EE,200B3434,extended,FC4032F0
