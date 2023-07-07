@@ -14,6 +14,8 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Change deformation impulse scale (set the float value of your choice on line 6, current value is default) [\[demo\]](https://i.imgur.com/iG091lm.png)
 - Partial mirror mode (everything is mirrored but controls work) [\[demo\]](https://i.imgur.com/WlghMuC.mp4)
 - Vertical split screen [\[demo\]](https://i.imgur.com/5crTbar.png)
+- Rivals number in road rage options [\[demo\]](https://i.imgur.com/IUVA81H.png)
+- Select rivals cars in garage before single event start [\[demo\]](https://i.imgur.com/2w6035K.mp4)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working

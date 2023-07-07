@@ -1,0 +1,17 @@
+gametitle=Burnout Revenge [SLUS-21242] (U)
+comment=Various patches for Burnout Revenge
+author=Nehalem
+
+// Native widescreen
+patch=0,EE,004693D4,extended,00000001
+patch=0,EE,204693D8,extended,00000001
+
+// Always ask for progressive scan
+patch=0,EE,2019778C,extended,10A2001C
+
+// Replace extras with debug menu
+patch=0,EE,1049FCA4,extended,00002248
+
+// MPH -> KPH
+patch=0,EE,201765E8,extended,0000102D
+patch=0,EE,201767DC,extended,0000102D
