@@ -1,4 +1,4 @@
-# PCSX2 Burnout 3: Takedown Mods
+# PCSX2 Burnout Revenge Mods
 
 Various cheats/patches/mods I made/ported for **Burnout Revenge** on **PCSX2**.
 
