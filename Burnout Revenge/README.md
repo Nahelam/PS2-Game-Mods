@@ -9,3 +9,4 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Always show the progressive scan menu
 - Replace extras menu with debug menu
 - Speedometer HUD unit patch (MPH->KPH)
+- No lap limit in Burning Lap mode

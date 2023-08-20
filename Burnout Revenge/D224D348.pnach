@@ -15,3 +15,7 @@ patch=0,EE,1049FCA4,extended,00002248
 // MPH -> KPH
 patch=0,EE,201765E8,extended,0000102D
 patch=0,EE,201767DC,extended,0000102D
+
+// No lap limit in Burning Lap mode
+patch=0,EE,101258CC,extended,0000FFFF
+patch=0,EE,1012564E,extended,00001000
