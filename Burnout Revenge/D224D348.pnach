@@ -19,3 +19,6 @@ patch=0,EE,201767DC,extended,0000102D
 // No lap limit in Burning Lap mode
 patch=0,EE,101258CC,extended,0000FFFF
 patch=0,EE,1012564E,extended,00001000
+
+// Disable camera speed shake
+patch=0,EE,2027EBF0,extended,03E00008
