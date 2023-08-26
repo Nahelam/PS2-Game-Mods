@@ -11,3 +11,4 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Speedometer HUD unit patch (MPH->KPH)
 - No lap limit in Burning Lap mode
 - Disable camera speed shake
+- All vehicle classes selectable
