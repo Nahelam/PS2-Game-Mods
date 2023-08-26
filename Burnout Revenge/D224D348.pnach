@@ -23,5 +23,5 @@ patch=0,EE,1012564E,extended,00001000
 // Disable camera speed shake
 patch=0,EE,2027EBF0,extended,03E00008
 
-// All vehicle classes selectable
+// Selectable crash vehicles in all modes
 patch=0,EE,20135A30,extended,00000000
