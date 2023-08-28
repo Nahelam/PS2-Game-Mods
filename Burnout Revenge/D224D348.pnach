@@ -33,3 +33,9 @@ patch=0,EE,201D5318,extended,00000000
 // Offline car air control
 patch=0,EE,2020A4FC,extended,0004B02D
 patch=0,EE,2020A514,extended,00000000
+
+// Disable rating HUD component
+patch=0,EE,1016B8B2,extended,00001000
+
+// Disable game mode HUD component
+patch=0,EE,201694F8,extended,03E00008

@@ -14,3 +14,5 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Selectable crash vehicles in all modes
 - Allow online games to be started even you're the only player in the lobby (Solonline)
 - Offline car air control
+- Disable rating HUD component
+- Disable game mode HUD component
