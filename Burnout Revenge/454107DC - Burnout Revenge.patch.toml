@@ -1,0 +1,45 @@
+title_name = "Burnout Revenge"
+title_id = "454107DC" # TQ-2001
+
+hash = [
+    "D629EA67090E3137" # default.xex (Title Update 0)
+#    "E13EE72FDCCE36A9" # default.xex (Title Update 1)
+]
+
+#media_id = "223759FA" # Disc (USA, Europe)
+
+[[patch]]
+   name = "Debug menu"
+    desc = "Replaces the extras menu"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]] # Title Update 0
+        address = 0x820394bc
+        value = 0x82206500
+        
+#    [[patch.be32]] # Title Update 1
+#        address = 0x820395ec
+#        value = 0x822064b0
+
+[[patch]]
+   name = "Crash vehicles in all modes"
+    desc = "Selectable crash vehicles in all modes"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be16]]
+        address = 0x820fb1ac # Title Update 0
+#        address = 0x820fb164 # Title Update 1
+        value = 0x4800
+		
+[[patch]]
+   name = "Ignore road rage event timer"
+    desc = "Prevent game ending when the timer reaches 0 in road rage events"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be16]]
+        address = 0x82141e04 # Title Update 0
+#        address = 0x82141d2c # Title Update 1
+        value = 0x4800
