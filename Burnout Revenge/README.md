@@ -17,7 +17,7 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Disable rating HUD component
 - Disable game mode HUD component
 
-## Xbox 360 Features (.toml file)
+## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
 - Selectable crash vehicles in all modes
 - Ignore road rage event timer
