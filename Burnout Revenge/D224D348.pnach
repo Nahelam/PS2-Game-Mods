@@ -29,3 +29,7 @@ patch=0,EE,20135A30,extended,00000000
 // Solonline
 patch=0,EE,2019E7B0,extended,00000000
 patch=0,EE,201D5318,extended,00000000
+
+// Offline car air control
+patch=0,EE,2020A4FC,extended,0004B02D
+patch=0,EE,2020A514,extended,00000000
