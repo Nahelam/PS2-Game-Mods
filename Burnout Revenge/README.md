@@ -4,7 +4,7 @@ Various cheats/patches/mods I made/ported for **Burnout Revenge** on **PCSX2**.
 
 Only a few patches are available for the moment, **SLUS-21242** only.
 
-## Features
+## PCSX2 Features
 - Native widescreen
 - Always show the progressive scan menu
 - Replace extras menu with debug menu
@@ -16,3 +16,8 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Offline car air control
 - Disable rating HUD component
 - Disable game mode HUD component
+
+## Xenia (Xbox 360) Features (.toml file)
+- Replace extras menu with debug menu
+- Selectable crash vehicles in all modes
+- Ignore road rage event timer
