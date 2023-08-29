@@ -16,6 +16,8 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Offline car air control
 - Disable rating HUD component
 - Disable game mode HUD component
+- Enable timer in race events and freeze its display for 5 seconds on new lap start
+- Enable total time timer in race events
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu

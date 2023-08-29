@@ -1,5 +1,5 @@
 gametitle=Burnout Revenge [SLUS-21242] (U)
-comment=Enable total time timer in single event races
+comment=Enable total time timer in race events
 author=Nehalem
 
 // Enable timer in race events

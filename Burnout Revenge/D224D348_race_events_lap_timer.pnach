@@ -1,5 +1,5 @@
 gametitle=Burnout Revenge [SLUS-21242] (U)
-comment=Enable timer in single event races and freeze its display for 5 seconds on new lap start
+comment=Enable timer in race events and freeze its display for 5 seconds on new lap start
 author=Nehalem
 
 // Enable timer in race events
