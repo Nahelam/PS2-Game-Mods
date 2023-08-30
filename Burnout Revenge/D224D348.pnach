@@ -39,3 +39,8 @@ patch=0,EE,1016B8B2,extended,00001000
 
 // Disable game mode HUD component
 patch=0,EE,201694F8,extended,03E00008
+
+// Race events lap modifier
+patch=0,EE,2049B75C,extended,000B4130
+patch=1,EE,200B4130,extended,03E00008
+patch=1,EE,200B4134,extended,24020004 // 2402XXXX change XXXX to the lap number of your choice (hexadecimal)

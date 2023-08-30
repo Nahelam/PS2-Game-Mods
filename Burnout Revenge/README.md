@@ -19,6 +19,7 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Enable timer in race events (cannot be used together)
   - Each lap version (with display freezing 5 seconds on new lap start)
   - Total time version (no reset between laps)
+- Race events lap modifier
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
