@@ -24,5 +24,6 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
 - Selectable crash vehicles in all modes
-- Ignore road rage event timer (also disables timer and game mode HUD display)
+- Ignore road rage event timer (also disables timer HUD display)
+- Disable game mode HUD
 - Disable rating HUD
