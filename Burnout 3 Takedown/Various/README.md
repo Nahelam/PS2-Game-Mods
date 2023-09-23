@@ -26,9 +26,10 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Rivals number in road rage options\* [\[demo\]](https://i.imgur.com/IUVA81H.png)
 - Select rivals cars in garage before single event start\* [\[demo\]](https://i.imgur.com/2w6035K.mp4)
 
-\*: SLES-52584, SLES-52585 & SLUS-21050 only
+\*: SLES-52584, SLES-52585 & SLUS-21050 only  
 \*\*: SLES-52585 & SLUS-21050 only
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
-- "Rivals number in road rage options" is also included in "Select rivals cars in garage".\*
+- "Rivals number in road rage options" is also included in "Select rivals cars in garage".
+- **DO NOT** use "Enable lap timer in race mode" and "Enable lap timer in road rage mode" together.

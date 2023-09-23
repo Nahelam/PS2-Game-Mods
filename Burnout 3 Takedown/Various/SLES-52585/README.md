@@ -29,3 +29,4 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
 - "Rivals number in road rage options" is also included in "Select rivals cars in garage".
+- **DO NOT** use "Enable lap timer in race mode" and "Enable lap timer in road rage mode" together.
