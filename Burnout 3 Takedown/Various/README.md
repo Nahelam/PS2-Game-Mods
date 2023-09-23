@@ -18,6 +18,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Vertical split screen [\[demo\]](https://i.imgur.com/5crTbar.png)
 - Enable time limit in single event road rage\* (you can set the float value of your choice on line 6, current value is default) [\[demo\]](https://i.imgur.com/5uQTYw4.mp4)
 - Enable lap timer in race mode\* (you can set the float value of your choice on line 6, current value is 88.0) [\[demo\]](https://i.imgur.com/zP0iQnc.png)
+- Enable lap timer in road rage mode\*\* (you can set the float value of your choice on line 6, current value is 88.0)
 - Show distance between you and other drivers in races (disables score HUD)\* (use **_ws** file if you're using PCSX2 widescreen patches) [\[demo\]](https://i.imgur.com/qws0uEH.mp4)
 - Disable traffic\*
 - Show AI drivers names\* [\[demo\]](https://i.imgur.com/RwdDiob.jpg)
@@ -26,6 +27,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Select rivals cars in garage before single event start\* [\[demo\]](https://i.imgur.com/2w6035K.mp4)
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only
+\*\*: SLES-52585 & SLUS-21050 only
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
