@@ -20,6 +20,7 @@ Only a few patches are available for the moment, **SLUS-21242** only.
   - Each lap version (with display freezing 5 seconds on new lap start)
   - Total time version (no reset between laps)
 - Race events lap modifier
+- Disable HUD
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
