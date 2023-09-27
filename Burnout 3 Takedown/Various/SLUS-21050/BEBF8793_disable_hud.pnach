@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Turn off HUD display
+author=Nehalem
+
+patch=0,EE,001A07AA,extended,00000000

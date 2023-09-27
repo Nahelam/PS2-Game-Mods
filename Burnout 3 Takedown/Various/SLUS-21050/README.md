@@ -25,6 +25,7 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Draw all checkpoints on the track [\[demo\]](https://i.imgur.com/n1puKRi.jpg)
 - Rivals number in road rage options [\[demo\]](https://i.imgur.com/IUVA81H.png)
 - Select rivals cars in garage before single event start [\[demo\]](https://i.imgur.com/2w6035K.mp4)
+- Disable HUD
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
