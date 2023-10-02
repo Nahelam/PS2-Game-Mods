@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Enable 60 FPS in crashes
+author=Nehalem
+
+patch=0,EE,201320D8,extended,1000004B

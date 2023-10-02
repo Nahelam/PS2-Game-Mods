@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Enable 60 FPS in crashes
+author=Nehalem
+
+patch=0,EE,201320E8,extended,1000004B
