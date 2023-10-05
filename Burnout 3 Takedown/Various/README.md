@@ -26,7 +26,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Rivals number in road rage options\* [\[demo\]](https://i.imgur.com/IUVA81H.png)
 - Select rivals cars in garage before single event start\* [\[demo\]](https://i.imgur.com/2w6035K.mp4)
 - Disable HUD\*\*
-- Toggle pause gameplay (R2+UP and R2+DOWN)\*\* [\[demo\]](https://i.imgur.com/6swIHzt.mp4) in combination with the [free camera code](https://tcrf.net/Burnout_3:_Takedown#Camera_Modes), now we can take good shots ;p
+- Toggle pause gameplay (R2+DPAD UP and R2+DPAD DOWN)\*\* [\[demo\]](https://i.imgur.com/6swIHzt.mp4) in combination with the [free camera code](https://tcrf.net/Burnout_3:_Takedown#Camera_Modes), now we can take good shots ;p
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 \*\*: SLES-52585 & SLUS-21050 only

@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLES-52585] (E)
-comment=Toggle pause gameplay (R2+UP and R2+DOWN)
+comment=Toggle pause gameplay (R2+DPAD UP and R2+DPAD DOWN)
 author=Nehalem
 
 patch=1,EE,D04F555C,extended,0000FDEF
