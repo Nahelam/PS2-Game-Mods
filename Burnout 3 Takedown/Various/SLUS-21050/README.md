@@ -27,8 +27,11 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Select rivals cars in garage before single event start [\[demo\]](https://i.imgur.com/2w6035K.mp4)
 - Disable HUD
 - Toggle pause gameplay (R2+DPAD UP and R2+DPAD DOWN) [\[demo\]](https://i.imgur.com/6swIHzt.mp4) in combination with the [free camera code](https://tcrf.net/Burnout_3:_Takedown#Camera_Modes), now we can take good shots ;p
+- Toggle AI controlled player car (DPAD DOWN)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
 - "Rivals number in road rage options" is also included in "Select rivals cars in garage".
 - **DO NOT** use "Enable lap timer in race mode" and "Enable lap timer in road rage mode" together.
+- Disable the takedown camera if you don't want the game to bring you back car controls while using the AI controlled patch
+
