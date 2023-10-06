@@ -28,6 +28,8 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Disable HUD\*\*
 - Toggle pause gameplay (R2+DPAD UP and R2+DPAD DOWN)\*\* [\[demo\]](https://i.imgur.com/6swIHzt.mp4) in combination with the [free camera code](https://tcrf.net/Burnout_3:_Takedown#Camera_Modes), now we can take good shots ;p
 - Toggle AI controlled player car (DPAD DOWN)\*\*
+- Disable 5 minutes idle check (pause menu opening automatically)\*\*
+- Disable automatic event ending for very long games\*\*
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 \*\*: SLES-52585 & SLUS-21050 only

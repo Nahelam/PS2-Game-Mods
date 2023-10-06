@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Disable 5 minutes idle check (pause menu opening automatically)
+author=Nehalem
+
+patch=0,EE,203954E8,extended,00000000

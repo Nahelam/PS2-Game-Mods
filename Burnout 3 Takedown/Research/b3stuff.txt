@@ -627,3 +627,24 @@ patch=1,EE,200B3424,extended,3C02000B
 patch=1,EE,200B3428,extended,080C355C
 patch=1,EE,200B342C,extended,FC4032F0
 
+====================================================
+Toggle AI controlled player car SLES-52585
+
+lui $v0, 0x4F
+lbu $v1, 0x57EB($v0)
+beqz $v1, 0x2C
+lw $a0, 0x1580($s2)
+lbu $v0, 0x27C8($a0)
+beqz $v0, 0x14
+nop
+daddu $a1, $zero, $zero
+b 0xC
+nop
+daddu $a1, $v1, $zero
+jal 0x150290
+nop
+ld $ra, 0x30($sp)
+lq $s2, 0x20($sp)
+lq $s0, 0($sp)
+jr $ra
+addiu $sp, 0x40
