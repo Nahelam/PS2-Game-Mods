@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Disable camera switch when crashing
+author=Nehalem
+
+patch=0,EE,20357830,extended,00000000

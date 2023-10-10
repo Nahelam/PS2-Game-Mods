@@ -8,4 +8,4 @@ Available patches:
 - 60 FPS crashes\*
 
 
-\*: SLES-52585 & SLUS-21050 only
+\*: SLES-52584, SLES-52585 & SLUS-21050 only

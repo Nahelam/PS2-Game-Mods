@@ -1,0 +1,23 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Toggle AI controlled player car (DPAD DOWN)
+author=Nehalem
+
+patch=0,EE,201BD604,extended,0C02CD10
+patch=1,EE,200B3440,extended,3C02004F
+patch=1,EE,200B3444,extended,904358EB
+patch=1,EE,200B3448,extended,1060000A
+patch=1,EE,200B3450,extended,8E441580
+patch=1,EE,200B3454,extended,908227C8
+patch=1,EE,200B3458,extended,10400004
+patch=1,EE,200B345C,extended,00000000
+patch=1,EE,200B3460,extended,0000282D
+patch=1,EE,200B3464,extended,10000002
+patch=1,EE,200B3468,extended,00000000
+patch=1,EE,200B346C,extended,0060282D
+patch=1,EE,200B3470,extended,0C0540A4
+patch=1,EE,200B3474,extended,00000000
+patch=1,EE,200B3478,extended,DFBF0030
+patch=1,EE,200B347C,extended,7BB20020
+patch=1,EE,200B3480,extended,7BB00000
+patch=1,EE,200B3484,extended,03E00008
+patch=1,EE,200B3488,extended,27BD0040

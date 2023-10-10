@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Disable automatic event ending for very long games
+author=Nehalem
+
+patch=0,EE,2019A7D4,extended,10000056
+patch=0,EE,2038B4D8,extended,00000000

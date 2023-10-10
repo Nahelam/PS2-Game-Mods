@@ -30,6 +30,7 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Toggle AI controlled player car (DPAD DOWN)
 - Disable 5 minutes idle check (pause menu opening automatically)
 - Disable automatic event ending for very long games
+- Disable camera switch when crashing
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
