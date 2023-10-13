@@ -31,6 +31,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Disable 5 minutes idle check (pause menu opening automatically)\*
 - Disable automatic event ending for very long games\*
 - Disable camera switch when crashing\*
+- Change offline traffic generation seed\*
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 

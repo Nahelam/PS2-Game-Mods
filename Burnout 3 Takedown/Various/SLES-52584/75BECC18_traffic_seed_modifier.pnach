@@ -1,0 +1,12 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Offline traffic seed modifier
+author=Nehalem
+
+// Offline traffic seed (8 bytes, current value is default, change it to whatever you want)
+patch=1,EE,200B34A0,extended,FD462907
+patch=1,EE,200B34A4,extended,02B9D6F8
+
+// Make the game use our seed
+patch=0,EE,201632C0,extended,3C02000B
+patch=0,EE,201632C8,extended,8C4634A4
+patch=0,EE,201632DC,extended,8C4634A0
