@@ -32,6 +32,8 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Disable automatic event ending for very long games
 - Disable camera switch when crashing
 - Change offline traffic generation seed
+- Kamikaze traffic "clean" (no more "crashing" state but the game still crashes when too many traffic vehicles have crashed, also affects AI)
+- Force specific LOD level (details in patch comments)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.

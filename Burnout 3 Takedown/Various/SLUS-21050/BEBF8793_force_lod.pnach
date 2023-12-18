@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Force specific LOD level
+author=Nehalem
+
+patch=0,EE,00151ABF,extended,00000010
+patch=0,EE,20151B78,extended,24070004 // Last digit is LOD level, you can use 0, 1, 2, 3, and 4 (4 being the most detailed iirc)
