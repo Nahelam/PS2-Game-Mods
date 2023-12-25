@@ -34,6 +34,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Change offline traffic generation seed\*
 - Kamikaze traffic "clean" (no more "crashing" state but the game still crashes when too many traffic vehicles have crashed, also affects AI)\*
 - Force specific LOD level (details in patch comments)\*
+- Chrome color on all vehicles\*
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 

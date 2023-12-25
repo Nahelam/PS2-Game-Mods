@@ -1,0 +1,11 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Chrome color on all vehicles
+author=Nehalem
+
+patch=0,EE,2021FEA0,extended,0C02CD2C
+patch=0,EE,2021FAE8,extended,0C02CD2C
+patch=1,EE,200B34B0,extended,34028000
+patch=1,EE,200B34B4,extended,00021638
+patch=1,EE,200B34B8,extended,344200A8
+patch=1,EE,200B34BC,extended,03E00008
+patch=1,EE,200B34C0,extended,FC8203B0
