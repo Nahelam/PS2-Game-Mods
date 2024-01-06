@@ -650,3 +650,45 @@ jr $ra
 addiu $sp, 0x40
 
 ====================================================
+SLES-52585:
+
+Make CB3HUDTakedowns::Update use crashed traffic count instead of takedowns
+
+// start 3A2888
+64 00 03 3C                 lui          $v1, 0x64
+34 00 86 8C                 lw           $a2, 0x34($a0)
+05 00 00 10                 b            0x18
+FC 55 67 8C                 lw           $a3, 0x55fc($v1)
+
+patch=0,EE,203A2888,extended,3C030064
+patch=0,EE,203A288C,extended,8C860034
+patch=0,EE,203A2890,extended,10000005
+patch=0,EE,203A2894,extended,8C6755FC
+
+
+Make CB3HUDTakedowns::PrepareTakedownsObjects use crashed traffic count instead of takedowns
+// start 3A2560
+64 00 02 3C                 lui          $v0, 0x64
+FC 55 42 8C                 lw           $v0, 0x55fc($v0)
+38 00 82 AE                 sw           $v0, 0x38($s4)
+06 00 00 10                 b            0x1C
+40 A9 52 26                 addiu        $s2, $s2, -0x56c0
+
+
+patch=0,EE,203A2560,extended,3C020064
+patch=0,EE,203A2564,extended,8C4255FC
+patch=0,EE,203A2568,extended,AE820038
+patch=0,EE,203A256C,extended,10000006
+patch=0,EE,203A2570,extended,2652A940
+
+SLUS:
+
+patch=0,EE,203A2518,extended,3C030064
+patch=0,EE,203A251C,extended,8C860034
+patch=0,EE,203A2520,extended,10000005
+patch=0,EE,203A2524,extended,8C67517C
+patch=0,EE,203A21F0,extended,3C020064
+patch=0,EE,203A21F4,extended,8C42517C
+patch=0,EE,203A21F8,extended,AE820038
+patch=0,EE,203A21FC,extended,10000006
+patch=0,EE,203A2200,extended,2673A4C0
