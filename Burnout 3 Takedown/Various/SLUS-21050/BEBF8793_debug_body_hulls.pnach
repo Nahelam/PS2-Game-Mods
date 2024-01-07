@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Enable debug body hulls drawing
+author=Nehalem
+
+patch=0,EE,202BED08,extended,A0860007

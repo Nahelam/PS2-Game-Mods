@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Enable debug intervals drawing
+author=Nehalem
+
+patch=0,EE,202BED10,extended,A0860008

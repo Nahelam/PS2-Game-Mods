@@ -35,6 +35,11 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Kamikaze traffic "clean" (no more "crashing" state but the game still crashes when too many traffic vehicles have crashed, also affects AI)
 - Force specific LOD level (details in patch comments)
 - Chrome color on all vehicles
+- Draw debug body hulls
+- Draw debug collision world (see patch comments for "leaf" mode)
+- Draw debug intervals
+- Draw debug near miss data
+- Draw debug traffic spatial triggers
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.

@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Enable debug near miss data drawing
+author=Nehalem
+
+patch=0,EE,202F0380,extended,24030001
+patch=0,EE,202F0384,extended,A0830000

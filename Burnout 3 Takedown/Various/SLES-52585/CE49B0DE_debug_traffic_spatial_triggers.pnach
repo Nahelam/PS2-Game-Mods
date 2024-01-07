@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Enable debug traffic spatial triggers drawing
+author=Nehalem
+
+patch=0,EE,202F03F8,extended,A0830001

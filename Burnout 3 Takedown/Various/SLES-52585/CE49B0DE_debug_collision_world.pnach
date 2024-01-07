@@ -1,0 +1,8 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Enable debug collision world drawing
+author=Nehalem
+
+patch=0,EE,202BEDA4,extended,A0860006
+
+// Uncomment for "leaf" mode
+// patch=0,EE,202BEDA8,extended,A086000A
