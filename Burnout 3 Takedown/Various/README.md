@@ -36,7 +36,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Force specific LOD level (details in patch comments)\*
 - Chrome color on all vehicles\*
 - Draw debug body hulls\*
-- Draw debug collision world (see patch comments for "leaf" mode)\*
+- Draw debug collision world (see patch comments for "leaf" mode and track rendering fix)\*
 - Draw debug intervals\*
 - Draw debug near miss data\*
 - Draw debug traffic spatial triggers\*

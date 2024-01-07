@@ -6,3 +6,8 @@ patch=0,EE,202BED94,extended,A0860006
 
 // Uncomment for "leaf" mode
 // patch=0,EE,202BED98,extended,A086000A
+
+// Uncomment to force track rendering along collision world drawing
+// patch=0,EE,2021C3DC,extended,00000000
+// patch=0,EE,2021C5C8,extended,00000000
+// patch=0,EE,2021C92C,extended,00000000
