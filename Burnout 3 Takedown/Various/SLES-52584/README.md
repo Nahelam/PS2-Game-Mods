@@ -40,6 +40,7 @@ This folder contains various cheats/patches/mods I made for Burnout 3: Takedown.
 - Draw debug intervals
 - Draw debug near miss data
 - Draw debug traffic spatial triggers
+- Disable vehicle sounds (makes driveable traffic mods on real hardware possible)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
