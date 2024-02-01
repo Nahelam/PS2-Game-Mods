@@ -5,12 +5,12 @@ author=Nehalem
 description=Brings back network play by connecting to No23's server emulator
 
 // DNAS patch
-patch=0,EE,2026BF0C,extended,10000003
+patch=0,EE,2026BDCC,extended,10000003
 
 // URL patch
-patch=0,EE,204C72F0,extended,736F622A
-patch=0,EE,204C72F4,extended,6F2E7672
-patch=0,EE,204C72F8,extended,00006772
+patch=0,EE,204EB300,extended,736F622A
+patch=0,EE,204EB304,extended,6F2E7672
+patch=0,EE,204EB308,extended,00006772
 
 // jal to stub in CB3Game::PrepareHardware
 patch=0,EE,201D44FC,extended,0C02CD34
