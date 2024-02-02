@@ -1,11 +1,13 @@
 # PCSX2 Burnout 3: Takedown ELF Code Cave
 
+`16B4F0` to `1996D0`, 188896 bytes, all yours.
+
 ## Inlineception?
 While looking into the game executable, I noticed three huge functions in the disassembler:
 
-`CB3TrafficVehicle::StartCrashing` (addr: 167D10) whose size is **37836** bytes\
-`CB3TrafficVehicle::Remove` (addr: 173D30) whose size is **75704** bytes\
-`CB3TrafficVehicle::Update` (addr: 186850) whose size is **77428** bytes
+`CB3TrafficVehicle::StartCrashing` *(addr: 167D10)* whose size is **37836** bytes\
+`CB3TrafficVehicle::Remove` *(addr: 173D30)* whose size is **75704** bytes\
+`CB3TrafficVehicle::Update` *(addr: 186850)* whose size is **77428** bytes
 
 The first time I saw them I thought their size was intended but when I wanted to look deeper into traffic vehicles code I changed my mind, something probably went wrong during the game compilation process.
 
@@ -36,7 +38,7 @@ In `Remove`, the function can call itself at one place only, the nested inlining
 
 These values sounds familiar, **128** is the max value for a signed char, and **256** the max value for an unsigned char, not sure if this information is useful to understand what happened behind the scenes though.
 
-I checked the XBOX executable and none of this seems to have happened.
+I checked the Xbox executable and none of this seems to have happened.
 
 ## Fixing
 After fixing the functions, here are their new sizes:
@@ -49,4 +51,4 @@ After fixing the functions, here are their new sizes:
 
 We have now ~188kb of free space in the retail ELF, however this free space is not contiguous, our code cave is split into three parts and there are also other functions between `StartCrashing` and `Update`.
 
-These patches will take care of moving all the functions to the end of the fixed `StartCrashing`, the calls to the previous location of the moved functions are also fixed, nothing will change in the game except that we now have a huge code cave starting at 0x16B4F0, enjoy.
+These patches will take care of moving all the functions to the end of the fixed `StartCrashing`, the calls to the previous location of the moved functions are also fixed, nothing will change in the game except that we now have a huge code cave starting at `16B4F0`, enjoy.
