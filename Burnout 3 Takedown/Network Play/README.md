@@ -8,6 +8,10 @@ The new patches doesn't rely on IOP addresses for patching the certificate verif
 
 The stub I wrote loads the DirtySock module file into a buffer located in the EE memory, applies the certificate verification patch to it, then tells the IOP to load this buffer as a module (sceSifLoadModuleBuffer function) instead of reading it directly from the file system. Once the module is loaded, the memory allocated for this operation is freed, the buffer is cleared and the game continues its execution normally.
 
+## Old Patches
+
 If you were fine with the previous (less reliable) version of these patches, you can still find them in the [Old Patches](https://github.com/Nahelam/PCSX2-Burnout-Mods/tree/main/Burnout%203%20Takedown/Network%20Play/Old%20Patches) folder.
+
+## Miscellaneous
 
 If the game is having troubles connecting to the network (game freezing during the "Accessing Network" message), try to use the "Disable UPnP" patch (experimental).
