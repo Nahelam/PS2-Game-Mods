@@ -1,6 +1,6 @@
 gametitle=Burnout 3: Takedown (SLES-52584) [PAL]
 
-[Network Play]
+[Network\Network Play]
 author=Nehalem
 description=Brings back network play by connecting to No23's server emulator
 
@@ -105,3 +105,9 @@ patch=1,EE,200B3620,extended,1000FFCB
 patch=1,EE,200B3624,extended,00408025
 patch=1,EE,200B3628,extended,1000FFCF
 patch=1,EE,200B362C,extended,2410FFFF
+
+[Network\Disable UPnP]
+author=Nehalem
+description=Prevent the game to use UPnP
+
+patch=0,EE,204BB448,extended,00230AA0
