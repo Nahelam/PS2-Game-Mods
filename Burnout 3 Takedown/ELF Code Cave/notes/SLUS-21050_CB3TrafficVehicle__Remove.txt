@@ -1,0 +1,86 @@
+Function address: 0x173D30
+Original function size: 0x127B8
+New function size: 0x7C
+Code cave size: 0x1273C
+
+--- Source ---
+
+void CB3TrafficVehicle::Remove(CB3TrafficVehicle *this)
+{
+    this->mx8Flag = this->mx8Flag | 1;
+    RemoveFromLanes(this);
+    if (this->mpTrailerVehicle && (gWorld.mTrafficSystem.mbIsOnline || ((this->mx8OtherFlags & 2) == 0)))
+    {
+        Remove(this->mpTrailerVehicle);
+    }
+    CB3TrafficSystem::AddToDeadTrafficList(&gWorld.mTrafficSystem, this, true);
+    this->mx8OtherFlags = '\0';
+}
+
+--- Disassembly (Little Endian) ---
+
+00173D30:  E0 FF BD 27    addiu $sp, $sp, -0x20
+00173D34:  10 00 BF FF    sd    $ra, 0x10($sp)
+00173D38:  00 00 B0 7F    sq    $s0, 0($sp)
+00173D3C:  2D 80 80 00    daddu $s0, $a0, $zero    // this
+00173D40:  7A 01 82 90    lbu   $v0, 0x17A($a0)    // this->mx8Flag
+00173D44:  01 00 42 34    ori   $v0, $v0, 1
+00173D48:  00 C8 05 0C    jal   0x172000           // CB3TrafficVehicle::RemoveFromLanes
+00173D4C:  7A 01 82 A0    sb    $v0, 0x17A($a0)    // this->mx8Flag
+00173D50:  10 01 04 8E    lw    $a0, 0x110($s0)    // this->mpTrailerVehicle (also a CB3TrafficVehicle)
+00173D54:  0A 00 80 10    beqz  $a0, 0x2C          // 0x00173D84
+00173D58:  00 00 00 00    nop   
+00173D5C:  56 00 02 3C    lui   $v0, 0x56
+00173D60:  F7 D7 42 90    lbu   $v0, -0x2809($v0)  // gWorld.mTrafficSystem.mbIsOnline
+00173D64:  04 00 40 14    bnez  $v0, 0x14          // 0x00173D7C
+00173D68:  00 00 00 00    nop   
+00173D6C:  74 01 02 92    lbu   $v0, 0x174($s0)    // this->mx8OtherFlags
+00173D70:  02 00 42 30    andi  $v0, $v0, 2
+00173D74:  02 00 40 14    bnez  $v0, 0xC           // 0x00173D84
+00173D78:  00 00 00 00    nop   
+00173D7C:  4C CF 05 0C    jal   0x173D30           // CB3TrafficVehicle::Remove (with mpTrailerVehicle as this)
+00173D80:  00 00 00 00    nop   
+00173D84:  52 00 04 3C    lui   $a0, 0x52
+00173D88:  40 74 84 24    addiu $a0, $a0, 0x7440   // gWorld.mTrafficSystem
+00173D8C:  2D 28 00 02    daddu $a1, $s0, $zero    // this
+00173D90:  A4 8F 05 0C    jal   0x163E90           // CB3TrafficSystem::AddToDeadTrafficList
+00173D94:  01 00 06 24    addiu $a2, $zero, 1
+00173D98:  74 01 00 A2    sb    $zero, 0x174($s0)  // this->mx8OtherFlags
+00173D9C:  10 00 BF DF    ld    $ra, 0x10($sp)
+00173DA0:  00 00 B0 7B    lq    $s0, 0($sp)
+00173DA4:  08 00 E0 03    jr    $ra
+00173DA8:  20 00 BD 27    addiu $sp, $sp, 0x20
+
+--- PCSX2 Patch (Big Endian) ---
+
+patch=0,EE,20173D30,extended,27BDFFE0
+patch=0,EE,20173D34,extended,FFBF0010
+patch=0,EE,20173D38,extended,7FB00000
+patch=0,EE,20173D3C,extended,0080802D
+patch=0,EE,20173D40,extended,9082017A
+patch=0,EE,20173D44,extended,34420001
+patch=0,EE,20173D48,extended,0C05C800
+patch=0,EE,20173D4C,extended,A082017A
+patch=0,EE,20173D50,extended,8E040110
+patch=0,EE,20173D54,extended,1080000A
+patch=0,EE,20173D58,extended,00000000
+patch=0,EE,20173D5C,extended,3C020056
+patch=0,EE,20173D60,extended,9042D7F7
+patch=0,EE,20173D64,extended,14400004
+patch=0,EE,20173D68,extended,00000000
+patch=0,EE,20173D6C,extended,92020174
+patch=0,EE,20173D70,extended,30420002
+patch=0,EE,20173D74,extended,14400002
+patch=0,EE,20173D78,extended,00000000
+patch=0,EE,20173D7C,extended,0C05CF4C
+patch=0,EE,20173D80,extended,00000000
+patch=0,EE,20173D84,extended,3C040052
+patch=0,EE,20173D88,extended,24847440
+patch=0,EE,20173D8C,extended,0200282D
+patch=0,EE,20173D90,extended,0C058FA4
+patch=0,EE,20173D94,extended,24060001
+patch=0,EE,20173D98,extended,A2000174
+patch=0,EE,20173D9C,extended,DFBF0010
+patch=0,EE,20173DA0,extended,7BB00000
+patch=0,EE,20173DA4,extended,03E00008
+patch=0,EE,20173DA8,extended,27BD0020

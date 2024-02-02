@@ -1,0 +1,49 @@
+Function address: 0x167D10
+Original function size: 0x93CC
+New function size: 0x38
+Code cave size: 0x9394
+
+--- Source ---
+
+void CB3TrafficVehicle::StartCrashing(CB3TrafficVehicle *this)
+{
+    this->mx8OtherFlags = this->mx8OtherFlags | 2;
+    if (gWorld.mTrafficSystem.mbIsOnline == false)
+    {
+        Remove(this);
+    }
+}
+
+--- Disassembly (Little Endian) ---
+
+00167D10:  F0 FF BD 27    addiu $sp, $sp, -0x10
+00167D14:  00 00 BF FF    sd    $ra, ($sp)
+00167D18:  74 01 82 90    lbu   $v0, 0x174($a0)    // this->mx8OtherFlags
+00167D1C:  02 00 42 34    ori   $v0, $v0, 2
+00167D20:  74 01 82 A0    sb    $v0, 0x174($a0)
+00167D24:  56 00 02 3C    lui   $v0, 0x56
+00167D28:  77 DD 42 90    lbu   $v0, -0x2289($v0)  // gWorld.mTrafficSystem.mbIsOnline
+00167D2C:  03 00 40 14    bnez  $v0, 0x10          // 0x00167D3C
+00167D30:  00 00 00 00    nop   
+00167D34:  4C CF 05 0C    jal   0x173D30           // CB3TrafficVehicle::Remove
+00167D38:  00 00 00 00    nop   
+00167D3C:  00 00 BF DF    ld    $ra, ($sp)
+00167D40:  08 00 E0 03    jr    $ra  
+00167D44:  10 00 BD 27    addiu $sp, $sp, 0x10
+
+--- PCSX2 Patch (Big Endian) ---
+
+patch=0,EE,20167D10,extended,27BDFFF0
+patch=0,EE,20167D14,extended,FFBF0000
+patch=0,EE,20167D18,extended,90820174
+patch=0,EE,20167D1C,extended,34420002
+patch=0,EE,20167D20,extended,A0820174
+patch=0,EE,20167D24,extended,3C020056
+patch=0,EE,20167D28,extended,9042DD77
+patch=0,EE,20167D2C,extended,14400003
+patch=0,EE,20167D30,extended,00000000
+patch=0,EE,20167D34,extended,0C05CF4C
+patch=0,EE,20167D38,extended,00000000
+patch=0,EE,20167D3C,extended,DFBF0000
+patch=0,EE,20167D40,extended,03E00008
+patch=0,EE,20167D44,extended,27BD0010

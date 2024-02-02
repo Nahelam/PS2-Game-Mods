@@ -1,0 +1,992 @@
+Function address: 0x186850
+Original function size: 0x12E74
+New function size: 0x7AC
+Code cave size: 0x126C8
+
+--- Disassembly (Little Endian) ---
+
+00186850:  B0 FF BD 27                 addiu        $sp, -0x50
+00186854:  2D 40 00 00                 move         $a4, $zero
+00186858:  40 00 BF FF                 sd           $ra, 0x40($sp)
+0018685C:  0D 00 03 24                 li           $v1, 0xD
+00186860:  C3 00 00 4B                 vaddw.x      $vf3, $vf0, $vf0
+00186864:  30 00 B3 7F                 sq           $s3, 0x30($sp)
+00186868:  20 00 B2 7F                 sq           $s2, 0x20($sp)
+0018686C:  2D 98 A0 00                 move         $s3, $a1
+00186870:  10 00 B1 7F                 sq           $s1, 0x10($sp)
+00186874:  2D 90 C0 00                 move         $s2, $a2
+00186878:  00 00 B0 7F                 sq           $s0, 0($sp)
+0018687C:  2D 88 00 00                 move         $s1, $zero
+00186880:  C8 00 83 A0                 sb           $v1, 0xC8($a0)
+00186884:  2D 80 80 00                 move         $s0, $a0
+00186888:  24 F4 03 34                 li           $v1, 0xF424
+0018688C:  00 20 A8 48                 qmtc2        $a4, $vf4
+00186890:  00 00 83 44                 mtc1         $v1, $f0
+00186894:  2D 30 00 00                 move         $a2, $zero
+00186898:  01 00 05 24                 li           $a1, 1
+0018689C:  01 00 04 64                 li           $a0, 1
+001868A0:  01 00 03 3C                 lui          $v1, 1
+001868A4:  69 27 67 34                 ori          $a3, $v1, 0x2769
+001868A8:  00 08 87 44                 mtc1         $a3, $f1
+001868AC:  52 00 03 3C                 lui          $v1, 0x52
+001868B0:  20 00 80 46                 cvt.s        $f0, $f0
+001868B4:  E0 2A 63 24                 li           $v1, gWorld
+001868B8:  42 00 00 10                 b            loc_1869C4
+001868BC:  60 08 80 46                 cvt.s        $f1, $f1
+001868C0:  C0 38 06 00                 sll          $a3, $a2, 3
+001868C4:  23 38 E6 00                 subu         $a3, $a2
+001868C8:  00 39 07 00                 sll          $a3, 4
+001868CC:  21 40 67 02                 addu         $a4, $s3, $a3
+001868D0:  68 00 07 91                 lbu          $a3, 0x68($a4)
+001868D4:  3A 00 E0 10                 beqz         $a3, loc_1869C0
+001868D8:  00 00 00 00                 nop
+001868DC:  50 00 01 D9                 lqc2         $vf1, 0x50($a4)
+001868E0:  A0 00 02 DA                 lqc2         $vf2, 0xA0($s0)
+001868E4:  6C 10 C1 4B                 vsub.xyz     $vf1, $vf2, $vf1
+001868E8:  40 00 84 4A                 vaddx.y      $vf1, $vf0, $vf4
+001868EC:  6A 08 C1 4B                 vmul.xyz     $vf1, $vf1, $vf1
+001868F0:  3D 08 01 4B                 vadday.x     $A, $vf1, $vf1
+001868F4:  4A 18 01 4B                 vmaddz.x     $vf1, $vf3, $vf1
+001868F8:  00 08 27 48                 qmfc2        $a3, $vf1
+001868FC:  00 10 87 44                 mtc1         $a3, $f2
+00186900:  00 00 00 00                 nop
+00186904:  34 10 01 46                 c.lt         $f2, $f1
+00186908:  05 00 01 45                 bc1t         loc_186920
+0018690C:  00 00 00 00                 nop
+00186910:  74 01 07 92                 lbu          $a3, 0x174($s0)
+00186914:  04 00 E7 30                 andi         $a3, 4
+00186918:  23 00 E0 10                 beqz         $a3, loc_1869A8
+0018691C:  00 00 00 00                 nop
+00186920:  74 01 08 92                 lbu          $a4, 0x174($s0)
+00186924:  02 00 07 31                 andi         $a3, $a4, 2
+00186928:  1F 00 E0 14                 bnez         $a3, loc_1869A8
+0018692C:  00 00 00 00                 nop
+00186930:  34 10 00 46                 c.lt         $f2, $f0
+00186934:  AF 00 01 45                 bc1t         loc_186BF4
+00186938:  2D 88 80 00                 move         $s1, $a0
+0018693C:  04 00 07 31                 andi         $a3, $a4, 4
+00186940:  AC 00 E0 14                 bnez         $a3, loc_186BF4
+00186944:  00 00 00 00                 nop
+00186948:  7B 01 07 92                 lbu          $a3, 0x17B($s0)
+0018694C:  04 40 C5 00                 sllv         $a4, $a1, $a2
+00186950:  27 40 00 01                 nor          $a4, $zero
+00186954:  FF 00 08 31                 andi         $a4, 0xFF
+00186958:  24 38 E8 00                 and          $a3, $a4
+0018695C:  7B 01 07 A2                 sb           $a3, 0x17B($s0)
+00186960:  03 00 01 3C                 lui          $at, 3
+00186964:  21 38 66 00                 addu         $a3, $v1, $a2
+00186968:  30 B1 21 34                 li           $at, 0x3B130
+0018696C:  77 01 0A 92                 lbu          $a6, 0x177($s0)
+00186970:  21 58 E1 00                 addu         $a7, $a3, $at
+00186974:  00 00 68 91                 lbu          $a4, 0($a7)
+00186978:  C0 39 06 00                 sll          $a3, $a2, 7
+0018697C:  23 38 E6 00                 subu         $a3, $a2
+00186980:  40 48 07 00                 sll          $a5, $a3, 1
+00186984:  21 48 69 00                 addu         $a5, $v1, $a5
+00186988:  04 00 07 3C                 lui          $a3, 4
+0018698C:  21 40 09 01                 addu         $a4, $a5
+00186990:  21 38 07 01                 addu         $a3, $a4, $a3
+00186994:  04 AA EA A0                 sb           $a6, -0x55FC($a3)
+00186998:  00 00 67 91                 lbu          $a3, 0($a7)
+0018699C:  01 00 E7 24                 addiu        $a3, 1
+001869A0:  07 00 00 10                 b            loc_1869C0
+001869A4:  00 00 67 A1                 sb           $a3, 0($a7)
+001869A8:  7B 01 07 92                 lbu          $a3, 0x17B($s0)
+001869AC:  04 40 C5 00                 sllv         $a4, $a1, $a2
+001869B0:  27 40 00 01                 nor          $a4, $zero
+001869B4:  FF 00 08 31                 andi         $a4, 0xFF
+001869B8:  24 38 E8 00                 and          $a3, $a4
+001869BC:  7B 01 07 A2                 sb           $a3, 0x17B($s0)
+001869C0:  01 00 C6 24                 addiu        $a2, 1
+001869C4:  2A 38 D2 00                 slt          $a3, $a2, $s2
+001869C8:  BD FF E0 14                 bnez         $a3, loc_1868C0
+001869CC:  00 00 00 00                 nop
+001869D0:  2A 08 12 00                 slt          $at, $zero, $s2
+001869D4:  64 00 20 10                 beqz         $at, loc_186B68
+001869D8:  2D 20 00 00                 move         $a0, $zero
+001869DC:  C8 42 03 3C                 lui          $v1, 0x42C8
+001869E0:  2D 30 00 00                 move         $a2, $zero
+001869E4:  00 08 83 44                 mtc1         $v1, $f1
+001869E8:  00 20 A6 48                 qmtc2        $a2, $vf4
+001869EC:  80 41 05 3C                 lui          $a1, 0x4180
+001869F0:  52 00 03 3C                 lui          $v1, 0x52
+001869F4:  00 00 85 44                 mtc1         $a1, $f0
+001869F8:  E0 2A 63 24                 li           $v1, gWorld
+001869FC:  57 00 00 10                 b            loc_186B5C
+00186A00:  83 00 00 4B                 vaddw.x      $vf2, $vf0, $vf0
+00186A04:  C0 28 04 00                 sll          $a1, $a0, 3
+00186A08:  A0 00 03 DA                 lqc2         $vf3, 0xA0($s0)
+00186A0C:  23 28 A4 00                 subu         $a1, $a0
+00186A10:  00 29 05 00                 sll          $a1, 4
+00186A14:  21 28 65 02                 addu         $a1, $s3, $a1
+00186A18:  30 00 A1 D8                 lqc2         $vf1, 0x30($a1)
+00186A1C:  6C 18 C1 4B                 vsub.xyz     $vf1, $vf3, $vf1
+00186A20:  40 00 84 4A                 vaddx.y      $vf1, $vf0, $vf4
+00186A24:  6A 08 C1 4B                 vmul.xyz     $vf1, $vf1, $vf1
+00186A28:  3D 08 01 4B                 vadday.x     $A, $vf1, $vf1
+00186A2C:  4A 10 01 4B                 vmaddz.x     $vf1, $vf2, $vf1
+00186A30:  00 08 25 48                 qmfc2        $a1, $vf1
+00186A34:  00 08 A5 48                 qmtc2        $a1, $vf1
+00186A38:  BD 03 01 4A                 vsqrt        $Q, $vf1.x
+00186A3C:  43 00 00 4B                 vaddw.x      $vf1, $vf0, $vf0
+00186A40:  00 08 28 48                 qmfc2        $a4, $vf1
+00186A44:  BF 03 00 4A                 vwaitq
+00186A48:  00 08 A8 48                 qmtc2        $a4, $vf1
+00186A4C:  5C 08 00 4B                 vmulq.x      $vf1, $vf1, $Q
+00186A50:  00 08 28 48                 qmfc2        $a4, $vf1
+00186A54:  77 01 07 92                 lbu          $a3, 0x177($s0)
+00186A58:  C0 31 04 00                 sll          $a2, $a0, 7
+00186A5C:  23 30 C4 00                 subu         $a2, $a0
+00186A60:  04 00 05 3C                 lui          $a1, 4
+00186A64:  C0 30 06 00                 sll          $a2, 3
+00186A68:  21 30 66 00                 addu         $a2, $v1, $a2
+00186A6C:  00 10 88 44                 mtc1         $a4, $f2
+00186A70:  80 38 07 00                 sll          $a3, 2
+00186A74:  21 30 E6 00                 addu         $a2, $a3, $a2
+00186A78:  21 28 C5 00                 addu         $a1, $a2, $a1
+00186A7C:  36 00 20 12                 beqz         $s1, loc_186B58
+00186A80:  34 92 A8 AC                 sw           $a4, -28108($a1)
+00186A84:  34 10 01 46                 c.lt         $f2, $f1
+00186A88:  05 00 01 45                 bc1t         loc_186AA0
+00186A8C:  00 00 00 00                 nop
+00186A90:  74 01 05 92                 lbu          $a1, 0x174($s0)
+00186A94:  04 00 A5 30                 andi         $a1, 4
+00186A98:  2F 00 A0 10                 beqz         $a1, loc_186B58
+00186A9C:  00 00 00 00                 nop
+00186AA0:  74 01 05 92                 lbu          $a1, 0x174($s0)
+00186AA4:  02 00 A5 30                 andi         $a1, 2
+00186AA8:  2B 00 A0 14                 bnez         $a1, loc_186B58
+00186AAC:  00 00 00 00                 nop
+00186AB0:  34 10 00 46                 c.lt         $f2, $f0
+00186AB4:  13 00 00 45                 bc1f         loc_186B04
+00186AB8:  00 00 00 00                 nop
+00186ABC:  03 00 01 3C                 lui          $at, 3
+00186AC0:  21 28 64 00                 addu         $a1, $v1, $a0
+00186AC4:  3C B1 21 34                 li           $at, 0x3B13C
+00186AC8:  21 48 A1 00                 addu         $a5, $a1, $at
+00186ACC:  00 00 28 91                 lbu          $a4, 0($a5)
+00186AD0:  08 00 01 29                 slti         $at, $a4, 8
+00186AD4:  0B 00 20 10                 beqz         $at, loc_186B04
+00186AD8:  00 00 00 00                 nop
+00186ADC:  77 01 07 92                 lbu          $a3, 0x177($s0)
+00186AE0:  C0 28 04 00                 sll          $a1, $a0, 3
+00186AE4:  21 30 65 00                 addu         $a2, $v1, $a1
+00186AE8:  04 00 05 3C                 lui          $a1, 4
+00186AEC:  21 30 06 01                 addu         $a2, $a4, $a2
+00186AF0:  21 28 C5 00                 addu         $a1, $a2, $a1
+00186AF4:  8E B0 A7 A0                 sb           $a3, -0x4F72($a1)
+00186AF8:  00 00 25 91                 lbu          $a1, 0($a5)
+00186AFC:  01 00 A5 24                 addiu        $a1, 1
+00186B00:  00 00 25 A1                 sb           $a1, 0($a5)
+00186B04:  03 00 01 3C                 lui          $at, 3
+00186B08:  21 28 64 00                 addu         $a1, $v1, $a0
+00186B0C:  36 B1 21 34                 li           $at, 0x3B136
+00186B10:  21 50 A1 00                 addu         $a6, $a1, $at
+00186B14:  00 00 49 91                 lbu          $a5, 0($a6)
+00186B18:  19 00 21 29                 slti         $at, $a5, 0x19
+00186B1C:  0E 00 20 10                 beqz         $at, loc_186B58
+00186B20:  00 00 00 00                 nop
+00186B24:  80 28 04 00                 sll          $a1, $a0, 2
+00186B28:  77 01 08 92                 lbu          $a4, 0x177($s0)
+00186B2C:  21 38 A4 00                 addu         $a3, $a1, $a0
+00186B30:  80 30 07 00                 sll          $a2, $a3, 2
+00186B34:  04 00 05 3C                 lui          $a1, 4
+00186B38:  21 30 E6 00                 addu         $a2, $a3, $a2
+00186B3C:  21 30 66 00                 addu         $a2, $v1, $a2
+00186B40:  21 30 26 01                 addu         $a2, $a5, $a2
+00186B44:  21 28 C5 00                 addu         $a1, $a2, $a1
+00186B48:  F8 AF A8 A0                 sb           $a4, -0x5008($a1)
+00186B4C:  00 00 45 91                 lbu          $a1, 0($a6)
+00186B50:  01 00 A5 24                 addiu        $a1, 1
+00186B54:  00 00 45 A1                 sb           $a1, 0($a6)
+00186B58:  01 00 84 24                 addiu        $a0, 1
+00186B5C:  2A 28 92 00                 slt          $a1, $a0, $s2
+00186B60:  A8 FF A0 14                 bnez         $a1, loc_186A04
+00186B64:  00 00 00 00                 nop
+00186B68:  14 01 03 8E                 lw           $v1, 0x114($s0)
+00186B6C:  1C 01 60 10                 beqz         $v1, loc_186FE0
+00186B70:  00 00 00 00                 nop
+00186B74:  30 00 60 C4                 lwc1         $f0, 0x30($v1)
+00186B78:  46 00 62 90                 lbu          $v0, 0x46($v1)
+00186B7C:  24 00 00 46                 cvt.w        $f0, $f0
+00186B80:  00 00 06 44                 mfc1         $a2, $f0
+00186B84:  14 01 40 10                 beqz         $v0, loc_186FD8
+00186B88:  00 00 00 00                 nop
+00186B8C:  41 00 65 90                 lbu          $a1, 0x41($v1)
+00186B90:  FF 00 02 24                 li           $v0, 0xFF
+00186B94:  03 00 A2 14                 bne          $a1, $v0, loc_186BA4
+00186B98:  00 00 00 00                 nop
+00186B9C:  0A 00 00 10                 b            loc_186BC8
+00186BA0:  2D 10 00 00                 move         $v0, $zero
+00186BA4:  C0 20 05 00                 sll          $a0, $a1, 3
+00186BA8:  52 00 02 3C                 lui          $v0, 0x52
+00186BAC:  21 20 85 00                 addu         $a0, $a1
+00186BB0:  E0 2A 42 24                 li           $v0, gWorld
+00186BB4:  40 20 04 00                 sll          $a0, 1
+00186BB8:  21 20 85 00                 addu         $a0, $a1
+00186BBC:  80 20 04 00                 sll          $a0, 2
+00186BC0:  21 10 44 00                 addu         $v0, $a0
+00186BC4:  2C 02 42 24                 addiu        $v0, 556
+00186BC8:  00 00 42 8C                 lw           $v0, 0($v0)
+00186BCC:  10 00 42 8C                 lw           $v0, 16($v0)
+00186BD0:  FF FF 42 24                 addiu        $v0, -1
+00186BD4:  2A 10 C2 00                 slt          $v0, $a2, $v0
+00186BD8:  0C 00 40 14                 bnez         $v0, loc_186C0C
+00186BDC:  00 00 00 00                 nop
+00186BE0:  18 01 02 8E                 lw           $v0, 0x118($s0)
+00186BE4:  09 00 40 14                 bnez         $v0, loc_186C0C
+00186BE8:  00 00 00 00                 nop
+00186BEC:  FA 00 00 10                 b            loc_186FD8
+00186BF0:  00 00 00 00                 nop
+00186BF4:  7B 01 07 92                 lbu          $a3, 0x17B($s0)
+00186BF8:  04 40 C5 00                 sllv         $a4, $a1, $a2
+00186BFC:  FF 00 08 31                 andi         $a4, 0xFF
+00186C00:  25 38 E8 00                 or           $a3, $a4
+00186C04:  56 FF 00 10                 b            loc_186960
+00186C08:  7B 01 07 A2                 sb           $a3, 0x17B($s0)
+00186C0C:  2C 00 60 C4                 lwc1         $f0, 0x2C($v1)
+00186C10:  2D 20 00 02                 move         $a0, $s0
+00186C14:  E8 C6 05 0C                 jal          CB3TrafficVehicle::CheckForChangeLane(void)
+00186C18:  C4 00 00 E6                 swc1         $f0, 0xC4($s0)
+00186C1C:  09 00 20 12                 beqz         $s1, loc_186C44
+00186C20:  00 00 00 00                 nop
+00186C24:  7A 01 04 92                 lbu          $a0, 0x17A($s0)
+00186C28:  01 00 83 30                 andi         $v1, $a0, 1
+00186C2C:  05 00 60 10                 beqz         $v1, loc_186C44
+00186C30:  00 00 00 00                 nop
+00186C34:  FE 00 82 30                 andi         $v0, $a0, 0xFE
+00186C38:  2D 20 00 02                 move         $a0, $s0
+00186C3C:  54 CE 05 0C                 jal          CB3TrafficVehicle::InitalisePosition(void)
+00186C40:  7A 01 02 A2                 sb           $v0, 0x17A($s0)
+00186C44:  C5 00 20 12                 beqz         $s1, loc_186F5C
+00186C48:  00 00 00 00                 nop
+00186C4C:  74 01 02 92                 lbu          $v0, 0x174($s0)
+00186C50:  04 00 42 30                 andi         $v0, 4
+00186C54:  09 00 40 14                 bnez         $v0, loc_186C7C
+00186C58:  00 00 00 00                 nop
+00186C5C:  56 00 02 3C+                lbu          $v0, gWorld.mTrafficSystem.mbIsOnline
+00186C60:  77 DC 42 90
+00186C64:  05 00 40 14                 bnez         $v0, loc_186C7C
+00186C68:  00 00 00 00                 nop
+00186C6C:  2D 28 60 02                 move         $a1, $s3
+00186C70:  2D 30 40 02                 move         $a2, $s2
+00186C74:  F4 C5 05 0C                 jal          sub_1717D0
+00186C78:  2D 20 00 02                 move         $a0, $s0
+00186C7C:  90 CB 05 0C                 jal          sub_172E40
+00186C80:  2D 20 00 02                 move         $a0, $s0
+00186C84:  14 01 03 8E                 lw           $v1, 0x114($s0)
+00186C88:  00 10 80 44                 mtc1         $zero, $f2
+00186C8C:  18 00 60 C4                 lwc1         $f0, 0x18($v1)
+00186C90:  36 00 02 46                 c.le         $f0, $f2
+00186C94:  1A 00 00 45                 bc1f         loc_186D00
+00186C98:  00 00 00 00                 nop
+00186C9C:  C4 00 01 C6                 lwc1         $f1, 0xC4($s0)
+00186CA0:  00 3F 03 3C                 lui          $v1, 0x3F00
+00186CA4:  00 00 83 44                 mtc1         $v1, $f0
+00186CA8:  00 00 00 00                 nop
+00186CAC:  34 08 00 46                 c.lt         $f1, $f0
+00186CB0:  53 00 01 45                 bc1t         loc_186E00
+00186CB4:  00 00 00 00                 nop
+00186CB8:  14 01 05 8E                 lw           $a1, 0x114($s0)
+00186CBC:  01 00 03 24                 li           $v1, 1
+00186CC0:  46 00 A4 90                 lbu          $a0, 0x46($a1)
+00186CC4:  08 00 83 14                 bne          $a0, $v1, loc_186CE8
+00186CC8:  00 00 00 00                 nop
+00186CCC:  18 00 A1 C4                 lwc1         $f1, 0x18($a1)
+00186CD0:  04 8C 80 C7                 lwc1         $f0, flt_4E16F4
+00186CD4:  34 08 00 46                 c.lt         $f1, $f0
+00186CD8:  09 00 00 45                 bc1f         loc_186D00
+00186CDC:  00 00 00 00                 nop
+00186CE0:  07 00 00 10                 b            loc_186D00
+00186CE4:  48 01 00 AE                 sw           $zero, 0x148($s0)
+00186CE8:  18 00 A1 C4                 lwc1         $f1, 0x18($a1)
+00186CEC:  EC 8B 80 C7                 lwc1         $f0, flt_4E16DC
+00186CF0:  34 08 00 46                 c.lt         $f1, $f0
+00186CF4:  02 00 00 45                 bc1f         loc_186D00
+00186CF8:  00 00 00 00                 nop
+00186CFC:  48 01 00 AE                 sw           $zero, 0x148($s0)
+00186D00:  48 01 02 C6                 lwc1         $f2, 0x148($s0)
+00186D04:  00 00 80 44                 mtc1         $zero, $f0
+00186D08:  00 00 00 00                 nop
+00186D0C:  34 10 00 46                 c.lt         $f2, $f0
+00186D10:  3D 00 00 45                 bc1f         loc_186E08
+00186D14:  00 00 00 00                 nop
+00186D18:  40 01 03 C6                 lwc1         $f3, 0x140($s0)
+00186D1C:  00 00 80 44                 mtc1         $zero, $f0
+00186D20:  00 00 00 00                 nop
+00186D24:  34 18 00 46                 c.lt         $f3, $f0
+00186D28:  47 00 00 45                 bc1f         loc_186E48
+00186D2C:  00 00 00 00                 nop
+00186D30:  72 01 04 82                 lb           $a0, 0x172($s0)
+00186D34:  02 00 03 24                 li           $v1, 2
+00186D38:  A9 00 83 14                 bne          $a0, $v1, loc_186FE0
+00186D3C:  00 00 00 00                 nop
+00186D40:  44 01 01 C6                 lwc1         $f1, 0x144($s0)
+00186D44:  40 40 03 3C                 lui          $v1, 0x4040
+00186D48:  00 00 83 44                 mtc1         $v1, $f0
+00186D4C:  00 00 00 00                 nop
+00186D50:  34 08 00 46                 c.lt         $f1, $f0
+00186D54:  7C 00 00 45                 bc1f         loc_186F48
+00186D58:  00 00 00 00                 nop
+00186D5C:  52 00 03 3C                 lui          $v1, 0x52
+00186D60:  44 01 02 C6                 lwc1         $f2, 0x144($s0)
+00186D64:  FC 2A 61 C4                 lwc1         $f1, flt_522AFC
+00186D68:  00 00 80 44                 mtc1         $zero, $f0
+00186D6C:  00 00 00 00                 nop
+00186D70:  40 10 01 46                 add          $f1, $f2, $f1
+00186D74:  44 01 01 E6                 swc1         $f1, 0x144($s0)
+00186D78:  70 01 03 82                 lb           $v1, 0x170($s0)
+00186D7C:  80 18 03 00                 sll          $v1, 2
+00186D80:  21 18 70 00                 addu         $v1, $s0
+00186D84:  F0 00 61 C4                 lwc1         $f1, 0xF0($v1)
+00186D88:  36 08 00 46                 c.le         $f1, $f0
+00186D8C:  94 00 01 45                 bc1t         loc_186FE0
+00186D90:  00 00 00 00                 nop
+00186D94:  78 01 06 92                 lbu          $a2, 0x178($s0)
+00186D98:  4B 00 05 3C                 lui          $a1, 0x4B
+00186D9C:  79 01 04 92                 lbu          $a0, 0x179($s0)
+00186DA0:  E0 75 A5 24                 li           $a1, dword_4B75E0
+00186DA4:  44 01 00 C6                 lwc1         $f0, 0x144($s0)
+00186DA8:  80 18 06 00                 sll          $v1, $a2, 2
+00186DAC:  21 30 66 00                 addu         $a2, $v1, $a2
+00186DB0:  80 30 06 00                 sll          $a2, 2
+00186DB4:  80 18 04 00                 sll          $v1, $a0, 2
+00186DB8:  21 28 A6 00                 addu         $a1, $a2
+00186DBC:  21 18 65 00                 addu         $v1, $a1
+00186DC0:  00 00 61 C4                 lwc1         $f1, 0($v1)
+00186DC4:  34 08 00 46                 c.lt         $f1, $f0
+00186DC8:  5C 00 01 45                 bc1t         loc_186F3C
+00186DCC:  00 00 00 00                 nop
+00186DD0:  79 01 04 92                 lbu          $a0, 0x179($s0)
+00186DD4:  04 00 81 04                 bgez         $a0, loc_186DE8
+00186DD8:  01 00 83 30                 andi         $v1, $a0, 1
+00186DDC:  02 00 60 10                 beqz         $v1, loc_186DE8
+00186DE0:  00 00 00 00                 nop
+00186DE4:  FE FF 63 24                 addiu        $v1, -2
+00186DE8:  7D 00 60 14                 bnez         $v1, loc_186FE0
+00186DEC:  00 00 00 00                 nop
+00186DF0:  C8 00 03 92                 lbu          $v1, 0xC8($s0)
+00186DF4:  02 00 63 34                 ori          $v1, 2
+00186DF8:  79 00 00 10                 b            loc_186FE0
+00186DFC:  C8 00 03 A2                 sb           $v1, 0xC8($s0)
+00186E00:  AD FF 00 10                 b            loc_186CB8
+00186E04:  48 01 02 E6                 swc1         $f2, 0x148($s0)
+00186E08:  52 00 03 3C                 lui          $v1, 0x52
+00186E0C:  00 3F 04 3C                 lui          $a0, 0x3F00
+00186E10:  FC 2A 61 C4                 lwc1         $f1, flt_522AFC
+00186E14:  00 00 84 44                 mtc1         $a0, $f0
+00186E18:  00 00 00 00                 nop
+00186E1C:  40 10 01 46                 add          $f1, $f2, $f1
+00186E20:  34 08 00 46                 c.lt         $f1, $f0
+00186E24:  05 00 00 45                 bc1f         loc_186E3C
+00186E28:  48 01 01 E6                 swc1         $f1, 0x148($s0)
+00186E2C:  C8 00 03 92                 lbu          $v1, 0xC8($s0)
+00186E30:  10 00 63 34                 ori          $v1, 0x10
+00186E34:  B8 FF 00 10                 b            loc_186D18
+00186E38:  C8 00 03 A2                 sb           $v1, 0xC8($s0)
+00186E3C:  80 BF 03 3C                 lui          $v1, 0xBF80
+00186E40:  B5 FF 00 10                 b            loc_186D18
+00186E44:  48 01 03 AE                 sw           $v1, 0x148($s0)
+00186E48:  52 00 03 3C                 lui          $v1, 0x52
+00186E4C:  FC 2A 61 C4                 lwc1         $f1, flt_522AFC
+00186E50:  24 88 82 C7                 lwc1         $f2, flt_4E1314
+00186E54:  18 00 03 46                 adda         $f0, $f3
+00186E58:  40 18 01 46                 add          $f1, $f3, $f1
+00186E5C:  00 3F 03 3C                 lui          $v1, 0x3F00
+00186E60:  40 01 01 E6                 swc1         $f1, 0x140($s0)
+00186E64:  43 18 02 46                 div          $f1, $f3, $f2
+00186E68:  64 08 00 46                 cvt.w        $f1, $f1
+00186E6C:  60 08 80 46                 cvt.s        $f1, $f1
+00186E70:  5D 10 01 46                 msub         $f1, $f2, $f1
+00186E74:  43 08 02 46                 div          $f1, $f2
+00186E78:  00 00 83 44                 mtc1         $v1, $f0
+00186E7C:  00 00 00 00                 nop
+00186E80:  00 00 00 00                 nop
+00186E84:  34 08 00 46                 c.lt         $f1, $f0
+00186E88:  0D 00 00 45                 bc1f         loc_186EC0
+00186E8C:  00 00 00 00                 nop
+00186E90:  75 01 03 92                 lbu          $v1, 0x175($s0)
+00186E94:  01 00 63 30                 andi         $v1, 1
+00186E98:  18 00 60 14                 bnez         $v1, loc_186EFC
+00186E9C:  00 00 00 00                 nop
+00186EA0:  75 01 03 92                 lbu          $v1, 0x175($s0)
+00186EA4:  04 00 63 30                 andi         $v1, 4
+00186EA8:  A1 FF 60 10                 beqz         $v1, loc_186D30
+00186EAC:  00 00 00 00                 nop
+00186EB0:  C8 00 03 92                 lbu          $v1, 0xC8($s0)
+00186EB4:  40 00 63 34                 ori          $v1, 0x40
+00186EB8:  9D FF 00 10                 b            loc_186D30
+00186EBC:  C8 00 03 A2                 sb           $v1, 0xC8($s0)
+00186EC0:  10 01 04 8E                 lw           $a0, 0x110($s0)
+00186EC4:  11 00 80 10                 beqz         $a0, loc_186F0C
+00186EC8:  00 00 00 00                 nop
+00186ECC:  14 01 05 8E                 lw           $a1, 0x114($s0)
+00186ED0:  48 00 A3 90                 lbu          $v1, 0x48($a1)
+00186ED4:  96 FF 60 14                 bnez         $v1, loc_186D30
+00186ED8:  00 00 00 00                 nop
+00186EDC:  5E 00 84 90                 lbu          $a0, 0x5E($a0)
+00186EE0:  41 00 A3 90                 lbu          $v1, 0x41($a1)
+00186EE4:  92 FF 83 14                 bne          $a0, $v1, loc_186D30
+00186EE8:  00 00 00 00                 nop
+00186EEC:  75 01 00 A2                 sb           $zero, 0x175($s0)
+00186EF0:  80 BF 03 3C                 lui          $v1, 0xBF80
+00186EF4:  8E FF 00 10                 b            loc_186D30
+00186EF8:  40 01 03 AE                 sw           $v1, 0x140($s0)
+00186EFC:  C8 00 03 92                 lbu          $v1, 0xC8($s0)
+00186F00:  20 00 63 34                 ori          $v1, 0x20
+00186F04:  E6 FF 00 10                 b            loc_186EA0
+00186F08:  C8 00 03 A2                 sb           $v1, 0xC8($s0)
+00186F0C:  14 01 04 8E                 lw           $a0, 0x114($s0)
+00186F10:  48 00 83 90                 lbu          $v1, 0x48($a0)
+00186F14:  86 FF 60 14                 bnez         $v1, loc_186D30
+00186F18:  00 00 00 00                 nop
+00186F1C:  41 00 83 90                 lbu          $v1, 0x41($a0)
+00186F20:  5E 00 04 92                 lbu          $a0, 0x5E($s0)
+00186F24:  82 FF 83 14                 bne          $a0, $v1, loc_186D30
+00186F28:  00 00 00 00                 nop
+00186F2C:  75 01 00 A2                 sb           $zero, 0x175($s0)
+00186F30:  80 BF 03 3C                 lui          $v1, 0xBF80
+00186F34:  7E FF 00 10                 b            loc_186D30
+00186F38:  40 01 03 AE                 sw           $v1, 0x140($s0)
+00186F3C:  01 00 83 24                 addiu        $v1, $a0, 1
+00186F40:  A3 FF 00 10                 b            loc_186DD0
+00186F44:  79 01 03 A2                 sb           $v1, 0x179($s0)
+00186F48:  01 00 04 24                 li           $a0, 1
+00186F4C:  80 BF 03 3C                 lui          $v1, 0xBF80
+00186F50:  72 01 04 A2                 sb           $a0, 0x172($s0)
+00186F54:  22 00 00 10                 b            loc_186FE0
+00186F58:  44 01 03 AE                 sw           $v1, 0x144($s0)
+00186F5C:  7A 01 04 92                 lbu          $a0, 0x17A($s0)
+00186F60:  52 00 03 3C                 lui          $v1, 0x52
+00186F64:  03 00 01 3C                 lui          $at, 3
+00186F68:  E0 2A 63 24                 li           $v1, gWorld
+00186F6C:  10 42 21 34                 li           $at, 0x34210
+00186F70:  01 00 84 34                 ori          $a0, 1
+00186F74:  7A 01 04 A2                 sb           $a0, 0x17A($s0)
+00186F78:  14 01 04 8E                 lw           $a0, 0x114($s0)
+00186F7C:  49 00 85 90                 lbu          $a1, 0x49($a0)
+00186F80:  80 20 05 00                 sll          $a0, $a1, 2
+00186F84:  21 20 85 00                 addu         $a0, $a1
+00186F88:  00 21 04 00                 sll          $a0, 4
+00186F8C:  21 18 64 00                 addu         $v1, $a0
+00186F90:  21 20 61 00                 addu         $a0, $v1, $at
+00186F94:  00 00 83 78                 lq           $v1, 0($a0)
+00186F98:  70 00 03 7E                 sq           $v1, 0x70($s0)
+00186F9C:  10 00 83 78                 lq           $v1, 0x10($a0)
+00186FA0:  80 00 03 7E                 sq           $v1, 0x80($s0)
+00186FA4:  20 00 83 78                 lq           $v1, 0x20($a0)
+00186FA8:  90 00 03 7E                 sq           $v1, 0x90($s0)
+00186FAC:  30 00 83 78                 lq           $v1, 0x30($a0)
+00186FB0:  A0 00 03 7E                 sq           $v1, 0xA0($s0)
+00186FB4:  20 01 03 8E                 lw           $v1, 0x120($s0)
+00186FB8:  00 00 00 00                 nop
+00186FBC:  80 00 01 DA                 lqc2         $vf1, 0x80($s0)
+00186FC0:  A0 00 03 DA                 lqc2         $vf3, 0xA0($s0)
+00186FC4:  00 10 A3 48                 qmtc2        $v1, $vf2
+00186FC8:  58 08 C2 4B                 vmulx.xyz    $vf1, $vf1, $vf2
+00186FCC:  68 18 C1 4B                 vadd.xyz     $vf1, $vf3, $vf1
+00186FD0:  03 00 00 10                 b            loc_186FE0
+00186FD4:  A0 00 01 FA                 sqc2         $vf1, 0xA0($s0)
+00186FD8:  4C CF 05 0C                 jal          CB3TrafficVehicle::Remove(void)
+00186FDC:  2D 20 00 02                 move         $a0, $s0
+00186FE0:  40 00 BF DF                 ld           $ra, 0x40($sp)
+00186FE4:  30 00 B3 7B                 lq           $s3, 0x30($sp)
+00186FE8:  20 00 B2 7B                 lq           $s2, 0x20($sp)
+00186FEC:  10 00 B1 7B                 lq           $s1, 0x10($sp)
+00186FF0:  00 00 B0 7B                 lq           $s0, 0($sp)
+00186FF4:  08 00 E0 03                 jr           $ra
+00186FF8:  50 00 BD 27                 addiu        $sp, 0x50
+
+--- PCSX2 Patch (Big Endian) ---
+
+patch=0,EE,20186850,extended,27BDFFB0
+patch=0,EE,20186854,extended,0000402D
+patch=0,EE,20186858,extended,FFBF0040
+patch=0,EE,2018685C,extended,2403000D
+patch=0,EE,20186860,extended,4B0000C3
+patch=0,EE,20186864,extended,7FB30030
+patch=0,EE,20186868,extended,7FB20020
+patch=0,EE,2018686C,extended,00A0982D
+patch=0,EE,20186870,extended,7FB10010
+patch=0,EE,20186874,extended,00C0902D
+patch=0,EE,20186878,extended,7FB00000
+patch=0,EE,2018687C,extended,0000882D
+patch=0,EE,20186880,extended,A08300C8
+patch=0,EE,20186884,extended,0080802D
+patch=0,EE,20186888,extended,3403F424
+patch=0,EE,2018688C,extended,48A82000
+patch=0,EE,20186890,extended,44830000
+patch=0,EE,20186894,extended,0000302D
+patch=0,EE,20186898,extended,24050001
+patch=0,EE,2018689C,extended,64040001
+patch=0,EE,201868A0,extended,3C030001
+patch=0,EE,201868A4,extended,34672769
+patch=0,EE,201868A8,extended,44870800
+patch=0,EE,201868AC,extended,3C030052
+patch=0,EE,201868B0,extended,46800020
+patch=0,EE,201868B4,extended,24632AE0
+patch=0,EE,201868B8,extended,10000042
+patch=0,EE,201868BC,extended,46800860
+patch=0,EE,201868C0,extended,000638C0
+patch=0,EE,201868C4,extended,00E63823
+patch=0,EE,201868C8,extended,00073900
+patch=0,EE,201868CC,extended,02674021
+patch=0,EE,201868D0,extended,91070068
+patch=0,EE,201868D4,extended,10E0003A
+patch=0,EE,201868D8,extended,00000000
+patch=0,EE,201868DC,extended,D9010050
+patch=0,EE,201868E0,extended,DA0200A0
+patch=0,EE,201868E4,extended,4BC1106C
+patch=0,EE,201868E8,extended,4A840040
+patch=0,EE,201868EC,extended,4BC1086A
+patch=0,EE,201868F0,extended,4B01083D
+patch=0,EE,201868F4,extended,4B01184A
+patch=0,EE,201868F8,extended,48270800
+patch=0,EE,201868FC,extended,44871000
+patch=0,EE,20186900,extended,00000000
+patch=0,EE,20186904,extended,46011034
+patch=0,EE,20186908,extended,45010005
+patch=0,EE,2018690C,extended,00000000
+patch=0,EE,20186910,extended,92070174
+patch=0,EE,20186914,extended,30E70004
+patch=0,EE,20186918,extended,10E00023
+patch=0,EE,2018691C,extended,00000000
+patch=0,EE,20186920,extended,92080174
+patch=0,EE,20186924,extended,31070002
+patch=0,EE,20186928,extended,14E0001F
+patch=0,EE,2018692C,extended,00000000
+patch=0,EE,20186930,extended,46001034
+patch=0,EE,20186934,extended,450100AF
+patch=0,EE,20186938,extended,0080882D
+patch=0,EE,2018693C,extended,31070004
+patch=0,EE,20186940,extended,14E000AC
+patch=0,EE,20186944,extended,00000000
+patch=0,EE,20186948,extended,9207017B
+patch=0,EE,2018694C,extended,00C54004
+patch=0,EE,20186950,extended,01004027
+patch=0,EE,20186954,extended,310800FF
+patch=0,EE,20186958,extended,00E83824
+patch=0,EE,2018695C,extended,A207017B
+patch=0,EE,20186960,extended,3C010003
+patch=0,EE,20186964,extended,00663821
+patch=0,EE,20186968,extended,3421B130
+patch=0,EE,2018696C,extended,920A0177
+patch=0,EE,20186970,extended,00E15821
+patch=0,EE,20186974,extended,91680000
+patch=0,EE,20186978,extended,000639C0
+patch=0,EE,2018697C,extended,00E63823
+patch=0,EE,20186980,extended,00074840
+patch=0,EE,20186984,extended,00694821
+patch=0,EE,20186988,extended,3C070004
+patch=0,EE,2018698C,extended,01094021
+patch=0,EE,20186990,extended,01073821
+patch=0,EE,20186994,extended,A0EAAA04
+patch=0,EE,20186998,extended,91670000
+patch=0,EE,2018699C,extended,24E70001
+patch=0,EE,201869A0,extended,10000007
+patch=0,EE,201869A4,extended,A1670000
+patch=0,EE,201869A8,extended,9207017B
+patch=0,EE,201869AC,extended,00C54004
+patch=0,EE,201869B0,extended,01004027
+patch=0,EE,201869B4,extended,310800FF
+patch=0,EE,201869B8,extended,00E83824
+patch=0,EE,201869BC,extended,A207017B
+patch=0,EE,201869C0,extended,24C60001
+patch=0,EE,201869C4,extended,00D2382A
+patch=0,EE,201869C8,extended,14E0FFBD
+patch=0,EE,201869CC,extended,00000000
+patch=0,EE,201869D0,extended,0012082A
+patch=0,EE,201869D4,extended,10200064
+patch=0,EE,201869D8,extended,0000202D
+patch=0,EE,201869DC,extended,3C0342C8
+patch=0,EE,201869E0,extended,0000302D
+patch=0,EE,201869E4,extended,44830800
+patch=0,EE,201869E8,extended,48A62000
+patch=0,EE,201869EC,extended,3C054180
+patch=0,EE,201869F0,extended,3C030052
+patch=0,EE,201869F4,extended,44850000
+patch=0,EE,201869F8,extended,24632AE0
+patch=0,EE,201869FC,extended,10000057
+patch=0,EE,20186A00,extended,4B000083
+patch=0,EE,20186A04,extended,000428C0
+patch=0,EE,20186A08,extended,DA0300A0
+patch=0,EE,20186A0C,extended,00A42823
+patch=0,EE,20186A10,extended,00052900
+patch=0,EE,20186A14,extended,02652821
+patch=0,EE,20186A18,extended,D8A10030
+patch=0,EE,20186A1C,extended,4BC1186C
+patch=0,EE,20186A20,extended,4A840040
+patch=0,EE,20186A24,extended,4BC1086A
+patch=0,EE,20186A28,extended,4B01083D
+patch=0,EE,20186A2C,extended,4B01104A
+patch=0,EE,20186A30,extended,48250800
+patch=0,EE,20186A34,extended,48A50800
+patch=0,EE,20186A38,extended,4A0103BD
+patch=0,EE,20186A3C,extended,4B000043
+patch=0,EE,20186A40,extended,48280800
+patch=0,EE,20186A44,extended,4A0003BF
+patch=0,EE,20186A48,extended,48A80800
+patch=0,EE,20186A4C,extended,4B00085C
+patch=0,EE,20186A50,extended,48280800
+patch=0,EE,20186A54,extended,92070177
+patch=0,EE,20186A58,extended,000431C0
+patch=0,EE,20186A5C,extended,00C43023
+patch=0,EE,20186A60,extended,3C050004
+patch=0,EE,20186A64,extended,000630C0
+patch=0,EE,20186A68,extended,00663021
+patch=0,EE,20186A6C,extended,44881000
+patch=0,EE,20186A70,extended,00073880
+patch=0,EE,20186A74,extended,00E63021
+patch=0,EE,20186A78,extended,00C52821
+patch=0,EE,20186A7C,extended,12200036
+patch=0,EE,20186A80,extended,ACA89234
+patch=0,EE,20186A84,extended,46011034
+patch=0,EE,20186A88,extended,45010005
+patch=0,EE,20186A8C,extended,00000000
+patch=0,EE,20186A90,extended,92050174
+patch=0,EE,20186A94,extended,30A50004
+patch=0,EE,20186A98,extended,10A0002F
+patch=0,EE,20186A9C,extended,00000000
+patch=0,EE,20186AA0,extended,92050174
+patch=0,EE,20186AA4,extended,30A50002
+patch=0,EE,20186AA8,extended,14A0002B
+patch=0,EE,20186AAC,extended,00000000
+patch=0,EE,20186AB0,extended,46001034
+patch=0,EE,20186AB4,extended,45000013
+patch=0,EE,20186AB8,extended,00000000
+patch=0,EE,20186ABC,extended,3C010003
+patch=0,EE,20186AC0,extended,00642821
+patch=0,EE,20186AC4,extended,3421B13C
+patch=0,EE,20186AC8,extended,00A14821
+patch=0,EE,20186ACC,extended,91280000
+patch=0,EE,20186AD0,extended,29010008
+patch=0,EE,20186AD4,extended,1020000B
+patch=0,EE,20186AD8,extended,00000000
+patch=0,EE,20186ADC,extended,92070177
+patch=0,EE,20186AE0,extended,000428C0
+patch=0,EE,20186AE4,extended,00653021
+patch=0,EE,20186AE8,extended,3C050004
+patch=0,EE,20186AEC,extended,01063021
+patch=0,EE,20186AF0,extended,00C52821
+patch=0,EE,20186AF4,extended,A0A7B08E
+patch=0,EE,20186AF8,extended,91250000
+patch=0,EE,20186AFC,extended,24A50001
+patch=0,EE,20186B00,extended,A1250000
+patch=0,EE,20186B04,extended,3C010003
+patch=0,EE,20186B08,extended,00642821
+patch=0,EE,20186B0C,extended,3421B136
+patch=0,EE,20186B10,extended,00A15021
+patch=0,EE,20186B14,extended,91490000
+patch=0,EE,20186B18,extended,29210019
+patch=0,EE,20186B1C,extended,1020000E
+patch=0,EE,20186B20,extended,00000000
+patch=0,EE,20186B24,extended,00042880
+patch=0,EE,20186B28,extended,92080177
+patch=0,EE,20186B2C,extended,00A43821
+patch=0,EE,20186B30,extended,00073080
+patch=0,EE,20186B34,extended,3C050004
+patch=0,EE,20186B38,extended,00E63021
+patch=0,EE,20186B3C,extended,00663021
+patch=0,EE,20186B40,extended,01263021
+patch=0,EE,20186B44,extended,00C52821
+patch=0,EE,20186B48,extended,A0A8AFF8
+patch=0,EE,20186B4C,extended,91450000
+patch=0,EE,20186B50,extended,24A50001
+patch=0,EE,20186B54,extended,A1450000
+patch=0,EE,20186B58,extended,24840001
+patch=0,EE,20186B5C,extended,0092282A
+patch=0,EE,20186B60,extended,14A0FFA8
+patch=0,EE,20186B64,extended,00000000
+patch=0,EE,20186B68,extended,8E030114
+patch=0,EE,20186B6C,extended,1060011C
+patch=0,EE,20186B70,extended,00000000
+patch=0,EE,20186B74,extended,C4600030
+patch=0,EE,20186B78,extended,90620046
+patch=0,EE,20186B7C,extended,46000024
+patch=0,EE,20186B80,extended,44060000
+patch=0,EE,20186B84,extended,10400114
+patch=0,EE,20186B88,extended,00000000
+patch=0,EE,20186B8C,extended,90650041
+patch=0,EE,20186B90,extended,240200FF
+patch=0,EE,20186B94,extended,14A20003
+patch=0,EE,20186B98,extended,00000000
+patch=0,EE,20186B9C,extended,1000000A
+patch=0,EE,20186BA0,extended,0000102D
+patch=0,EE,20186BA4,extended,000520C0
+patch=0,EE,20186BA8,extended,3C020052
+patch=0,EE,20186BAC,extended,00852021
+patch=0,EE,20186BB0,extended,24422AE0
+patch=0,EE,20186BB4,extended,00042040
+patch=0,EE,20186BB8,extended,00852021
+patch=0,EE,20186BBC,extended,00042080
+patch=0,EE,20186BC0,extended,00441021
+patch=0,EE,20186BC4,extended,2442022C
+patch=0,EE,20186BC8,extended,8C420000
+patch=0,EE,20186BCC,extended,8C420010
+patch=0,EE,20186BD0,extended,2442FFFF
+patch=0,EE,20186BD4,extended,00C2102A
+patch=0,EE,20186BD8,extended,1440000C
+patch=0,EE,20186BDC,extended,00000000
+patch=0,EE,20186BE0,extended,8E020118
+patch=0,EE,20186BE4,extended,14400009
+patch=0,EE,20186BE8,extended,00000000
+patch=0,EE,20186BEC,extended,100000FA
+patch=0,EE,20186BF0,extended,00000000
+patch=0,EE,20186BF4,extended,9207017B
+patch=0,EE,20186BF8,extended,00C54004
+patch=0,EE,20186BFC,extended,310800FF
+patch=0,EE,20186C00,extended,00E83825
+patch=0,EE,20186C04,extended,1000FF56
+patch=0,EE,20186C08,extended,A207017B
+patch=0,EE,20186C0C,extended,C460002C
+patch=0,EE,20186C10,extended,0200202D
+patch=0,EE,20186C14,extended,0C05C6E8
+patch=0,EE,20186C18,extended,E60000C4
+patch=0,EE,20186C1C,extended,12200009
+patch=0,EE,20186C20,extended,00000000
+patch=0,EE,20186C24,extended,9204017A
+patch=0,EE,20186C28,extended,30830001
+patch=0,EE,20186C2C,extended,10600005
+patch=0,EE,20186C30,extended,00000000
+patch=0,EE,20186C34,extended,308200FE
+patch=0,EE,20186C38,extended,0200202D
+patch=0,EE,20186C3C,extended,0C05CE54
+patch=0,EE,20186C40,extended,A202017A
+patch=0,EE,20186C44,extended,122000C5
+patch=0,EE,20186C48,extended,00000000
+patch=0,EE,20186C4C,extended,92020174
+patch=0,EE,20186C50,extended,30420004
+patch=0,EE,20186C54,extended,14400009
+patch=0,EE,20186C58,extended,00000000
+patch=0,EE,20186C5C,extended,3C020056
+patch=0,EE,20186C60,extended,9042DC77
+patch=0,EE,20186C64,extended,14400005
+patch=0,EE,20186C68,extended,00000000
+patch=0,EE,20186C6C,extended,0260282D
+patch=0,EE,20186C70,extended,0240302D
+patch=0,EE,20186C74,extended,0C05C5F4
+patch=0,EE,20186C78,extended,0200202D
+patch=0,EE,20186C7C,extended,0C05CB90
+patch=0,EE,20186C80,extended,0200202D
+patch=0,EE,20186C84,extended,8E030114
+patch=0,EE,20186C88,extended,44801000
+patch=0,EE,20186C8C,extended,C4600018
+patch=0,EE,20186C90,extended,46020036
+patch=0,EE,20186C94,extended,4500001A
+patch=0,EE,20186C98,extended,00000000
+patch=0,EE,20186C9C,extended,C60100C4
+patch=0,EE,20186CA0,extended,3C033F00
+patch=0,EE,20186CA4,extended,44830000
+patch=0,EE,20186CA8,extended,00000000
+patch=0,EE,20186CAC,extended,46000834
+patch=0,EE,20186CB0,extended,45010053
+patch=0,EE,20186CB4,extended,00000000
+patch=0,EE,20186CB8,extended,8E050114
+patch=0,EE,20186CBC,extended,24030001
+patch=0,EE,20186CC0,extended,90A40046
+patch=0,EE,20186CC4,extended,14830008
+patch=0,EE,20186CC8,extended,00000000
+patch=0,EE,20186CCC,extended,C4A10018
+patch=0,EE,20186CD0,extended,C7808C04
+patch=0,EE,20186CD4,extended,46000834
+patch=0,EE,20186CD8,extended,45000009
+patch=0,EE,20186CDC,extended,00000000
+patch=0,EE,20186CE0,extended,10000007
+patch=0,EE,20186CE4,extended,AE000148
+patch=0,EE,20186CE8,extended,C4A10018
+patch=0,EE,20186CEC,extended,C7808BEC
+patch=0,EE,20186CF0,extended,46000834
+patch=0,EE,20186CF4,extended,45000002
+patch=0,EE,20186CF8,extended,00000000
+patch=0,EE,20186CFC,extended,AE000148
+patch=0,EE,20186D00,extended,C6020148
+patch=0,EE,20186D04,extended,44800000
+patch=0,EE,20186D08,extended,00000000
+patch=0,EE,20186D0C,extended,46001034
+patch=0,EE,20186D10,extended,4500003D
+patch=0,EE,20186D14,extended,00000000
+patch=0,EE,20186D18,extended,C6030140
+patch=0,EE,20186D1C,extended,44800000
+patch=0,EE,20186D20,extended,00000000
+patch=0,EE,20186D24,extended,46001834
+patch=0,EE,20186D28,extended,45000047
+patch=0,EE,20186D2C,extended,00000000
+patch=0,EE,20186D30,extended,82040172
+patch=0,EE,20186D34,extended,24030002
+patch=0,EE,20186D38,extended,148300A9
+patch=0,EE,20186D3C,extended,00000000
+patch=0,EE,20186D40,extended,C6010144
+patch=0,EE,20186D44,extended,3C034040
+patch=0,EE,20186D48,extended,44830000
+patch=0,EE,20186D4C,extended,00000000
+patch=0,EE,20186D50,extended,46000834
+patch=0,EE,20186D54,extended,4500007C
+patch=0,EE,20186D58,extended,00000000
+patch=0,EE,20186D5C,extended,3C030052
+patch=0,EE,20186D60,extended,C6020144
+patch=0,EE,20186D64,extended,C4612AFC
+patch=0,EE,20186D68,extended,44800000
+patch=0,EE,20186D6C,extended,00000000
+patch=0,EE,20186D70,extended,46011040
+patch=0,EE,20186D74,extended,E6010144
+patch=0,EE,20186D78,extended,82030170
+patch=0,EE,20186D7C,extended,00031880
+patch=0,EE,20186D80,extended,00701821
+patch=0,EE,20186D84,extended,C46100F0
+patch=0,EE,20186D88,extended,46000836
+patch=0,EE,20186D8C,extended,45010094
+patch=0,EE,20186D90,extended,00000000
+patch=0,EE,20186D94,extended,92060178
+patch=0,EE,20186D98,extended,3C05004B
+patch=0,EE,20186D9C,extended,92040179
+patch=0,EE,20186DA0,extended,24A575E0
+patch=0,EE,20186DA4,extended,C6000144
+patch=0,EE,20186DA8,extended,00061880
+patch=0,EE,20186DAC,extended,00663021
+patch=0,EE,20186DB0,extended,00063080
+patch=0,EE,20186DB4,extended,00041880
+patch=0,EE,20186DB8,extended,00A62821
+patch=0,EE,20186DBC,extended,00651821
+patch=0,EE,20186DC0,extended,C4610000
+patch=0,EE,20186DC4,extended,46000834
+patch=0,EE,20186DC8,extended,4501005C
+patch=0,EE,20186DCC,extended,00000000
+patch=0,EE,20186DD0,extended,92040179
+patch=0,EE,20186DD4,extended,04810004
+patch=0,EE,20186DD8,extended,30830001
+patch=0,EE,20186DDC,extended,10600002
+patch=0,EE,20186DE0,extended,00000000
+patch=0,EE,20186DE4,extended,2463FFFE
+patch=0,EE,20186DE8,extended,1460007D
+patch=0,EE,20186DEC,extended,00000000
+patch=0,EE,20186DF0,extended,920300C8
+patch=0,EE,20186DF4,extended,34630002
+patch=0,EE,20186DF8,extended,10000079
+patch=0,EE,20186DFC,extended,A20300C8
+patch=0,EE,20186E00,extended,1000FFAD
+patch=0,EE,20186E04,extended,E6020148
+patch=0,EE,20186E08,extended,3C030052
+patch=0,EE,20186E0C,extended,3C043F00
+patch=0,EE,20186E10,extended,C4612AFC
+patch=0,EE,20186E14,extended,44840000
+patch=0,EE,20186E18,extended,00000000
+patch=0,EE,20186E1C,extended,46011040
+patch=0,EE,20186E20,extended,46000834
+patch=0,EE,20186E24,extended,45000005
+patch=0,EE,20186E28,extended,E6010148
+patch=0,EE,20186E2C,extended,920300C8
+patch=0,EE,20186E30,extended,34630010
+patch=0,EE,20186E34,extended,1000FFB8
+patch=0,EE,20186E38,extended,A20300C8
+patch=0,EE,20186E3C,extended,3C03BF80
+patch=0,EE,20186E40,extended,1000FFB5
+patch=0,EE,20186E44,extended,AE030148
+patch=0,EE,20186E48,extended,3C030052
+patch=0,EE,20186E4C,extended,C4612AFC
+patch=0,EE,20186E50,extended,C7828824
+patch=0,EE,20186E54,extended,46030018
+patch=0,EE,20186E58,extended,46011840
+patch=0,EE,20186E5C,extended,3C033F00
+patch=0,EE,20186E60,extended,E6010140
+patch=0,EE,20186E64,extended,46021843
+patch=0,EE,20186E68,extended,46000864
+patch=0,EE,20186E6C,extended,46800860
+patch=0,EE,20186E70,extended,4601105D
+patch=0,EE,20186E74,extended,46020843
+patch=0,EE,20186E78,extended,44830000
+patch=0,EE,20186E7C,extended,00000000
+patch=0,EE,20186E80,extended,00000000
+patch=0,EE,20186E84,extended,46000834
+patch=0,EE,20186E88,extended,4500000D
+patch=0,EE,20186E8C,extended,00000000
+patch=0,EE,20186E90,extended,92030175
+patch=0,EE,20186E94,extended,30630001
+patch=0,EE,20186E98,extended,14600018
+patch=0,EE,20186E9C,extended,00000000
+patch=0,EE,20186EA0,extended,92030175
+patch=0,EE,20186EA4,extended,30630004
+patch=0,EE,20186EA8,extended,1060FFA1
+patch=0,EE,20186EAC,extended,00000000
+patch=0,EE,20186EB0,extended,920300C8
+patch=0,EE,20186EB4,extended,34630040
+patch=0,EE,20186EB8,extended,1000FF9D
+patch=0,EE,20186EBC,extended,A20300C8
+patch=0,EE,20186EC0,extended,8E040110
+patch=0,EE,20186EC4,extended,10800011
+patch=0,EE,20186EC8,extended,00000000
+patch=0,EE,20186ECC,extended,8E050114
+patch=0,EE,20186ED0,extended,90A30048
+patch=0,EE,20186ED4,extended,1460FF96
+patch=0,EE,20186ED8,extended,00000000
+patch=0,EE,20186EDC,extended,9084005E
+patch=0,EE,20186EE0,extended,90A30041
+patch=0,EE,20186EE4,extended,1483FF92
+patch=0,EE,20186EE8,extended,00000000
+patch=0,EE,20186EEC,extended,A2000175
+patch=0,EE,20186EF0,extended,3C03BF80
+patch=0,EE,20186EF4,extended,1000FF8E
+patch=0,EE,20186EF8,extended,AE030140
+patch=0,EE,20186EFC,extended,920300C8
+patch=0,EE,20186F00,extended,34630020
+patch=0,EE,20186F04,extended,1000FFE6
+patch=0,EE,20186F08,extended,A20300C8
+patch=0,EE,20186F0C,extended,8E040114
+patch=0,EE,20186F10,extended,90830048
+patch=0,EE,20186F14,extended,1460FF86
+patch=0,EE,20186F18,extended,00000000
+patch=0,EE,20186F1C,extended,90830041
+patch=0,EE,20186F20,extended,9204005E
+patch=0,EE,20186F24,extended,1483FF82
+patch=0,EE,20186F28,extended,00000000
+patch=0,EE,20186F2C,extended,A2000175
+patch=0,EE,20186F30,extended,3C03BF80
+patch=0,EE,20186F34,extended,1000FF7E
+patch=0,EE,20186F38,extended,AE030140
+patch=0,EE,20186F3C,extended,24830001
+patch=0,EE,20186F40,extended,1000FFA3
+patch=0,EE,20186F44,extended,A2030179
+patch=0,EE,20186F48,extended,24040001
+patch=0,EE,20186F4C,extended,3C03BF80
+patch=0,EE,20186F50,extended,A2040172
+patch=0,EE,20186F54,extended,10000022
+patch=0,EE,20186F58,extended,AE030144
+patch=0,EE,20186F5C,extended,9204017A
+patch=0,EE,20186F60,extended,3C030052
+patch=0,EE,20186F64,extended,3C010003
+patch=0,EE,20186F68,extended,24632AE0
+patch=0,EE,20186F6C,extended,34214210
+patch=0,EE,20186F70,extended,34840001
+patch=0,EE,20186F74,extended,A204017A
+patch=0,EE,20186F78,extended,8E040114
+patch=0,EE,20186F7C,extended,90850049
+patch=0,EE,20186F80,extended,00052080
+patch=0,EE,20186F84,extended,00852021
+patch=0,EE,20186F88,extended,00042100
+patch=0,EE,20186F8C,extended,00641821
+patch=0,EE,20186F90,extended,00612021
+patch=0,EE,20186F94,extended,78830000
+patch=0,EE,20186F98,extended,7E030070
+patch=0,EE,20186F9C,extended,78830010
+patch=0,EE,20186FA0,extended,7E030080
+patch=0,EE,20186FA4,extended,78830020
+patch=0,EE,20186FA8,extended,7E030090
+patch=0,EE,20186FAC,extended,78830030
+patch=0,EE,20186FB0,extended,7E0300A0
+patch=0,EE,20186FB4,extended,8E030120
+patch=0,EE,20186FB8,extended,00000000
+patch=0,EE,20186FBC,extended,DA010080
+patch=0,EE,20186FC0,extended,DA0300A0
+patch=0,EE,20186FC4,extended,48A31000
+patch=0,EE,20186FC8,extended,4BC20858
+patch=0,EE,20186FCC,extended,4BC11868
+patch=0,EE,20186FD0,extended,10000003
+patch=0,EE,20186FD4,extended,FA0100A0
+patch=0,EE,20186FD8,extended,0C05CF4C
+patch=0,EE,20186FDC,extended,0200202D
+patch=0,EE,20186FE0,extended,DFBF0040
+patch=0,EE,20186FE4,extended,7BB30030
+patch=0,EE,20186FE8,extended,7BB20020
+patch=0,EE,20186FEC,extended,7BB10010
+patch=0,EE,20186FF0,extended,7BB00000
+patch=0,EE,20186FF4,extended,03E00008
+patch=0,EE,20186FF8,extended,27BD0050
