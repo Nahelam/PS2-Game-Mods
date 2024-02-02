@@ -12,6 +12,6 @@ The stub I wrote loads the DirtySock module file into a buffer located in the EE
 
 If you were fine with the previous (less reliable) version of these patches, you can still find them in the [Old Patches](https://github.com/Nahelam/PCSX2-Burnout-Mods/tree/main/Burnout%203%20Takedown/Network%20Play/Old%20Patches) folder.
 
-## Miscellaneous
+## Disable UPnP
 
-If the game is having troubles connecting to the network (game freezing during the "Accessing Network" message), try to use the "Disable UPnP" patch (experimental).
+If you want to prevent the game from using UPnP, check "Disable UPnP".
