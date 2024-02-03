@@ -1,4 +1,4 @@
-# PCSX2 Burnout 3: Takedown Mods
+# Various Game Modifications
 
 These folders contains various cheats/patches/mods I made for Burnout 3: Takedown.
 

@@ -1,4 +1,4 @@
-# PCSX2 Burnout 3: Takedown Widescreen Patches 
+# Widescreen Patches 
 
 The `Aero_` folder contains the widescreen patches made by [Aero_](https://github.com/AeroWidescreen) that I ported to `SLES-52585`.
 

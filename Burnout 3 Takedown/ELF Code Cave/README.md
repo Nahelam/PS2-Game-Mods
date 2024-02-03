@@ -1,4 +1,4 @@
-# PCSX2 Burnout 3: Takedown ELF Code Cave
+# ELF Code Cave
 
 `16B4F0` to `1996D0`, 188896 bytes, all yours.
 
