@@ -1,6 +1,6 @@
 # Network Play
 
-These patches are bringing back network play by connecting to No23's server emulator.
+These patches are bringing back network play by connecting to [/dev/ghostline](https://gitlab.com/gh0stl1ne)'s server emulator.
 
 ## What's new?
 
