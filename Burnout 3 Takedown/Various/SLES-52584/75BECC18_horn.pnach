@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Turn back on the horn volume, press CIRCLE or R3 to honk
+author=Nehalem
+
+patch=0,EE,2028CE40,extended,3C023F80
+patch=0,EE,2028CE58,extended,AFA2005C
