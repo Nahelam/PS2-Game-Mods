@@ -4,3 +4,6 @@ author=Nehalem
 
 patch=0,EE,2028CC60,extended,3C023F80
 patch=0,EE,2028CC78,extended,AFA2005C
+
+// Uncomment to change the R3 button mapping to R2
+// patch=0,EE,0012F6D4,extended,0000000D
