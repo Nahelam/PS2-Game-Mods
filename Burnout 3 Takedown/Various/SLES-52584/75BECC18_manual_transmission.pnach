@@ -1,0 +1,8 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Enable manual transmission (L2 downshift, R2 upshift)
+author=Nehalem
+
+patch=0,EE,201C78E4,extended,AC830070
+
+// Uncomment to change the music skip button (L2) to DPAD UP
+// patch=0,EE,0012F518,extended,00000004
