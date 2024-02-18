@@ -2,7 +2,7 @@ gametitle=Burnout 3: Takedown (SLUS-21050) [NTSC-U/C]
 
 [Network\Network Play]
 author=Nehalem
-description=Brings back network play by connecting to No23's server emulator
+description=Brings back network play by connecting to /dev/ghostline's server emulator
 
 // DNAS patch
 patch=0,EE,2026BEFC,extended,10000003

@@ -1,0 +1,250 @@
+gametitle=Burnout 3: Takedown (SLUS-21050) [NTSC-U/C]
+
+[Car Viewer\Enable]
+author=Nehalem
+description=Jump into the Car Viewer from the rewards garage (L2+R2+SQUARE)
+
+// CB3CarRewardsGaragePage::Update vtable ptr
+patch=0,EE,204DFE48,extended,000B3698
+
+// CB3CarViewerGameMode::Prepare vtable ptr
+patch=0,EE,204DE0CC,extended,000B3748
+
+// CB3CarViewerGameMode::Update vtable ptr
+patch=0,EE,204DE0D0,extended,000B37D0
+
+// CB3CarViewerGameMode::Release vtable ptr
+patch=0,EE,204DE0D8,extended,000B3910
+
+// CB3CarViewerGameMode::Render patch (background colors)
+patch=0,EE,2024D564,extended,3C02000B
+patch=0,EE,2024D568,extended,34423630
+patch=0,EE,2024D56C,extended,92440217
+patch=0,EE,2024D570,extended,00042080
+patch=0,EE,2024D574,extended,00441021
+patch=0,EE,2024D578,extended,8C420000
+patch=0,EE,2024D57C,extended,AC620000
+
+// Prevent constant writing of the dynamic patches once the game is fully prepared, it should stick in memory
+patch=1,EE,D051BAA0,extended,BA110017
+
+// Background colors RGBA (1 byte each) values (little-endian)
+patch=1,EE,200B3630,extended,00000000
+patch=1,EE,200B3634,extended,007F7F7F
+patch=1,EE,200B3638,extended,003F3F3F
+patch=1,EE,200B363C,extended,003F003F
+patch=1,EE,200B3640,extended,00003F3F
+patch=1,EE,200B3644,extended,0000003F
+patch=1,EE,200B3648,extended,003F3F00
+patch=1,EE,200B364C,extended,00003F00
+patch=1,EE,200B3650,extended,003F0000
+patch=1,EE,200B3654,extended,007F007F
+patch=1,EE,200B3658,extended,00007F7F
+patch=1,EE,200B365C,extended,0000007F
+patch=1,EE,200B3660,extended,007F7F00
+patch=1,EE,200B3664,extended,00007F00
+patch=1,EE,200B3668,extended,007F0000
+
+// Irrandiance map float values
+patch=1,EE,200B3690,extended,3F200000    // Coeff 1 (ambient light?)
+patch=1,EE,200B3670,extended,3F000000    // Coeff 2 (top light?)
+patch=1,EE,200B3674,extended,00000000    // Coeff 3 (front light?)
+patch=1,EE,200B3678,extended,00000000    // Coeff 4 (?)
+patch=1,EE,200B367C,extended,00000000    // Coeff 5 (?)
+patch=1,EE,200B3680,extended,00000000    // Coeff 6 (?)
+patch=1,EE,200B3684,extended,00000000    // Coeff 7 (?)
+patch=1,EE,200B3688,extended,00000000    // Coeff 8 (?)
+patch=1,EE,200B368C,extended,3DE00000    // Coeff 9 (ground light?)
+
+// CB3CarRewardsGaragePage::Update hook
+patch=1,EE,200B3698,extended,27BDFFE0
+patch=1,EE,200B369C,extended,FFBF0010
+patch=1,EE,200B36A0,extended,7FB00000
+patch=1,EE,200B36A4,extended,0080802D
+patch=1,EE,200B36A8,extended,3C0201E9
+patch=1,EE,200B36AC,extended,34420240
+patch=1,EE,200B36B0,extended,8C4201E4
+patch=1,EE,200B36B4,extended,24030005
+patch=1,EE,200B36B8,extended,1462001E
+patch=1,EE,200B36BC,extended,00000000
+patch=1,EE,200B36C0,extended,3C04004F
+patch=1,EE,200B36C4,extended,0C08B1E0
+patch=1,EE,200B36C8,extended,348450C0
+patch=1,EE,200B36CC,extended,10400017
+patch=1,EE,200B36D0,extended,00000000
+patch=1,EE,200B36D4,extended,3C0201EA
+patch=1,EE,200B36D8,extended,34422970
+patch=1,EE,200B36DC,extended,8C420004
+patch=1,EE,200B36E0,extended,DC420000
+patch=1,EE,200B36E4,extended,3C030051
+patch=1,EE,200B36E8,extended,3463A6A8
+patch=1,EE,200B36EC,extended,FC620300
+patch=1,EE,200B36F0,extended,3C0401E9
+patch=1,EE,200B36F4,extended,0C0C375C
+patch=1,EE,200B36F8,extended,34840240
+patch=1,EE,200B36FC,extended,3C0401E8
+patch=1,EE,200B3700,extended,3484EC30
+patch=1,EE,200B3704,extended,0C10ADC0
+patch=1,EE,200B3708,extended,8C850244
+patch=1,EE,200B370C,extended,3C0401E9
+patch=1,EE,200B3710,extended,348400B0
+patch=1,EE,200B3714,extended,FC820080
+patch=1,EE,200B3718,extended,24020004
+patch=1,EE,200B371C,extended,0C0C346C
+patch=1,EE,200B3720,extended,AC820004
+patch=1,EE,200B3724,extended,10000003
+patch=1,EE,200B3728,extended,00000000
+patch=1,EE,200B372C,extended,0C0FC0F4
+patch=1,EE,200B3730,extended,0200202D
+patch=1,EE,200B3734,extended,DFBF0010
+patch=1,EE,200B3738,extended,7BB00000
+patch=1,EE,200B373C,extended,03E00008
+patch=1,EE,200B3740,extended,27BD0020
+
+// CB3CarRewardsGaragePage::Prepare hook
+patch=1,EE,200B3748,extended,27BDFFF0
+patch=1,EE,200B374C,extended,FFBF0000
+patch=1,EE,200B3750,extended,0C093F08
+patch=1,EE,200B3754,extended,AC800214
+patch=1,EE,200B3758,extended,10400015
+patch=1,EE,200B375C,extended,00000000
+patch=1,EE,200B3760,extended,3C030064
+patch=1,EE,200B3764,extended,3463D3B0
+patch=1,EE,200B3768,extended,3C04000B
+patch=1,EE,200B376C,extended,34843670
+patch=1,EE,200B3770,extended,8C850020
+patch=1,EE,200B3774,extended,AC65005C
+patch=1,EE,200B3778,extended,78850000
+patch=1,EE,200B377C,extended,7C650060
+patch=1,EE,200B3780,extended,78850010
+patch=1,EE,200B3784,extended,7C650070
+patch=1,EE,200B3788,extended,AC6011A0
+patch=1,EE,200B378C,extended,3C040057
+patch=1,EE,200B3790,extended,3484BAF0
+patch=1,EE,200B3794,extended,AC642430
+patch=1,EE,200B3798,extended,AC8313F4
+patch=1,EE,200B379C,extended,3C030066
+patch=1,EE,200B37A0,extended,34635EC0
+patch=1,EE,200B37A4,extended,A0600067
+patch=1,EE,200B37A8,extended,A0600068
+patch=1,EE,200B37AC,extended,A060006A
+patch=1,EE,200B37B0,extended,DFBF0000
+patch=1,EE,200B37B4,extended,03E00008
+patch=1,EE,200B37B8,extended,27BD0010
+
+// CB3CarViewerGameMode::Update hook
+patch=1,EE,200B37D0,extended,27BDFFE0
+patch=1,EE,200B37D4,extended,FFBF0010
+patch=1,EE,200B37D8,extended,7FB00000
+patch=1,EE,200B37DC,extended,3C0201E7
+patch=1,EE,200B37E0,extended,34427540
+patch=1,EE,200B37E4,extended,8C430004
+patch=1,EE,200B37E8,extended,10600002
+patch=1,EE,200B37EC,extended,00000000
+patch=1,EE,200B37F0,extended,AC400004
+patch=1,EE,200B37F4,extended,0C0936AC
+patch=1,EE,200B37F8,extended,0080802D
+patch=1,EE,200B37FC,extended,3C02004F
+patch=1,EE,200B3800,extended,3C03004F
+patch=1,EE,200B3804,extended,80446061
+patch=1,EE,200B3808,extended,246350C0
+patch=1,EE,200B380C,extended,24050007
+patch=1,EE,200B3810,extended,0000302D
+patch=1,EE,200B3814,extended,00041100
+patch=1,EE,200B3818,extended,00442023
+patch=1,EE,200B381C,extended,00041080
+patch=1,EE,200B3820,extended,00821021
+patch=1,EE,200B3824,extended,00021080
+patch=1,EE,200B3828,extended,00621021
+patch=1,EE,200B382C,extended,0C04BF0C
+patch=1,EE,200B3830,extended,24440D48
+patch=1,EE,200B3834,extended,46000045
+patch=1,EE,200B3838,extended,C78088EC
+patch=1,EE,200B383C,extended,46000834
+patch=1,EE,200B3840,extended,45000003
+patch=1,EE,200B3844,extended,00000000
+patch=1,EE,200B3848,extended,1000000B
+patch=1,EE,200B384C,extended,A2000215
+patch=1,EE,200B3850,extended,92020215
+patch=1,EE,200B3854,extended,14400008
+patch=1,EE,200B3858,extended,00000000
+patch=1,EE,200B385C,extended,3C050064
+patch=1,EE,200B3860,extended,34A5D3B0
+patch=1,EE,200B3864,extended,24A40380
+patch=1,EE,200B3868,extended,0C0F6BB8
+patch=1,EE,200B386C,extended,24A60080
+patch=1,EE,200B3870,extended,24020001
+patch=1,EE,200B3874,extended,A2020215
+patch=1,EE,200B3878,extended,3C02004F
+patch=1,EE,200B387C,extended,3C03004F
+patch=1,EE,200B3880,extended,80446061
+patch=1,EE,200B3884,extended,246350C0
+patch=1,EE,200B3888,extended,24050006
+patch=1,EE,200B388C,extended,0000302D
+patch=1,EE,200B3890,extended,00041100
+patch=1,EE,200B3894,extended,00442023
+patch=1,EE,200B3898,extended,00041080
+patch=1,EE,200B389C,extended,00821021
+patch=1,EE,200B38A0,extended,00021080
+patch=1,EE,200B38A4,extended,00621021
+patch=1,EE,200B38A8,extended,0C04BF0C
+patch=1,EE,200B38AC,extended,24440D48
+patch=1,EE,200B38B0,extended,46000045
+patch=1,EE,200B38B4,extended,C78088EC
+patch=1,EE,200B38B8,extended,46000834
+patch=1,EE,200B38BC,extended,45000003
+patch=1,EE,200B38C0,extended,00000000
+patch=1,EE,200B38C4,extended,1000000D
+patch=1,EE,200B38C8,extended,A2000216
+patch=1,EE,200B38CC,extended,92020216
+patch=1,EE,200B38D0,extended,1440000A
+patch=1,EE,200B38D4,extended,00000000
+patch=1,EE,200B38D8,extended,92020217
+patch=1,EE,200B38DC,extended,2403000E
+patch=1,EE,200B38E0,extended,10430004
+patch=1,EE,200B38E4,extended,24040001
+patch=1,EE,200B38E8,extended,00441021
+patch=1,EE,200B38EC,extended,10000002
+patch=1,EE,200B38F0,extended,A2020217
+patch=1,EE,200B38F4,extended,A2000217
+patch=1,EE,200B38F8,extended,A2040216
+patch=1,EE,200B38FC,extended,DFBF0010
+patch=1,EE,200B3900,extended,7BB00000
+patch=1,EE,200B3904,extended,03E00008
+patch=1,EE,200B3908,extended,27BD0020
+
+// CB3CarViewerGameMode::Release hook
+patch=1,EE,200B3910,extended,3C020066
+patch=1,EE,200B3914,extended,34425EC0
+patch=1,EE,200B3918,extended,24030001
+patch=1,EE,200B391C,extended,A0430067
+patch=1,EE,200B3920,extended,A0430068
+patch=1,EE,200B3924,extended,A043006A
+patch=1,EE,200B3928,extended,3C0201E7
+patch=1,EE,200B392C,extended,34427540
+patch=1,EE,200B3930,extended,24030017
+patch=1,EE,200B3934,extended,08093534
+patch=1,EE,200B3938,extended,A0430004
+
+[Car Viewer\Disable envmap rendering]
+author=Nehalem
+description=Prevent rendering of the garage envmap leftovers in the Car Viewer (reflections, etc.)
+
+// CB3GraphicsManager::DistortEnvmapBuffersIntoSphereMap call
+patch=0,EE,202764D4,extended,0C02CE50
+
+// Prevent constant writing of the dynamic patches once the game is fully prepared, it should stick in memory
+patch=1,EE,D051BAA0,extended,0B110017
+
+// CB3GraphicsManager::DistortEnvmapBuffersIntoSphereMap hook
+patch=1,EE,200B3940,extended,3C020051
+patch=1,EE,200B3944,extended,3442BA88
+patch=1,EE,200B3948,extended,8C420000
+patch=1,EE,200B394C,extended,3C030051
+patch=1,EE,200B3950,extended,3463A9E0
+patch=1,EE,200B3954,extended,10430003
+patch=1,EE,200B3958,extended,00000000
+patch=1,EE,200B395C,extended,08088B28
+patch=1,EE,200B3960,extended,00000000
+patch=1,EE,200B3964,extended,03E00008
+patch=1,EE,200B3968,extended,00000000
