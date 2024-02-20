@@ -1,0 +1,472 @@
+========================================================================
+Background colors RGBA (1 byte each) values (little-endian)
+Had to divide the RGBA values by 2 as the game seems to multiply them by 2 later for some reason
+
+patch=1,EE,200B3630,extended,00000000
+patch=1,EE,200B3634,extended,007F7F7F
+patch=1,EE,200B3638,extended,003F3F3F
+patch=1,EE,200B363C,extended,003F003F
+patch=1,EE,200B3640,extended,00003F3F
+patch=1,EE,200B3644,extended,0000003F
+patch=1,EE,200B3648,extended,003F3F00
+patch=1,EE,200B364C,extended,00003F00
+patch=1,EE,200B3650,extended,003F0000
+patch=1,EE,200B3654,extended,007F007F
+patch=1,EE,200B3658,extended,00007F7F
+patch=1,EE,200B365C,extended,0000007F
+patch=1,EE,200B3660,extended,007F7F00
+patch=1,EE,200B3664,extended,00007F00
+patch=1,EE,200B3668,extended,007F0000
+
+========================================================================
+Irrandiance map float values
+
+patch=1,EE,200B3690,extended,3F200000
+patch=1,EE,200B3670,extended,3F000000
+patch=1,EE,200B3674,extended,00000000
+patch=1,EE,200B3678,extended,00000000
+patch=1,EE,200B367C,extended,00000000
+patch=1,EE,200B3680,extended,00000000
+patch=1,EE,200B3684,extended,00000000
+patch=1,EE,200B3688,extended,00000000
+patch=1,EE,200B368C,extended,3DE00000
+
+========================================================================
+Running Car Viewer from the rewards garage (L2+R2+SQUARE)
+
+E0 FF BD 27    addiu        $sp, $sp, -0x20
+10 00 BF FF    sd           $ra, 0x10($sp)
+00 00 B0 7F    sq           $s0, 0x00($sp)
+2D 80 80 00    daddu        $s0, $a0, $zero
+
+E9 01 02 3C    lui          $v0, 0x1E9
+C0 06 42 34    ori          $v0, $v0, 0x6C0           // gMenuPageManager
+E4 01 42 8C    lw           $v0, 0x1E4($v0)           // gMenuPageManager.mnCurrentStateAction
+05 00 03 24    addiu        $v1, $zero, 5
+1E 00 62 14    bne          $v1, $v0, 0x7C
+00 00 00 00    nop
+
+4F 00 04 3C    lui          $a0, 0x4F
+E0 B1 08 0C    jal          sub_22C780                // L2+R2+SQUARE pressed func
+40 55 84 34    ori          $a0, $a0, 0x5540          // gInputManager
+17 00 40 10    beqz         $v0, 0x60
+00 00 00 00    nop
+
+EA 01 02 3C    lui          $v0, 0x1EA
+F0 2D 42 34    ori          $v0, $v0, 0x2DF0          // gMenuFSM
+04 00 42 8C    lw           $v0, 0x4($v0)             // gMenuFSM.mpState
+00 00 42 DC    ld           $v0, 0x0($v0)             // Current state id
+
+51 00 03 3C    lui          $v1, 0x51                 
+28 AB 63 34    ori          $v1, $v1, 0xAB28          // gGameModeFrontEnd
+00 03 62 FC    sd           $v0, 0x300($v1)           // gGameModeFrontEnd.mInitialMenuID
+
+E9 01 04 3C    lui          $a0, 0x1E9
+78 37 0C 0C    jal          0x30DDE0                  // CB3MenuPageManager::ReleaseCurrentMenu
+C0 06 84 34    ori          $a0, $a0, 0x6C0           // gMenuPageManager
+
+E8 01 04 3C    lui          $a0, 0x1E8
+B0 F0 84 34    ori          $a0, $a0, 0xF0B0          // gCarouselComponent
+C8 AE 10 0C    jal          0x42BB20                  // CB3CarouselComponent::GetEntryCarID
+44 02 85 8C    lw           $a1, 0x244($a0)           // gCarouselComponent.mnCurrentEntry
+
+E9 01 04 3C    lui          $a0, 0x1E9
+30 05 84 34    ori          $a0, $a0, 0x530           // gMenuChoices
+80 00 82 FC    sd           $v0, 0x80($a0)            // gMenuChoices.maCarID[0]
+04 00 02 24    addiu        $v0, $zero, 4
+88 34 0C 0C    jal          0x30D220                  // CB3MenuChoices::RequestNewGameMode
+04 00 82 AC    sw           $v0, 0x4($a0)             // gMenuChoices.meOnePlayerChoice
+03 00 00 10    b            0x10
+00 00 00 00    nop
+
+D0 C1 0F 0C    jal          0x3F0740                  // CB3CarRewardsGaragePage::Update
+2D 20 00 02    daddu        $a0, $s0, $zero
+
+10 00 BF DF    ld           $ra, 0x10($sp)
+00 00 B0 7B    lq           $s0, 0x00($sp)
+08 00 E0 03    jr           $ra
+20 00 BD 27    addiu        $sp, $sp, 0x20
+
+
+// Replace "Update" function pointer in CB3CarRewardsGaragePage vtable
+patch=0,EE,204E02D8,extended,000B3698
+
+patch=1,EE,200B3698,extended,27BDFFE0
+patch=1,EE,200B369C,extended,FFBF0010
+patch=1,EE,200B36A0,extended,7FB00000
+patch=1,EE,200B36A4,extended,0080802D
+patch=1,EE,200B36A8,extended,3C0201E9
+patch=1,EE,200B36AC,extended,344206C0
+patch=1,EE,200B36B0,extended,8C4201E4
+patch=1,EE,200B36B4,extended,24030005
+patch=1,EE,200B36B8,extended,1462001E
+patch=1,EE,200B36BC,extended,00000000
+patch=1,EE,200B36C0,extended,3C04004F
+patch=1,EE,200B36C4,extended,0C08B1E0
+patch=1,EE,200B36C8,extended,34845540
+patch=1,EE,200B36CC,extended,10400017
+patch=1,EE,200B36D0,extended,00000000
+patch=1,EE,200B36D4,extended,3C0201EA
+patch=1,EE,200B36D8,extended,34422DF0
+patch=1,EE,200B36DC,extended,8C420004
+patch=1,EE,200B36E0,extended,DC420000
+patch=1,EE,200B36E4,extended,3C030051
+patch=1,EE,200B36E8,extended,3463AB28
+patch=1,EE,200B36EC,extended,FC620300
+patch=1,EE,200B36F0,extended,3C0401E9
+patch=1,EE,200B36F4,extended,0C0C3778
+patch=1,EE,200B36F8,extended,348406C0
+patch=1,EE,200B36FC,extended,3C0401E8
+patch=1,EE,200B3700,extended,3484F0B0
+patch=1,EE,200B3704,extended,0C10AEC8
+patch=1,EE,200B3708,extended,8C850244
+patch=1,EE,200B370C,extended,3C0401E9
+patch=1,EE,200B3710,extended,34840530
+patch=1,EE,200B3714,extended,FC820080
+patch=1,EE,200B3718,extended,24020004
+patch=1,EE,200B371C,extended,0C0C3488
+patch=1,EE,200B3720,extended,AC820004
+patch=1,EE,200B3724,extended,10000003
+patch=1,EE,200B3728,extended,00000000
+patch=1,EE,200B372C,extended,0C0FC1D0
+patch=1,EE,200B3730,extended,0200202D
+patch=1,EE,200B3734,extended,DFBF0010
+patch=1,EE,200B3738,extended,7BB00000
+patch=1,EE,200B373C,extended,03E00008
+patch=1,EE,200B3740,extended,27BD0020
+
+========================================================================
+Car Viewer "Prepare" hook
+
+F0 FF BD 27    addiu $sp, $sp, -0x10
+00 00 BF FF    sd    $ra, ($sp)
+08 3F 09 0C    jal   0x24FC20                // CB3CarViewerGameMode::Prepare
+14 02 80 AC    sw    $zero, 0x214($a0)       // Init uint8 variables used by Update hook
+15 00 40 10    beqz  $v0, 0x58
+00 00 00 00    nop
+64 00 03 3C    lui   $v1, 0x64
+30 D8 63 34    ori   $v1, $v1, 0xD830        // gWorld.maPlayerCars[0]
+0B 00 04 3C    lui   $a0, 0xB
+70 36 84 34    ori   $a0, $a0, 0x3670
+20 00 85 8C    lw    $a1, 0x20($a0)
+5C 00 65 AC    sw    $a1, 0x5C($v1)
+00 00 85 78    lq    $a1, 0x0($a0)
+60 00 65 7C    sq    $a1, 0x60($v1)
+10 00 85 78    lq    $a1, 0x10($a0)
+70 00 65 7C    sq    $a1, 0x70($v1)
+A0 11 60 AC    sw    $zero, 0x11A0($v1)     // Boost flame intensity
+57 00 04 3C    lui   $a0, 0x57
+70 BF 84 34    ori   $a0, $a0, 0xBF70       // gPhysicsManager.maPlayerCarBodies[0]
+30 24 64 AC    sw    $a0, 0x2430($v1)       // maPlayerCarBodies[0] ptr in player car obj
+F4 13 83 AC    sw    $v1, 0x13F4($a0)       // Vehicle essential params ptr in physics to avoid vehicle deformation TLB miss 
+66 00 03 3C    lui   $v1, 0x66
+40 63 63 34    ori   $v1, $v1, 0x6340       // gGraphicsManager
+67 00 60 A0    sb    $zero, 0x67($v1)       // Disable gGraphicsManager.bRenderShadows
+68 00 60 A0    sb    $zero, 0x68($v1)       // Disable gGraphicsManager.bRenderBloom
+6A 00 60 A0    sb    $zero, 0x6A($v1)       // Disable gGraphicsManager.bRenderBlur
+00 00 BF DF    ld    $ra, ($sp)
+08 00 E0 03    jr    $ra
+10 00 BD 27    addiu $sp, $sp, 0x10
+
+
+// Replace "Prepare" function pointer in CB3CarViewerGameMode vtable
+patch=0,EE,204DE55C,extended,000B3748
+
+patch=1,EE,200B3748,extended,27BDFFF0
+patch=1,EE,200B374C,extended,FFBF0000
+patch=1,EE,200B3750,extended,0C093F08
+patch=1,EE,200B3754,extended,AC800214
+patch=1,EE,200B3758,extended,10400017
+patch=1,EE,200B375C,extended,00000000
+patch=1,EE,200B3760,extended,3C030064
+patch=1,EE,200B3764,extended,3463D830
+patch=1,EE,200B3768,extended,3C04000B
+patch=1,EE,200B376C,extended,34843670
+patch=1,EE,200B3770,extended,8C850020
+patch=1,EE,200B3774,extended,AC65005C
+patch=1,EE,200B3778,extended,78850000
+patch=1,EE,200B377C,extended,7C650060
+patch=1,EE,200B3780,extended,78850010
+patch=1,EE,200B3784,extended,7C650070
+patch=1,EE,200B3788,extended,AC6011A0
+patch=1,EE,200B378C,extended,3C040057
+patch=1,EE,200B3790,extended,3484BF70
+patch=1,EE,200B3794,extended,AC642430
+patch=1,EE,200B3798,extended,AC8313F4
+patch=1,EE,200B379C,extended,3C030066
+patch=1,EE,200B37A0,extended,34636340
+patch=1,EE,200B37A4,extended,A0600067
+patch=1,EE,200B37A8,extended,A0600068
+patch=1,EE,200B37AC,extended,A060006A
+patch=1,EE,200B37B0,extended,DFBF0000
+patch=1,EE,200B37B4,extended,03E00008
+patch=1,EE,200B37B8,extended,27BD0010
+
+========================================================================
+Car Viewer "Update" hook
+
+Boolean (CarViewerGameMode + 0x215) is unused (padding), using it as mbDPadRightPressed
+Boolean (CarViewerGameMode + 0x216) is unused (padding), using it as mbDPadLeftPressed
+Boolean (CarViewerGameMode + 0x217) is unused (padding), using it as background color array index for the Render hook
+
+Adds two new bindings to the Car Viewer:
+
+DPAD LEFT: Change background color array index
+DPAD RIGHT: Reset vehicle deformation
+
+E0 FF BD 27 addiu        $sp, $sp, -0x20
+10 00 BF FF sd           $ra, 0x10($sp)
+00 00 B0 7F sq           $s0, 0x00($sp)
+
+E7 01 02 3C lui          $v0, 0x1E7
+C0 79 42 34 ori          $v0, $v0, 0x79C0         // gSoundGameModeManager
+04 00 43 8C lw           $v1, 4($v0)
+02 00 60 10 beqz         $v1, 0x10
+00 00 00 00 nop  
+04 00 40 AC sw           $zero, 4($v0)            // Prevent sound functions from updating by changing SoundGameModeManager's prepare state, to avoid TLB misses
+AC 36 09 0C jal          0x24DAB0                 // CB3CarViewerGameMode::Update
+2D 80 80 00 daddu        $s0, $a0, $zero
+
+4F 00 02 3C lui          $v0, 0x4F
+4F 00 03 3C lui          $v1, 0x4F
+E1 64 44 80 lb           $a0, byte_4F64E1
+40 55 63 24 li           $v1, gInputManager
+07 00 05 24 li           $a1, 7
+2D 30 00 00 move         $a2, $zero
+00 11 04 00 sll          $v0, $a0, 4
+23 20 44 00 subu         $a0, $v0, $a0
+80 10 04 00 sll          $v0, $a0, 2
+21 10 82 00 addu         $v0, $a0, $v0
+80 10 02 00 sll          $v0, 2
+21 10 62 00 addu         $v0, $v1, $v0
+0C BF 04 0C jal          0x12FC30                 // CB3ControllerMapping::GetPadControl
+48 0D 44 24 addiu        $a0, $v0, 0xD48
+45 00 00 46 abs          $f1, $f0
+EC 88 80 C7 lwc1         $f0, flt_4E13DC
+34 08 00 46 c.lt         $f1, $f0
+03 00 00 45 bc1f         0x10
+00 00 00 00 nop
+
+0B 00 00 10 b            0x30
+15 02 00 A2 sb           $zero, 0x215($s0)
+
+15 02 02 92 lbu          $v0, 0x215($s0)
+08 00 40 14 bnez         $v0, 0x24
+00 00 00 00 nop
+
+64 00 05 3C lui          $a1, 0x64
+30 D8 A5 34 ori          $a1, $a1, 0xD830         // gWorld.maPlayerCars[0]
+80 03 A4 24 addiu        $a0, $a1, 0x380          // gWorld.maPlayerCars[0].mVehicleParams.mDeform
+94 6C 0F 0C jal          0x3DB250                 // CB3VehicleDeform::Reset
+80 00 A6 24 addiu        $a2, $a1, 0x80           // gWorld.maPlayerCars[0].mVehicleParams
+01 00 02 24 li           $v0, 1
+15 02 02 A2 sb           $v0, 0x215($s0)
+
+4F 00 02 3C lui          $v0, 0x4F
+4F 00 03 3C lui          $v1, 0x4F
+E1 64 44 80 lb           $a0, byte_4F64E1
+40 55 63 24 li           $v1, gInputManager
+06 00 05 24 li           $a1, 6
+2D 30 00 00 move         $a2, $zero
+00 11 04 00 sll          $v0, $a0, 4
+23 20 44 00 subu         $a0, $v0, $a0
+80 10 04 00 sll          $v0, $a0, 2
+21 10 82 00 addu         $v0, $a0, $v0
+80 10 02 00 sll          $v0, 2
+21 10 62 00 addu         $v0, $v1, $v0
+0C BF 04 0C jal          0x12FC30                 // CB3ControllerMapping::GetPadControl
+48 0D 44 24 addiu        $a0, $v0, 0xD48
+45 00 00 46 abs          $f1, $f0
+EC 88 80 C7 lwc1         $f0, flt_4E13DC
+34 08 00 46 c.lt         $f1, $f0
+03 00 00 45 bc1f         0x10
+00 00 00 00 nop
+
+0D 00 00 10 b            0x38
+16 02 00 A2 sb           $zero, 0x216($s0)
+
+16 02 02 92 lbu          $v0, 0x216($s0)
+0A 00 40 14 bnez         $v0, 0x2C
+00 00 00 00 nop
+
+17 02 02 92 lbu          $v0, 0x217($s0)
+0E 00 03 24 addiu        $v1, $zero, 0xE
+04 00 43 10 beq          $v0, $v1, 0x14
+01 00 04 24 addiu        $a0, $zero, 1
+21 10 44 00 addu         $v0, $v0, $a0
+02 00 00 10 b            0xC
+17 02 02 A2 sb           $v0, 0x217($s0)
+17 02 00 A2 sb           $zero, 0x217($s0)
+16 02 04 A2 sb           $a0, 0x216($s0)          // Background colors array index
+
+10 00 BF DF ld           $ra, 0x10($sp)
+00 00 B0 7B lq           $s0, 0x00($sp)
+08 00 E0 03 jr           $ra
+20 00 BD 27 addiu        $sp, $sp, 0x20
+
+
+// Replace "Update" function pointer in CB3CarViewerGameMode vtable
+patch=0,EE,204DE560,extended,000B37D0
+
+patch=1,EE,200B37D0,extended,27BDFFE0
+patch=1,EE,200B37D4,extended,FFBF0010
+patch=1,EE,200B37D8,extended,7FB00000
+patch=1,EE,200B37DC,extended,3C0201E7
+patch=1,EE,200B37E0,extended,344279C0
+patch=1,EE,200B37E4,extended,8C430004
+patch=1,EE,200B37E8,extended,10600002
+patch=1,EE,200B37EC,extended,00000000
+patch=1,EE,200B37F0,extended,AC400004
+patch=1,EE,200B37F4,extended,0C0936AC
+patch=1,EE,200B37F8,extended,0080802D
+patch=1,EE,200B37FC,extended,3C02004F
+patch=1,EE,200B3800,extended,3C03004F
+patch=1,EE,200B3804,extended,804464E1
+patch=1,EE,200B3808,extended,24635540
+patch=1,EE,200B380C,extended,24050007
+patch=1,EE,200B3810,extended,0000302D
+patch=1,EE,200B3814,extended,00041100
+patch=1,EE,200B3818,extended,00442023
+patch=1,EE,200B381C,extended,00041080
+patch=1,EE,200B3820,extended,00821021
+patch=1,EE,200B3824,extended,00021080
+patch=1,EE,200B3828,extended,00621021
+patch=1,EE,200B382C,extended,0C04BF0C
+patch=1,EE,200B3830,extended,24440D48
+patch=1,EE,200B3834,extended,46000045
+patch=1,EE,200B3838,extended,C78088EC
+patch=1,EE,200B383C,extended,46000834
+patch=1,EE,200B3840,extended,45000003
+patch=1,EE,200B3844,extended,00000000
+patch=1,EE,200B3848,extended,1000000B
+patch=1,EE,200B384C,extended,A2000215
+patch=1,EE,200B3850,extended,92020215
+patch=1,EE,200B3854,extended,14400008
+patch=1,EE,200B3858,extended,00000000
+patch=1,EE,200B385C,extended,3C050064
+patch=1,EE,200B3860,extended,34A5D830
+patch=1,EE,200B3864,extended,24A40380
+patch=1,EE,200B3868,extended,0C0F6C94
+patch=1,EE,200B386C,extended,24A60080
+patch=1,EE,200B3870,extended,24020001
+patch=1,EE,200B3874,extended,A2020215
+patch=1,EE,200B3878,extended,3C02004F
+patch=1,EE,200B387C,extended,3C03004F
+patch=1,EE,200B3880,extended,804464E1
+patch=1,EE,200B3884,extended,24635540
+patch=1,EE,200B3888,extended,24050006
+patch=1,EE,200B388C,extended,0000302D
+patch=1,EE,200B3890,extended,00041100
+patch=1,EE,200B3894,extended,00442023
+patch=1,EE,200B3898,extended,00041080
+patch=1,EE,200B389C,extended,00821021
+patch=1,EE,200B38A0,extended,00021080
+patch=1,EE,200B38A4,extended,00621021
+patch=1,EE,200B38A8,extended,0C04BF0C
+patch=1,EE,200B38AC,extended,24440D48
+patch=1,EE,200B38B0,extended,46000045
+patch=1,EE,200B38B4,extended,C78088EC
+patch=1,EE,200B38B8,extended,46000834
+patch=1,EE,200B38BC,extended,45000003
+patch=1,EE,200B38C0,extended,00000000
+patch=1,EE,200B38C4,extended,1000000D
+patch=1,EE,200B38C8,extended,A2000216
+patch=1,EE,200B38CC,extended,92020216
+patch=1,EE,200B38D0,extended,1440000A
+patch=1,EE,200B38D4,extended,00000000
+patch=1,EE,200B38D8,extended,92020217
+patch=1,EE,200B38DC,extended,2403000E
+patch=1,EE,200B38E0,extended,10430004
+patch=1,EE,200B38E4,extended,24040001
+patch=1,EE,200B38E8,extended,00441021
+patch=1,EE,200B38EC,extended,10000002
+patch=1,EE,200B38F0,extended,A2020217
+patch=1,EE,200B38F4,extended,A2000217
+patch=1,EE,200B38F8,extended,A2040216
+patch=1,EE,200B38FC,extended,DFBF0010
+patch=1,EE,200B3900,extended,7BB00000
+patch=1,EE,200B3904,extended,03E00008
+patch=1,EE,200B3908,extended,27BD0020
+
+========================================================================
+Car Viewer "Render" patch
+Loop through the background colors array (0xB3630) using the background color array index (CarViewerGameMode + 0x217)
+
+0B 00 02 3C    lui        $v0, 0xB
+B0 38 42 34    ori        $v0, $v0, 0x3630
+17 02 44 92    lbu        $a0, 0x217($s2)
+80 20 04 00    sll        $a0, $a0, 2
+21 10 44 00    addu       $v0, $v0, $a0
+00 00 42 8C    lw         $v0, 0x0($v0)
+00 00 62 AC    sw         $v0, 0x0($v1)
+
+
+patch=0,EE,2024D564,extended,3C02000B
+patch=0,EE,2024D568,extended,34423630
+patch=0,EE,2024D56C,extended,92440217
+patch=0,EE,2024D570,extended,00042080
+patch=0,EE,2024D574,extended,00441021
+patch=0,EE,2024D578,extended,8C420000
+patch=0,EE,2024D57C,extended,AC620000
+
+========================================================================
+Car Viewer "Release" hook
+
+66 00 02 3C    lui $v0, 0x66
+40 63 42 34    ori $v0, $v0, 0x6340   // gGraphicsManager
+01 00 03 24    addiu $v1, $zero, 1
+67 00 43 A0    sb $v1, 0x67($v0)      // Enable gGraphicsManager.bRenderShadows
+68 00 43 A0    sb $v1, 0x68($v0)      // Enable gGraphicsManager.bRenderBloom
+6A 00 43 A0    sb $v1, 0x6A($v0)      // Enable gGraphicsManager.bRenderBlur
+E7 01 02 3C    lui $v0, 0x1E7
+C0 79 42 34    ori $v0, $v0, 0x79C0   // Restore SoundGameModeManager's prepare state
+17 00 03 24    addiu $v1, $zero, 17
+34 35 09 08    j   0x24D4D0           // CB3CarViewerGameMode::Release
+04 00 43 A0    sb $v1, 0x4($v0)
+
+
+// Replace "Release" function pointer in CB3CarViewerGameMode vtable
+patch=0,EE,204DE568,extended,000B3910
+
+patch=1,EE,200B3910,extended,3C020066
+patch=1,EE,200B3914,extended,34426340
+patch=1,EE,200B3918,extended,24030001
+patch=1,EE,200B391C,extended,A0430067
+patch=1,EE,200B3920,extended,A0430068
+patch=1,EE,200B3924,extended,A043006A
+patch=1,EE,200B3928,extended,3C0201E7
+patch=1,EE,200B392C,extended,344279C0
+patch=1,EE,200B3930,extended,24030017
+patch=1,EE,200B3934,extended,08093534
+patch=1,EE,200B3938,extended,A0430004
+
+========================================================================
+Do not render reflection stuff
+
+51 00 02 3C    lui $v0, 0x51
+08 BF 42 34    ori $v0, $v0, 0xBF08       // gmpCurrentGameMode
+00 00 42 8C    lw  $v0, 0x0($v0)
+51 00 03 3C    lui $v1, 0x51
+60 AE 63 34    ori $v1, $v1, 0xAE60       // gCarViewerGameMode
+03 00 43 10    beq $v0, $v1, 0x10
+00 00 00 00    nop
+28 8B 08 08    j   0x222CA0               // CB3GraphicsManager::DistortEnvmapBuffersIntoSphereMap
+00 00 00 00    nop
+08 00 E0 03    jr $ra
+00 00 00 00    nop
+
+
+// Replace jal to CB3GraphicsManager::DistortEnvmapBuffersIntoSphereMap in CB3World::Render with our hook
+patch=0,EE,20276554,extended,0C02CE50
+
+patch=1,EE,200B3940,extended,3C020051
+patch=1,EE,200B3944,extended,3442BF08
+patch=1,EE,200B3948,extended,8C420000
+patch=1,EE,200B394C,extended,3C030051
+patch=1,EE,200B3950,extended,3463AE60
+patch=1,EE,200B3954,extended,10430003
+patch=1,EE,200B3958,extended,00000000
+patch=1,EE,200B395C,extended,08088B28
+patch=1,EE,200B3960,extended,00000000
+patch=1,EE,200B3964,extended,03E00008
+patch=1,EE,200B3968,extended,00000000

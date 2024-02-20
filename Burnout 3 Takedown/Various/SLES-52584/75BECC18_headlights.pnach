@@ -1,0 +1,14 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Headlights ON while using horn buttons (CIRCLE or R3 by default)
+author=Nehalem
+
+patch=0,EE,201C4924,extended,0C02CE5C
+patch=1,EE,D051BF20,extended,08110017
+patch=1,EE,200B3970,extended,8E440CC0
+patch=1,EE,200B3974,extended,824313FC
+patch=1,EE,200B3978,extended,30630008
+patch=1,EE,200B397C,extended,10600002
+patch=1,EE,200B3980,extended,0000182D
+patch=1,EE,200B3984,extended,24630004
+patch=1,EE,200B3988,extended,03E00008
+patch=1,EE,200B398C,extended,A0830058
