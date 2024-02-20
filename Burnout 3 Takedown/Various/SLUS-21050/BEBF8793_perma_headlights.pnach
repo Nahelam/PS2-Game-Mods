@@ -1,0 +1,7 @@
+gametitle=Burnout 3: Takedown [SLUS-21050] (U)
+comment=Turn on headlights for all race cars
+author=Nehalem
+
+patch=0,EE,201C4930,extended,8E430CC0
+patch=0,EE,201C4934,extended,24040004
+patch=0,EE,201C4940,extended,A0640058

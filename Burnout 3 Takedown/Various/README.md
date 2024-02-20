@@ -43,7 +43,8 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Disable vehicle sounds (makes driveable traffic mods on real hardware possible)\*
 - Turn back on the horn volume, press CIRCLE or R3 to honk (the functionality was always there, but the volume was turned off, see patch comments for button remapping)
 - Enable manual transmission (L2 downshift, R2 upshift, see patch comments for button remapping)\*
-- Turn on vehicle headlights while using horn buttons (CIRCLE or R3 by default)\* [\[demo\]](https://i.imgur.com/U87YRuD.mp4)
+- Turn on vehicle headlights while holding horn buttons (CIRCLE or R3 by default)\* [\[demo\]](https://i.imgur.com/U87YRuD.mp4)
+- Turn on all race cars headlights permanently\*
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 
