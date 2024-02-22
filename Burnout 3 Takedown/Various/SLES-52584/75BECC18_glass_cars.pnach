@@ -1,0 +1,6 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Glass cars (make all vehicles look ghostly)
+author=Nehalem
+
+patch=0,EE,2021FD14,extended,0000182D
+patch=0,EE,2021F95C,extended,0000182D

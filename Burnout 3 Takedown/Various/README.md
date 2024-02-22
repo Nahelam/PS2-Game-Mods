@@ -45,6 +45,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Enable manual transmission (L2 downshift, R2 upshift, see patch comments for button remapping)\*
 - Turn on vehicle headlights while holding horn buttons (CIRCLE or R3 by default)\* [\[demo\]](https://i.imgur.com/U87YRuD.mp4)
 - Turn on all race cars headlights permanently\*
+- Glass cars (make all vehicles look ghostly)\* [\[demo\]](https://i.imgur.com/LVm50S9.png)
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 
