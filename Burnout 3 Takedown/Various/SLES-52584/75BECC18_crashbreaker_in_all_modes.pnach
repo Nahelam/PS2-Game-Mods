@@ -1,0 +1,11 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Activatable Crashbreaker in all modes (R2)
+author=Nehalem
+
+patch=0,EE,201BB9A8,extended,00000000
+patch=0,EE,201BFC9C,extended,2C510001
+patch=0,EE,201BFCAC,extended,A2514586
+patch=0,EE,201BFCB0,extended,92450218
+
+// Uncomment for unlimited explosions (also affects crash mode)
+// patch=0,EE,201BB9F8,extended,00000000
