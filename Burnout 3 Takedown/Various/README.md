@@ -46,7 +46,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Turn on vehicle headlights while holding horn buttons (CIRCLE or R3 by default)\* [\[demo\]](https://i.imgur.com/U87YRuD.mp4)
 - Turn on all race cars headlights permanently\*
 - Glass cars (make all vehicles look ghostly)\* [\[demo\]](https://i.imgur.com/LVm50S9.png)
-- Activatable Crashbreaker in all modes (R2, see patch comments for unlimited mode)\* 
+- Activatable Crashbreaker in all modes (R2, see patch comments for unlimited mode)\* [\[demo\]](https://i.imgur.com/PzgJJgr.mp4)
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 
