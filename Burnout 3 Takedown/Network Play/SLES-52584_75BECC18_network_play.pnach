@@ -1,7 +1,7 @@
 gametitle=Burnout 3: Takedown (SLES-52584) [PAL]
 
 [Network\Network Play]
-author=Nehalem
+author=/dev/ghostline (DNAS, URL, Cert Validation), Nehalem (DirtySock IOP module patching and loading from the EE)
 description=Brings back network play by connecting to /dev/ghostline's server emulator
 
 // DNAS patch

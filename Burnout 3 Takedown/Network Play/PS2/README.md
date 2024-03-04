@@ -1,4 +1,4 @@
-# Network Play (PS2)
+# Network Play (PS2 attempt, might not work)
 
 PS2 version, requires a different Master Code than usual.
 

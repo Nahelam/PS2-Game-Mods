@@ -1,7 +1,7 @@
 gametitle=Burnout 3: Takedown (SLKA-25206) [NTSC-J]
 
 [Network\Network Play]
-author=Nehalem
+author=/dev/ghostline (DNAS, URL, Cert Validation), Nehalem (DirtySock IOP module patching and loading from the EE)
 description=Brings back network play by connecting to /dev/ghostline's server emulator
 
 // DNAS patch
@@ -107,7 +107,7 @@ patch=1,EE,200B3628,extended,1000FFCF
 patch=1,EE,200B362C,extended,2410FFFF
 
 [Network\Disable UPnP]
-author=Nehalem
+author=/dev/ghostline, Nehalem
 description=Prevent the game to use UPnP
 
 patch=0,EE,204BB248,extended,00230910
