@@ -20,7 +20,7 @@ Online Co-Driver Voice
 
 ### 50 FPS
 
-This patch keeps the game running at 50 FPS while playing online.
+This patch keeps the game running at 50 FPS (instead of 25) while playing online.
 
 PS2 version (raw):
 
