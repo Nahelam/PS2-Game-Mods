@@ -1,0 +1,9 @@
+gametitle=Colin McRae Rally 2005 (SLES-52636) [PAL]
+
+[50 FPS Online]
+author=Nehalem
+description=Keep the game running at 50 FPS while playing online
+
+patch=0,EE,201688CC,extended,10000003
+patch=0,EE,20230448,extended,10000008
+patch=0,EE,20233918,extended,10000006

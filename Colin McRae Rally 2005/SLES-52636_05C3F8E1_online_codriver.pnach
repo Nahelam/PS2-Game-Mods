@@ -1,0 +1,8 @@
+gametitle=Colin McRae Rally 2005 (SLES-52636) [PAL]
+
+[Online Co-Driver Voice]
+author=Nehalem
+description=Enable the co-driver voice while playing online
+
+patch=0,EE,20110960,extended,00000000
+patch=0,EE,201688CC,extended,10000003
