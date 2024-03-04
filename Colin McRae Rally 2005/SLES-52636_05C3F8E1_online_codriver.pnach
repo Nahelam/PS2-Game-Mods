@@ -5,3 +5,4 @@ author=Nehalem
 description=Enable the co-driver voice while playing online
 
 patch=0,EE,20110960,extended,00000000
+patch=0,EE,202ACEA4,extended,00000000

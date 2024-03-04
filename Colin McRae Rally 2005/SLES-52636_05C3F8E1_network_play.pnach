@@ -1,0 +1,31 @@
+gametitle=Colin McRae Rally 2005 (SLES-52636) [PAL]
+
+[Network Play]
+author=Unknown, Nehalem
+description=DNAS bypass and GameSpy URLs replacement
+
+// DNAS bypass
+patch=1,EE,D186CA06,extended,000003E0
+patch=1,EE,1186C9C2,extended,0000AC80
+patch=1,EE,D186CA06,extended,000003E0
+patch=1,EE,0186C9C8,extended,00000000
+patch=1,EE,D186CA06,extended,000003E0
+patch=1,EE,2186C9DC,extended,ACE00004
+patch=1,EE,D186CA06,extended,000003E0
+patch=1,EE,2186CA08,extended,03E00008
+patch=1,EE,D186CA06,extended,000003E0
+patch=1,EE,1186CA0E,extended,0000ACC3
+patch=1,EE,D186CA06,extended,000003E0
+patch=1,EE,2186CA04,extended,34030005
+
+// URLs replacement
+patch=0,EE,2046B6AA,extended,6E65706F
+patch=0,EE,2046B6B1,extended,74656E2E
+patch=0,EE,2046BBA8,extended,6E65706F
+patch=0,EE,2046BBAF,extended,74656E2E
+patch=0,EE,2046BC58,extended,6E65706F
+patch=0,EE,2046BC5F,extended,74656E2E
+patch=0,EE,2046BC70,extended,6E65706F
+patch=0,EE,2046BC77,extended,74656E2E
+patch=0,EE,2046CACD,extended,6E65706F
+patch=0,EE,2046CAD4,extended,74656E2E

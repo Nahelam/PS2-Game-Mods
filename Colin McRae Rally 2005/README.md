@@ -2,6 +2,10 @@
 
 ## Online Mode Patches
 
+### PCSX2 Network Play
+
+The Network Play pnach file contains the required patches for playing online with PCSX2.
+
 ### Co-Driver Voice
 
 This patch allows your co-driver to be heard while playing online.
@@ -11,6 +15,7 @@ PS2 version (raw):
 ```
 Online Co-Driver Voice
 20110960 00000000
+202ACEA4 00000000
 ```
 
 ### 50 FPS
