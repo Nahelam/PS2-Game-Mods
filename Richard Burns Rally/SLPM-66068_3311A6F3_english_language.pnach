@@ -1,0 +1,9 @@
+gametitle=Richard Burns Rally (SLPM-66068) [NTSC-J]
+
+[English Language]
+author=Nehalem
+description=Force the game to use English instead of Japanese
+
+patch=0,EE,20388C80,extended,474E452E
+patch=0,EE,203CC8D0,extended,474E4500
+patch=0,EE,203CCE20,extended,676E652E
