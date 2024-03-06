@@ -4,7 +4,7 @@
 
 ### Force English (NTSC-J)
 
-The English language seems to be fully supported in the Japanese version of the game which contains an exclusive "Arcade Mode".
+The English language seems to be fully supported in the Japanese version of the game which contains an exclusive "Arcade Mode".\
 This patch will force the game to use the English language.
 
 PS2 version (raw):
