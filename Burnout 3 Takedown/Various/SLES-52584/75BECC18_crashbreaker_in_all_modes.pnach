@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLES-52584] (E)
-comment=Activatable Crashbreaker in all modes (R2)
+comment=Activatable Crash Breaker in all modes (R2)
 author=Nehalem
 
 patch=0,EE,201BB9A8,extended,00000000
