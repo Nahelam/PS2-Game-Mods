@@ -13,7 +13,7 @@ I took the expansion to the next level by adding the following features:
 
 ## PS2 Version
 
-PS2 raw codes can be found in the [PS2](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Crash%20Breaker%20Expansion/PS2) folder.
+These patches are too big to be used on PS2 cheat engines. I might work on a workdaround someday.
 
 ## Notes
 
