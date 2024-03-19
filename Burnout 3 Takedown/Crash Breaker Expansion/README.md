@@ -13,7 +13,7 @@ I took the expansion to the next level by adding the following features:
 
 ## PS2 Version
 
-These patches are too big to be used on PS2 cheat engines. I might work on a workdaround someday.
+These patches are too big to be used on PS2 cheat engines. I might work on a workaround someday.
 
 ## Notes
 
