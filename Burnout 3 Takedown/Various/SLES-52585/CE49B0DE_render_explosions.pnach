@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLES-52585] (E)
+comment=Render other race cars explosions while driving
+author=Nehalem
+
+patch=0,EE,20261EC8,extended,24040001
