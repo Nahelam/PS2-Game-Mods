@@ -1,23 +1,10 @@
 # Network Play (PS2 attempt, might not work)
 
-PS2 version, requires a different Master Code than usual.
+## Mastercode
 
-## Master Codes
+PS2 version should work using the following Mastercode:
 
-#### SLES-52585
 ```
-// Master Code
-902271E0 0C07880A
-```
-
-#### SLES-52584
-```
-// Master Code
-902271D0 0C078806
-```
-
-#### SLUS-21050
-```
-// Master Code
-902271E0 0C07880A
+// Mastercode
+9010E630 0C043934
 ```
