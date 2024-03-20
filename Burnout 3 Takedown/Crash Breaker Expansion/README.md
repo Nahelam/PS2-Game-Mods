@@ -8,12 +8,12 @@ I already made a [patch expanding it](https://github.com/Nahelam/PS2-Game-Mods/b
 
 I took the expansion to the next level by adding the following features: 
 - AI and other players are now affected by the explosion
-- Crashbreakered race cars are registered as aftertouch takedowns
-- HUD prompt while crashing (including split screen mode)
+- Crash Breakered race cars are registered as Aftertouch Takedowns
+- Crash Breaker HUD prompt while crashing (including split screen mode)
 
 ## PS2 Version
 
-These patches are too big to be used on PS2 cheat engines. I might work on a workaround someday.
+These patches are too big to be used on PS2 cheat engines. I'll try to find a workaround.
 
 ## Notes
 
