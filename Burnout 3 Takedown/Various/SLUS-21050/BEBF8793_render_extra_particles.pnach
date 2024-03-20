@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLUS-21050] (U)
-comment=Render other vehicles explosions while driving
+comment=Render extra particles while driving
 author=Nehalem
 
 patch=0,EE,20261EB8,extended,24040001

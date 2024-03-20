@@ -17,7 +17,7 @@ These patches are too big to be used on PS2 cheat engines. I'll try to find a wo
 
 ## Notes
 
-- If you want to be able to see other vehicles explosion effects **while driving**, you can use the "render explosions" patch available [here](<https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Various>).
+- If you want to be able to see other vehicles explosion effects **while driving**, you can use the "extra particles" patch available [here](<https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Various>).
 - If you were using my previous Crash Breaker patch, make sure to remove it before using this one.
 
 ## Demo
