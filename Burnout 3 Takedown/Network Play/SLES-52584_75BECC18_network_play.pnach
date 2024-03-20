@@ -13,7 +13,7 @@ patch=0,EE,204C73F4,extended,6F2E7672
 patch=0,EE,204C73F8,extended,00006772
 
 // jal to stub in CB3Game::PrepareHardware
-patch=0,EE,201D44FC,extended,0C02CD34
+patch=0,EE,201D44EC,extended,0C02CD34
 
 // DirtySock IOP module patching stub
 patch=1,EE,D051C041,extended,58010000
