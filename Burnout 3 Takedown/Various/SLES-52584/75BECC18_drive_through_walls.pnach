@@ -1,0 +1,5 @@
+gametitle=Burnout 3: Takedown [SLES-52584] (E)
+comment=Drive through walls and barriers (also affects AI)
+author=Nehalem
+
+patch=0,EE,001C5476,extended,00000000

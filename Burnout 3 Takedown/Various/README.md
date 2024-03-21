@@ -48,6 +48,7 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Glass cars (make all vehicles look ghostly)\* [\[demo\]](https://i.imgur.com/LVm50S9.png)
 - Activatable Crash Breaker in all modes (R2, see patch comments for unlimited mode)\* [\[demo\]](https://i.imgur.com/PzgJJgr.mp4)
 - Render extra particles while driving\*
+- Drive through walls and barriers (also affects AI)\* [\[demo\]](https://i.imgur.com/peiNZ08.mp4)
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 
