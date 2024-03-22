@@ -1,7 +1,9 @@
 # Crazy AI Physics
 
 While looking into collision stuff I tried to make the game think that all race cars wheels were always on groud. It completely messed-up physics in a funny way thus I decided to make a patch out of it.
-I excluded player cars from this physics madness because it was unplayable (although I had a nice [sparkles trip](https://i.imgur.com/rjRHgY9.mp4))
+
+I excluded player cars from this physics madness because it was unplayable (although I had a nice [sparkles trip](https://i.imgur.com/rjRHgY9.mp4)).
+
 I also reduced the gravity of the AI cars while they are driving to make them act crazy more often.
 
 ## Variants
