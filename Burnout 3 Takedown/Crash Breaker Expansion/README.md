@@ -11,10 +11,6 @@ I took the expansion to the next level by adding the following features:
 - Crash Breakered race cars are registered as Aftertouch Takedowns
 - Crash Breaker HUD prompt while crashing (including split screen mode)
 
-## PS2 Version
-
-These patches are too big to be used on PS2 cheat engines. I'll try to find a workaround.
-
 ## Notes
 
 - If you want to be able to see other vehicles explosion effects **while driving**, you can use the "extra particles" patch available [here](<https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Various>).
