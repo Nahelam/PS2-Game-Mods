@@ -21,6 +21,7 @@ Only a few patches are available for the moment, **SLUS-21242** only.
   - Total time version (no reset between laps)
 - Race events lap modifier
 - Disable HUD
+- Turn multiplayer mode into single event mode (WIP)
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
