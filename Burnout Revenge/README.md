@@ -22,7 +22,8 @@ Only a few patches are available for the moment, **SLUS-21242** only.
 - Race events lap modifier
 - Disable HUD
 - Turn multiplayer mode into single event mode (WIP)
-- APT debug print to PCSX2 logs
+- [APT debug print to PCSX2 logs](https://github.com/Nahelam/PS2-Game-Mods/assets/128867759/182b704b-1a1a-4a4f-a665-8bbf31ba9799)
+    - Restored an APT debug print function, it was given args but doing nothing with it. I used scePrintf to print in the PCSX2 logs.
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
