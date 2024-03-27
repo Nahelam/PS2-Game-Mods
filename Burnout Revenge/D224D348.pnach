@@ -47,3 +47,13 @@ patch=1,EE,200B4134,extended,24020004 // 2402XXXX change XXXX to the lap number 
 
 // Disable HUD
 patch=0,EE,0016BA56,extended,00000000
+
+// APT debug print to PCSX2 logs
+patch=0,EE,2017E064,extended,00A0202D
+patch=0,EE,2017E068,extended,00C0282D
+patch=0,EE,2017E06C,extended,00E0302D
+patch=0,EE,2017E070,extended,0100382D
+patch=0,EE,2017E074,extended,0120402D
+patch=0,EE,2017E078,extended,0140482D
+patch=0,EE,2017E07C,extended,0160502D
+patch=0,EE,2017E090,extended,081125A8
