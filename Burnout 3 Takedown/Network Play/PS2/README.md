@@ -2,7 +2,7 @@
 
 ## Mastercode
 
-PS2 version should work using the following Mastercode:
+PS2 version must be used with the following Mastercode:
 
 ```
 Mastercode
