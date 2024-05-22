@@ -90,3 +90,5 @@ patch=0,EE,001264AA,extended,00000071
 patch=0,EE,001264AE,extended,00000051
 patch=0,EE,2049E7DC,extended,00115560
 patch=0,EE,2016AFBC,extended,00000000
+patch=0,EE,001826E2,extended,00000046
+patch=0,EE,201826DC,extended,00000000
