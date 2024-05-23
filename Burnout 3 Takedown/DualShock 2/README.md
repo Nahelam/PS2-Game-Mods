@@ -2,10 +2,10 @@
 
 ## Lowering DS2 pressure sensitive buttons active zone threshold
 
-Lower the amount of pressure required by pressure sensitive buttons to *0.15* (doesn't affect triggers/analog)
+Lower the amount of pressure required by pressure sensitive buttons to `0.15` (doesn't affect triggers/analog)
 
-- The default active zone threshold is set to *0.9*
-- The default dead zone threshold is set to *0.1*
+- The default active zone threshold is set to `0.9`
+- The default dead zone threshold is set to `0.1`
 
 Use the patch corresponding to your game region:
 
