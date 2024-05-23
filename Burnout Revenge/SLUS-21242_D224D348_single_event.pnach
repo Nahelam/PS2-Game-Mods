@@ -1,8 +1,8 @@
 gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C]
 
-[Multiplayer to Single Event (WIP)]
+[Multiplayer to Single Event (WIP)\Enable]
 author=Nehalem
-description=Turn multiplayer mode into single event mode
+description=Turn multiplayer mode into single event mode (also, Crash Party -> Burning Lap & Crash Tour -> Eliminator)
 
 patch=0,EE,0019B2C4,extended,00000001
 patch=0,EE,0019A598,extended,00000001
@@ -88,7 +88,22 @@ patch=0,EE,204B8EA0,extended,0019B5AC
 patch=0,EE,001264A2,extended,00000060
 patch=0,EE,001264AA,extended,00000071
 patch=0,EE,001264AE,extended,00000051
+
+[Multiplayer to Single Event (WIP)\Disable Road Rage timer]
+author=Nehalem
+description=Unlimited time & no timer on the HUD in Road Rage mode
+
 patch=0,EE,2049E7DC,extended,00115560
 patch=0,EE,2016AFBC,extended,00000000
+
+[Multiplayer to Single Event (WIP)\Enable Burning Lap Oncoming]
+author=Nehalem
+description=Burning Lap style boost rewarding while driving in oncoming traffic (only useful when leaving traffic disabled)
+
 patch=0,EE,001826E2,extended,00000046
+
+[Multiplayer to Single Event (WIP)\Enable Burning Lap traffic]
+author=Nehalem
+description=Enable traffic in Burning Lap mode
+
 patch=0,EE,201826DC,extended,00000000
