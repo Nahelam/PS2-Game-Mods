@@ -1,8 +1,8 @@
 # DualShock 2 PS2 stuff
 
-## Reducing threshold
+## Reducing the threshold
 
-Reduce the pressure amount threshold required for buttons activation to `0.15` (doesn't affect triggers/analog)
+Reduce the pressure threshold required for buttons activation to `0.15` (doesn't affect triggers/analog)
 
 - The default active zone threshold is set to `0.9`
 - The default dead zone threshold is set to `0.1`
