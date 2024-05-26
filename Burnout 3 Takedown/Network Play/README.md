@@ -18,4 +18,4 @@ If you want to prevent the game from using UPnP, check "Disable UPnP".
 
 ## Disable Buddy System
 
-Preventing the game from connecting to the buddy server improves the connection quality between players, it should completely eliminate timeout issues.
+Preventing the game from connecting to the buddy server improves the connection quality between players, it should completely eliminate game start timeouts.
