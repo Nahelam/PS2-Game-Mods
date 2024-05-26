@@ -108,6 +108,19 @@ patch=1,EE,200B362C,extended,2410FFFF
 
 [Network\Disable UPnP]
 author=Nehalem
-description=Prevent the game to use UPnP
+description=Prevent the game from using UPnP
 
 patch=0,EE,204BAEE8,extended,00230AB0
+
+[Network\Disable Buddy System]
+author=Nehalem
+description=Prevent the game from connecting to the buddy server
+
+patch=0,EE,203609D4,extended,00000000
+patch=0,EE,10341166,extended,00001000
+patch=0,EE,203606E0,extended,03E00008
+patch=0,EE,203606E4,extended,00000000
+patch=0,EE,204197F8,extended,03E00008
+patch=0,EE,204197FC,extended,0000102D
+patch=0,EE,204196E8,extended,03E00008
+patch=0,EE,204196EC,extended,0000102D
