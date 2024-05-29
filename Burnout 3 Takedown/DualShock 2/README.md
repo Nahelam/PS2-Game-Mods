@@ -4,7 +4,7 @@ Only use one of the following at once.
 
 ## Disable buttons analog
 
-This cheat disables the analog feature of the buttons, no more pressure sensitivity for them.
+This cheat disables the analog feature of the buttons, no more pressure sensitivity checks.
 
 ### SLES-52585 & SLUS-21050
 ```
