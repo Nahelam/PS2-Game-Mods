@@ -57,3 +57,4 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - "Rivals number in road rage options" is also included in "Select rivals cars in garage".
 - **DO NOT** use "Enable lap timer in race mode" and "Enable lap timer in road rage mode" together.
 - Disable the takedown camera if you don't want the game to bring you back car controls while using the AI controlled patch
+- A more complete version of the Crash Breaker patch can be found on the [Crash Breaker Expansion](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Crash%20Breaker%20Expansion) page. 
