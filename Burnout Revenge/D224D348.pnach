@@ -65,3 +65,6 @@ patch=1,EE,00517800,extended,00000001
 patch=1,EE,D04F341C,extended,0200FFBB
 patch=1,EE,205177D0,extended,00000200
 patch=1,EE,00517800,extended,00000009
+
+// Disable "Press R1 to boost" HUD hint
+patch=0,EE,1016D39E,extended,00001000
