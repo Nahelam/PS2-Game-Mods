@@ -1,0 +1,12 @@
+gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C]
+
+[Free Camera]
+author=Nehalem
+description=Toggleable free camera (R3+UP enable, R3+DOWN disable)
+
+patch=1,EE,D04F341C,extended,0200FFEB
+patch=1,EE,205177D0,extended,00000002
+patch=1,EE,00517800,extended,00000001
+patch=1,EE,D04F341C,extended,0200FFBB
+patch=1,EE,205177D0,extended,00000200
+patch=1,EE,00517800,extended,00000009
