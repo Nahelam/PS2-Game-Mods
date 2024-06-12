@@ -1,6 +1,6 @@
 gametitle=Burnout Dominator (SLUS-21596) [NTSC-U/C]
 
-[Free Camera]
+[Free camera]
 author=Nehalem
 description=Toggleable free camera (R3+UP enable, R3+DOWN disable)
 
@@ -10,3 +10,9 @@ patch=1,EE,004BC910,extended,00000001
 patch=1,EE,D049165C,extended,0200FFBB
 patch=1,EE,204BC8E0,extended,00000200
 patch=1,EE,004BC910,extended,00000009
+
+[Render traffic lanes]
+author=Nehalem
+description=Enable debug rendering of traffic lanes
+
+patch=0,EE,20219DD8,extended,00000000
