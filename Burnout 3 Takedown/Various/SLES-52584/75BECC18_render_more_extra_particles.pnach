@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLES-52584] (E)
-comment=Render extra particles while driving
+comment=Render more extra particles while driving (explosions, smoke, etc.)
 author=Nehalem
 
 patch=0,EE,20261EB8,extended,24040001

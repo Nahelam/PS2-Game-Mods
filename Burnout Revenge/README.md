@@ -25,6 +25,7 @@ Various cheats/patches/mods I made/ported for **Burnout Revenge**.
     - Restored an APT debug print function, it was given args but doing nothing with it. I used scePrintf to print in the PCSX2 logs.
 - Toggleable free camera (R3+UP enable, R3+DOWN disable)
 - Disable "Press R1 to boost" HUD hint
+- Render all extra particles while driving
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu

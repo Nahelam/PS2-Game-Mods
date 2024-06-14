@@ -60,3 +60,6 @@ patch=0,EE,2017E090,extended,081125A8
 
 // Disable "Press R1 to boost" HUD hint
 patch=0,EE,1016D39E,extended,00001000
+
+// Render all extra particles while driving
+patch=0,EE,202B5334,extended,24030001
