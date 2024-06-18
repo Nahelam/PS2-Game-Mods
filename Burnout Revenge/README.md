@@ -26,6 +26,8 @@ Various cheats/patches/mods I made/ported for **Burnout Revenge**.
 - Toggleable free camera (R3+UP enable, R3+DOWN disable)
 - Disable "Press R1 to boost" HUD hint
 - Render all extra particles while driving
+- Toggleable gameplay (R2+DPAD UP enable, R2+DPAD DOWN disable)
+- Toggleable gameplay & HUD (R2+DPAD UP enable, R2+DPAD DOWN disable)
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
