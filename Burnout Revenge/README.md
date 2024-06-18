@@ -24,6 +24,7 @@ Various cheats/patches/mods I made/ported for **Burnout Revenge**.
 - [APT debug print to PCSX2 logs](https://github.com/Nahelam/PS2-Game-Mods/assets/128867759/182b704b-1a1a-4a4f-a665-8bbf31ba9799)
     - Restored an APT debug print function, it was given args but doing nothing with it. I used scePrintf to print in the PCSX2 logs.
 - Toggleable free camera (R3+UP enable, R3+DOWN disable)
+- Toggleable free camera & HUD (R3+UP enable, R3+DOWN disable)
 - Disable "Press R1 to boost" HUD hint
 - Render all extra particles while driving
 - Toggleable gameplay (R2+DPAD UP enable, R2+DPAD DOWN disable)
