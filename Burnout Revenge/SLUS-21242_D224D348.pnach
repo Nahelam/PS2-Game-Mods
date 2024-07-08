@@ -410,7 +410,7 @@ author=Nehalem
 description=Enable traffic in Burning Lap mode
 patch=0,EE,201826DC,extended,00000000
 
-[Falling car parts while driving]
+[Falling car parts while driving (takedowns & traffic checks)]
 author=Nehalem
 description=Enable falling car parts during takedowns and traffic checks while driving
 patch=0,EE,20210FA8,extended,00000000
