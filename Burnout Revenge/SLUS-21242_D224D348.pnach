@@ -1,0 +1,416 @@
+gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C]
+
+[Native widescreen]
+author=Nehalem
+description=Force native widescreen mode
+patch=0,EE,004693D4,extended,00000001
+patch=0,EE,204693D8,extended,00000001
+
+[Ask for 480p]
+author=Nehalem
+description=Always ask for progressive scan
+patch=0,EE,2019778C,extended,10A2001C
+
+[Debug menu (go to extras)]
+author=Nehalem
+description=Replace extras menu with debug menu
+patch=0,EE,1049FCA4,extended,00002248
+
+[MPH -> KPH]
+author=Nehalem
+description=Speedometer HUD unit patch
+patch=0,EE,201765E8,extended,0000102D
+patch=0,EE,201767DC,extended,0000102D
+
+[Burning LapS]
+author=Nehalem
+description=No lap limit in Burning Lap mode
+patch=0,EE,101258CC,extended,0000FFFF
+patch=0,EE,1012564E,extended,00001000
+
+[No camera speed shake]
+author=Nehalem
+description=Disable camera speed shake
+patch=0,EE,2027EBF0,extended,03E00008
+
+[Crash mode vehicles always available]
+author=Nehalem
+description=Selectable crash vehicles in all modes
+patch=0,EE,20135A30,extended,00000000
+
+[Solonline]
+author=Nehalem
+description=Allow online games to be started even you're the only player in the lobby
+patch=0,EE,2019E7B0,extended,00000000
+patch=0,EE,201D5318,extended,00000000
+
+[Driving air control]
+author=Nehalem
+description=Enables aftertouch air control in offline modes
+patch=0,EE,2020A4FC,extended,0004B02D
+patch=0,EE,2020A514,extended,00000000
+
+[No rating HUD]
+author=Nehalem
+description=Disable rating HUD display
+patch=0,EE,1016B8B2,extended,00001000
+
+[No game mode HUD]
+author=Nehalem
+description=Disable game mode HUD display
+patch=0,EE,201694F8,extended,03E00008
+
+[Race mode lap modifier]
+author=Nehalem
+description=Choose your own lap limit for race mode (see patch comment)
+patch=0,EE,2049B75C,extended,000B4130
+patch=1,EE,200B4130,extended,03E00008
+patch=1,EE,200B4134,extended,24020004 // 2402XXXX change XXXX to the lap number of your choice (hexadecimal)
+
+[Race mode timer\Each lap]
+author=Nehalem
+description=Enable timer in race mode, each lap version (with display freezing 5 seconds on new lap)
+patch=0,EE,2016AE18,extended,100000A1
+patch=0,EE,20163610,extended,0C02D008
+patch=0,EE,20163654,extended,0C02D02C
+patch=0,EE,2016383C,extended,0C02D014
+patch=0,EE,20163890,extended,0C02D020
+patch=1,EE,200B4000,extended,8E220000
+patch=1,EE,200B4004,extended,8C4205D8
+patch=1,EE,200B4008,extended,03E00008
+patch=1,EE,200B400C,extended,2C420002
+patch=1,EE,200B4010,extended,3C014270
+patch=1,EE,200B4014,extended,44810800
+patch=1,EE,200B4018,extended,03E00008
+patch=1,EE,200B401C,extended,46010000
+patch=1,EE,200B4020,extended,27BDFFF0
+patch=1,EE,200B4024,extended,FFBF0000
+patch=1,EE,200B4028,extended,0C02D000
+patch=1,EE,200B402C,extended,24030001
+patch=1,EE,200B4030,extended,14430004
+patch=1,EE,200B4034,extended,00000000
+patch=1,EE,200B4038,extended,0C02D004
+patch=1,EE,200B403C,extended,00000000
+patch=1,EE,200B4040,extended,E7A00014
+patch=1,EE,200B4044,extended,DFBF0000
+patch=1,EE,200B4048,extended,03E00008
+patch=1,EE,200B404C,extended,27BD0010
+patch=1,EE,200B4050,extended,27BDFFF0
+patch=1,EE,200B4054,extended,FFBF0000
+patch=1,EE,200B4058,extended,0C02D000
+patch=1,EE,200B405C,extended,24030001
+patch=1,EE,200B4060,extended,14430004
+patch=1,EE,200B4064,extended,00000000
+patch=1,EE,200B4068,extended,0C02D004
+patch=1,EE,200B406C,extended,00000000
+patch=1,EE,200B4070,extended,E7A00044
+patch=1,EE,200B4074,extended,DFBF0000
+patch=1,EE,200B4078,extended,0805DB04
+patch=1,EE,200B407C,extended,27BD0010
+patch=1,EE,200B4080,extended,27BDFFF0
+patch=1,EE,200B4084,extended,FFBF0000
+patch=1,EE,200B4088,extended,0C02D000
+patch=1,EE,200B408C,extended,24030001
+patch=1,EE,200B4090,extended,14430004
+patch=1,EE,200B4094,extended,00000000
+patch=1,EE,200B4098,extended,0C02D004
+patch=1,EE,200B409C,extended,4600B006
+patch=1,EE,200B40A0,extended,E7A00044
+patch=1,EE,200B40A4,extended,DFBF0000
+patch=1,EE,200B40A8,extended,0805DB04
+patch=1,EE,200B40AC,extended,27BD0010
+patch=1,EE,200B40B0,extended,27BDFFF0
+patch=1,EE,200B40B4,extended,FFBF0000
+patch=1,EE,200B40B8,extended,0C02D000
+patch=1,EE,200B40BC,extended,24030001
+patch=1,EE,200B40C0,extended,14430004
+patch=1,EE,200B40C4,extended,00000000
+patch=1,EE,200B40C8,extended,0C02D004
+patch=1,EE,200B40CC,extended,44800000
+patch=1,EE,200B40D0,extended,E7A00014
+patch=1,EE,200B40D4,extended,DFBF0000
+patch=1,EE,200B40D8,extended,0805D7D8
+patch=1,EE,200B40DC,extended,27BD0010
+patch=0,EE,202C7DA4,extended,E62100A8
+patch=0,EE,2049B714,extended,000B40E0
+patch=1,EE,200B40E0,extended,3C0201EE
+patch=1,EE,200B40E4,extended,8C43A564
+patch=1,EE,200B40E8,extended,18600009
+patch=1,EE,200B40EC,extended,C440A5E8
+patch=1,EE,200B40F0,extended,3C0140A0
+patch=1,EE,200B40F4,extended,44811000
+patch=1,EE,200B40F8,extended,00000000
+patch=1,EE,200B40FC,extended,46020034
+patch=1,EE,200B4100,extended,00000000
+patch=1,EE,200B4104,extended,45000002
+patch=1,EE,200B4108,extended,00000000
+patch=1,EE,200B410C,extended,C440A5F8
+patch=1,EE,200B4110,extended,03E00008
+patch=1,EE,200B4114,extended,00000000
+
+[Race mode timer\Total time]
+author=Nehalem
+description=Enable timer in race mode, total time version (no reset between laps)
+patch=0,EE,2016AE18,extended,100000A1
+patch=0,EE,20163610,extended,0C02D008
+patch=0,EE,20163654,extended,0C02D02C
+patch=0,EE,2016383C,extended,0C02D014
+patch=0,EE,20163890,extended,0C02D020
+patch=1,EE,200B4000,extended,8E220000
+patch=1,EE,200B4004,extended,8C4205D8
+patch=1,EE,200B4008,extended,03E00008
+patch=1,EE,200B400C,extended,2C420002
+patch=1,EE,200B4010,extended,3C014270
+patch=1,EE,200B4014,extended,44810800
+patch=1,EE,200B4018,extended,03E00008
+patch=1,EE,200B401C,extended,46010000
+patch=1,EE,200B4020,extended,27BDFFF0
+patch=1,EE,200B4024,extended,FFBF0000
+patch=1,EE,200B4028,extended,0C02D000
+patch=1,EE,200B402C,extended,24030001
+patch=1,EE,200B4030,extended,14430004
+patch=1,EE,200B4034,extended,00000000
+patch=1,EE,200B4038,extended,0C02D004
+patch=1,EE,200B403C,extended,00000000
+patch=1,EE,200B4040,extended,E7A00014
+patch=1,EE,200B4044,extended,DFBF0000
+patch=1,EE,200B4048,extended,03E00008
+patch=1,EE,200B404C,extended,27BD0010
+patch=1,EE,200B4050,extended,27BDFFF0
+patch=1,EE,200B4054,extended,FFBF0000
+patch=1,EE,200B4058,extended,0C02D000
+patch=1,EE,200B405C,extended,24030001
+patch=1,EE,200B4060,extended,14430004
+patch=1,EE,200B4064,extended,00000000
+patch=1,EE,200B4068,extended,0C02D004
+patch=1,EE,200B406C,extended,00000000
+patch=1,EE,200B4070,extended,E7A00044
+patch=1,EE,200B4074,extended,DFBF0000
+patch=1,EE,200B4078,extended,0805DB04
+patch=1,EE,200B407C,extended,27BD0010
+patch=1,EE,200B4080,extended,27BDFFF0
+patch=1,EE,200B4084,extended,FFBF0000
+patch=1,EE,200B4088,extended,0C02D000
+patch=1,EE,200B408C,extended,24030001
+patch=1,EE,200B4090,extended,14430004
+patch=1,EE,200B4094,extended,00000000
+patch=1,EE,200B4098,extended,0C02D004
+patch=1,EE,200B409C,extended,4600B006
+patch=1,EE,200B40A0,extended,E7A00044
+patch=1,EE,200B40A4,extended,DFBF0000
+patch=1,EE,200B40A8,extended,0805DB04
+patch=1,EE,200B40AC,extended,27BD0010
+patch=1,EE,200B40B0,extended,27BDFFF0
+patch=1,EE,200B40B4,extended,FFBF0000
+patch=1,EE,200B40B8,extended,0C02D000
+patch=1,EE,200B40BC,extended,24030001
+patch=1,EE,200B40C0,extended,14430004
+patch=1,EE,200B40C4,extended,00000000
+patch=1,EE,200B40C8,extended,0C02D004
+patch=1,EE,200B40CC,extended,44800000
+patch=1,EE,200B40D0,extended,E7A00014
+patch=1,EE,200B40D4,extended,DFBF0000
+patch=1,EE,200B40D8,extended,0805D7D8
+patch=1,EE,200B40DC,extended,27BD0010
+patch=0,EE,2049B714,extended,000B40E0
+patch=1,EE,200B40E0,extended,3C0201EE
+patch=1,EE,200B40E4,extended,03E00008
+patch=1,EE,200B40E8,extended,C440A55C
+
+[No HUD]
+author=Nehalem
+description=Completely turn off the HUD display
+patch=0,EE,0016BA56,extended,00000000
+
+[APT debug logging]
+author=Nehalem
+description=Redirect some APT debug logs to PCSX2 logs
+patch=0,EE,2017E064,extended,00A0202D
+patch=0,EE,2017E068,extended,00C0282D
+patch=0,EE,2017E06C,extended,00E0302D
+patch=0,EE,2017E070,extended,0100382D
+patch=0,EE,2017E074,extended,0120402D
+patch=0,EE,2017E078,extended,0140482D
+patch=0,EE,2017E07C,extended,0160502D
+patch=0,EE,2017E090,extended,081125A8
+
+[No boost HUD hint]
+author=Nehalem
+description=Disable "Press R1 to boost" HUD hint
+patch=0,EE,1016D39E,extended,00001000
+
+[Extra particles while driving]
+author=Nehalem
+description=Render all extra particles while driving
+patch=0,EE,202B5334,extended,24030001
+
+[Free camera\Basic]
+author=Nehalem
+description=Toggleable free camera (R3+UP enable, R3+DOWN disable)
+patch=1,EE,D04F341C,extended,0200FFEB
+patch=1,EE,205177D0,extended,00000002
+patch=1,EE,00517800,extended,00000001
+patch=1,EE,D04F341C,extended,0200FFBB
+patch=1,EE,205177D0,extended,00000200
+patch=1,EE,00517800,extended,00000009
+
+[Free camera\No HUD]
+author=Nehalem
+description=Toggleable free camera & HUD (R3+UP enable, R3+DOWN disable)
+patch=1,EE,D04F341C,extended,0300FFEB
+patch=1,EE,205177D0,extended,00000002
+patch=1,EE,00517800,extended,00000001
+patch=1,EE,01BFE7BB,extended,00000000
+patch=1,EE,D04F341C,extended,0300FFBB
+patch=1,EE,205177D0,extended,00000200
+patch=1,EE,00517800,extended,00000009
+patch=1,EE,01BFE7BB,extended,00000001
+
+[Pause gameplay\Basic]
+author=Nehalem
+description=Toggleable gameplay (R2+DPAD UP enable, R2+DPAD DOWN disable)
+patch=1,EE,D04F341C,extended,0000FDEF
+patch=1,EE,004F01C0,extended,00000000
+patch=1,EE,D04F341C,extended,0000FDBF
+patch=1,EE,004F01C0,extended,00000001
+
+[Pause gameplay\No HUD]
+author=Nehalem
+description=Toggleable gameplay & HUD (R2+DPAD UP enable, R2+DPAD DOWN disable)
+patch=1,EE,D04F341C,extended,0200FDEF
+patch=1,EE,004F01C0,extended,00000000
+patch=1,EE,01BFE7BB,extended,00000000
+patch=1,EE,D04F341C,extended,0200FDBF
+patch=1,EE,004F01C0,extended,00000001
+patch=1,EE,01BFE7BB,extended,00000001
+
+[Multiplayer to Single Event (WIP)\Enable]
+author=Nehalem
+description=Turn multiplayer mode into single event mode (also, Crash Party -> Burning Lap & Crash Tour -> Eliminator)
+patch=0,EE,0019B2C4,extended,00000001
+patch=0,EE,0019A598,extended,00000001
+patch=0,EE,2019B81C,extended,08066DD5
+patch=0,EE,2019B820,extended,27BD0020
+patch=0,EE,2019B380,extended,00000000
+patch=0,EE,2019A5EC,extended,1000002A
+patch=0,EE,2019A5F0,extended,0220202D
+patch=0,EE,1012828E,extended,00001000
+patch=0,EE,2011AC9C,extended,00000000
+patch=0,EE,2012515E,extended,00001000
+patch=0,EE,2010D558,extended,0C060ABC
+patch=0,EE,20182AF0,extended,14600009
+patch=0,EE,20182AF4,extended,00000000
+patch=0,EE,20182AF8,extended,24040003
+patch=0,EE,20182AFC,extended,3C0201C1
+patch=0,EE,20182B00,extended,244209F0
+patch=0,EE,20182B04,extended,8C420144
+patch=0,EE,20182B08,extended,14820002
+patch=0,EE,20182B0C,extended,00000000
+patch=0,EE,20182B10,extended,24030002
+patch=0,EE,20182B14,extended,27FF0004
+patch=0,EE,20182B18,extended,03E00008
+patch=0,EE,20182B1C,extended,24040002
+patch=0,EE,2010D67C,extended,0C060AC8
+patch=0,EE,202D63A8,extended,0C060AC8
+patch=0,EE,20121034,extended,0C060AC8
+patch=0,EE,2012A1CC,extended,0C060AC8
+patch=0,EE,20182B20,extended,3C0201C1
+patch=0,EE,20182B24,extended,8C420C18
+patch=0,EE,20182B28,extended,03E00008
+patch=0,EE,20182B2C,extended,2C420001
+patch=0,EE,204B3C08,extended,001825C4
+patch=0,EE,204B3C14,extended,001825C4
+patch=0,EE,20182698,extended,0C060ACC
+patch=0,EE,20182B30,extended,24020002
+patch=0,EE,20182B34,extended,8E630140
+patch=0,EE,20182B38,extended,14430004
+patch=0,EE,20182B3C,extended,27FF023C
+patch=0,EE,20182B40,extended,24840036
+patch=0,EE,20182B44,extended,10000005
+patch=0,EE,20182B48,extended,24020007
+patch=0,EE,20182B4C,extended,24020005
+patch=0,EE,20182B50,extended,14430003
+patch=0,EE,20182B54,extended,00000000
+patch=0,EE,20182B58,extended,24020004
+patch=0,EE,20182B5C,extended,AE420114
+patch=0,EE,20182B60,extended,03E00008
+patch=0,EE,20182B64,extended,00000000
+patch=0,EE,2049FF04,extended,20182B68
+patch=0,EE,20182B68,extended,3C0201C1
+patch=0,EE,20182B6C,extended,244209F0
+patch=0,EE,20182B70,extended,24060001
+patch=0,EE,20182B74,extended,14A60003
+patch=0,EE,20182B78,extended,00000000
+patch=0,EE,20182B7C,extended,10000011
+patch=0,EE,20182B80,extended,24060002
+patch=0,EE,20182B84,extended,24060002
+patch=0,EE,20182B88,extended,14A60003
+patch=0,EE,20182B8C,extended,00000000
+patch=0,EE,20182B90,extended,1000000C
+patch=0,EE,20182B94,extended,24060003
+patch=0,EE,20182B98,extended,24060005
+patch=0,EE,20182B9C,extended,14A60003
+patch=0,EE,20182BA0,extended,00000000
+patch=0,EE,20182BA4,extended,10000007
+patch=0,EE,20182BA8,extended,24060006
+patch=0,EE,20182BAC,extended,24060003
+patch=0,EE,20182BB0,extended,14A60003
+patch=0,EE,20182BB4,extended,00000000
+patch=0,EE,20182BB8,extended,10000002
+patch=0,EE,20182BBC,extended,24060005
+patch=0,EE,20182BC0,extended,00A0302D
+patch=0,EE,20182BC4,extended,08066D18
+patch=0,EE,20182BC8,extended,AC460140
+patch=0,EE,20126AA4,extended,1000009D
+patch=0,EE,2012420C,extended,100000DB
+patch=0,EE,2016AF8C,extended,0C060AC8
+patch=0,EE,0016AF97,extended,00000010
+patch=0,EE,204B8E94,extended,0019B54C
+patch=0,EE,204B8E9C,extended,0019B54C
+patch=0,EE,204B8EA0,extended,0019B5AC
+patch=0,EE,001264A2,extended,00000060
+patch=0,EE,001264AA,extended,00000071
+patch=0,EE,001264AE,extended,00000051
+patch=0,EE,2049DCB4,extended,00182BD0
+patch=0,EE,20182BD0,extended,3C0201C1
+patch=0,EE,20182BD4,extended,8C420C18
+patch=0,EE,20182BD8,extended,14400010
+patch=0,EE,20182BDC,extended,00000000
+patch=0,EE,20182BE0,extended,3C0501EE
+patch=0,EE,20182BE4,extended,24A58070
+patch=0,EE,20182BE8,extended,8CA224F4
+patch=0,EE,20182BEC,extended,1040000B
+patch=0,EE,20182BF0,extended,00000000
+patch=0,EE,20182BF4,extended,8CA22500
+patch=0,EE,20182BF8,extended,24060003
+patch=0,EE,20182BFC,extended,10460007
+patch=0,EE,20182C00,extended,00000000
+patch=0,EE,20182C04,extended,27FF0010
+patch=0,EE,20182C08,extended,3C0201C1
+patch=0,EE,20182C0C,extended,A040F906
+patch=0,EE,20182C10,extended,8C62015C
+patch=0,EE,20182C14,extended,00400008
+patch=0,EE,20182C18,extended,24060005
+patch=0,EE,20182C1C,extended,080459E8
+patch=0,EE,20182C20,extended,24050001
+
+[Multiplayer to Single Event (WIP)\Disable Road Rage timer]
+author=Nehalem
+description=Unlimited time & no timer on the HUD in Road Rage mode
+patch=0,EE,2049E7DC,extended,00115560
+patch=0,EE,2016AFBC,extended,00000000
+
+[Multiplayer to Single Event (WIP)\Enable Burning Lap Oncoming]
+author=Nehalem
+description=Burning Lap style boost rewarding while driving in oncoming traffic (only useful when leaving traffic disabled)
+patch=0,EE,001826E2,extended,00000046
+
+[Multiplayer to Single Event (WIP)\Enable Burning Lap traffic]
+author=Nehalem
+description=Enable traffic in Burning Lap mode
+patch=0,EE,201826DC,extended,00000000
+
+[Falling car parts while driving]
+author=Nehalem
+description=Enable falling car parts during takedowns and traffic checks while driving
+patch=0,EE,20210FA8,extended,00000000
