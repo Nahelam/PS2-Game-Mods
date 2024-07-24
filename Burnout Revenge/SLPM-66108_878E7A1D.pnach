@@ -1,0 +1,92 @@
+gametitle=Burnout Revenge (SLPM-66108) [NTSC-J]
+
+[Native widescreen]
+author=Nehalem
+description=Force native widescreen mode
+patch=0,EE,003FE6E4,extended,00000001
+patch=0,EE,203FE6E8,extended,00000001
+
+[Ask for 480p]
+author=Nehalem
+description=Always ask for progressive scan
+patch=0,EE,20188674,extended,10A2001C
+
+[Debug menu (go to extras)]
+author=Nehalem
+description=Replace extras menu with debug menu
+patch=0,EE,10432D5C,extended,00003A10
+
+[No camera speed shake]
+author=Nehalem
+description=Disable camera speed shake
+patch=0,EE,20248C98,extended,03E00008
+
+[Crash mode vehicles always available]
+author=Nehalem
+description=Selectable crash vehicles in all modes
+patch=0,EE,201310A0,extended,00000000
+
+[No HUD]
+author=Nehalem
+description=Completely turn off the HUD display
+patch=0,EE,00166E46,extended,00000000
+
+[No rating HUD]
+author=Nehalem
+description=Disable rating HUD display
+patch=0,EE,10166CB2,extended,00001000
+
+[No game mode HUD]
+author=Nehalem
+description=Disable game mode HUD display
+patch=0,EE,20164AB8,extended,03E00008
+
+[Extra particles while driving]
+author=Nehalem
+description=Render all extra particles while driving
+patch=0,EE,2027EE7C,extended,24030001
+
+[Free camera\Basic]
+author=Nehalem
+description=Toggleable free camera (R3+UP enable, R3+DOWN disable)
+patch=1,EE,D047CB1C,extended,0200FFEB
+patch=1,EE,204A0ED0,extended,00000002
+patch=1,EE,004A0F00,extended,00000001
+patch=1,EE,D047CB1C,extended,0200FFBB
+patch=1,EE,204A0ED0,extended,00000200
+patch=1,EE,004A0F00,extended,00000009
+
+[Free camera\No HUD]
+author=Nehalem
+description=Toggleable free camera & HUD (R3+UP enable, R3+DOWN disable)
+patch=1,EE,D047CB1C,extended,0300FFEB
+patch=1,EE,204A0ED0,extended,00000002
+patch=1,EE,004A0F00,extended,00000001
+patch=1,EE,01B85EBB,extended,00000000
+patch=1,EE,D047CB1C,extended,0300FFBB
+patch=1,EE,204A0ED0,extended,00000200
+patch=1,EE,004A0F00,extended,00000009
+patch=1,EE,01B85EBB,extended,00000001
+
+[Pause gameplay\Basic]
+author=Nehalem
+description=Toggleable gameplay (R2+DPAD UP enable, R2+DPAD DOWN disable)
+patch=1,EE,D047CB1C,extended,0000FDEF
+patch=1,EE,004798C0,extended,00000000
+patch=1,EE,D047CB1C,extended,0000FDBF
+patch=1,EE,004798C0,extended,00000001
+
+[Pause gameplay\No HUD]
+author=Nehalem
+description=Toggleable gameplay & HUD (R2+DPAD UP enable, R2+DPAD DOWN disable)
+patch=1,EE,D047CB1C,extended,0200FDEF
+patch=1,EE,004798C0,extended,00000000
+patch=1,EE,01B85EBB,extended,00000000
+patch=1,EE,D047CB1C,extended,0200FDBF
+patch=1,EE,004798C0,extended,00000001
+patch=1,EE,01B85EBB,extended,00000001
+
+[Falling car parts while driving (takedowns & traffic checks)]
+author=Nehalem
+description=Enable falling car parts during takedowns and traffic checks while driving
+patch=0,EE,201DB398,extended,00000000
