@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown [SLUS-21050] (U)
-comment=Render all extra particles while driving
+comment=Render extra particles while driving (full)
 author=Nehalem
 
 patch=0,EE,20261E6C,extended,24120001

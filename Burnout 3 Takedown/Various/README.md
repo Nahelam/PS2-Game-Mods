@@ -47,10 +47,9 @@ These folders contains various cheats/patches/mods I made for Burnout 3: Takedow
 - Turn on all race cars headlights permanently\*
 - Glass cars (make all vehicles look ghostly)\* [\[demo\]](https://i.imgur.com/LVm50S9.png)
 - Activatable Crash Breaker in all modes (R2, see patch comments for unlimited mode)\* [\[demo\]](https://i.imgur.com/PzgJJgr.mp4)
-- Render more extra particles while driving (explosions, smoke, etc.)\*
+- Render extra particles while driving (partial/full)\*
 - Drive through walls and barriers (also affects AI)\* [\[demo\]](https://i.imgur.com/peiNZ08.mp4)
-- Render all extra particles while driving\*
-- Keep the third person view while looking back\* [\[demo\]](https://i.imgur.com/Rl2KQRy.mp4)
+- Third person rear view\* [\[demo\]](https://i.imgur.com/Rl2KQRy.mp4)
 
 \*: SLES-52584, SLES-52585 & SLUS-21050 only  
 

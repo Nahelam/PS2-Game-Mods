@@ -36,6 +36,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions, please c
   - No HUD version
 - Falling car parts during takedowns and traffic checks 
 - Moon jump (DPAD UP) [\[demo\]](https://www.reddit.com/r/Burnout/comments/1dghna2/predator_missile_inbound)
+- Third person rear view
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
