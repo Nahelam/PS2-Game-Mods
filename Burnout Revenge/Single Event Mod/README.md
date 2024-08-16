@@ -1,6 +1,6 @@
 # Single Event Mod
 
-
+![b4sem](https://github.com/user-attachments/assets/4f689fb9-bd03-48fb-86de-bc9cf7fb6552)
 
 ## About
 
@@ -19,7 +19,6 @@ A lot of function hooks were implemented to make the game handle everything corr
 
 I wanted to make this patch available for all regions of the game thus I used as much localized strings as possible.  
 Only a few are still hardcoded in english.
-
 
 ## New Options
 
@@ -90,7 +89,7 @@ You can end the current event from the pause menu in
 
 In Race and Eliminator modes you can choose up to **99** opponents.  
 The "active" opponents limit is still **5**, they will be adjusted according to your position.  
-The "adjusting" mechanic was only working properly in Race mode, support for Eliminator mode is brand new.
+The "adjusting" mechanic was only working properly in Race mode, support for Eliminator has been added.
 
 ### Lap Limit
 
@@ -104,3 +103,7 @@ My favorite one, when the **Traffic Cheking** option is set to *Insane* you will
 You can check the same traffic vehicle until it vanishes.  
 Each time you touch a traffic car with enough speed it will count as a check.  
 Opponents are also given that power but they can't take you or other drivers down with traffic.
+
+## Install
+
+Follow the [install instructions](https://github.com/Nahelam/PS2-Game-Mods/blob/main/README.md) and make sure to delete/disable the previous WIP Single Event patch.
