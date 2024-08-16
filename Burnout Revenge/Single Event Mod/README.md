@@ -36,7 +36,7 @@ Only a few are still hardcoded in english.
 ### Road Rage
 
 - **Time Limit**: Choose or disable time limit *(Off/1-16 minutes)*
-- **Damage Critical**: Enable or disable damage elimination *(Yes/No, always Yes if there is no time limit)*
+- **Damage Critical**: Enable or disable elimination when your car is too damaged *(Yes/No, always Yes if there is no time limit)*
 - **Rivals**: The number of opponents you want to face *(0-5)*
 - **Select Rivals**: Choose the vehicle and color of all the opponents *(Yes/No)*
 - **AI Mode**: Choose opponents behavior *(Race/Road Rage)*
