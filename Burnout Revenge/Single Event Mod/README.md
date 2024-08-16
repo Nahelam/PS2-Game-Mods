@@ -6,7 +6,7 @@
 
 This mod replaces the **Multiplayer** option with a brand new **Create Game** (single event) option.
 
-It lets you choose between the following game modes:
+It lets you choose between the following one player game modes:
 - Race
 - Road Rage
 - Traffic Attack
