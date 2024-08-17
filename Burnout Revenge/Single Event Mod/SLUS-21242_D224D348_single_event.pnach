@@ -87,7 +87,6 @@ patch=0,EE,2049DBC4,extended,000B68B0
 patch=0,EE,2049DD04,extended,000B6960
 patch=0,EE,2049DD84,extended,000B67B0
 patch=0,EE,2049E474,extended,000B6760
-patch=0,EE,2049E514,extended,000B67B0
 patch=0,EE,2049E7DC,extended,000B69A0
 patch=0,EE,2049E894,extended,000B6A10
 patch=0,EE,2049F2EC,extended,000B6A50
