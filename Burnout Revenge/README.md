@@ -22,8 +22,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions, please c
   - Total time version (no reset between laps)
 - Race events lap modifier
 - Disable HUD
-- Turn multiplayer mode into single event mode (WIP)
-    - **NOTE**: Crash Party becomes Burning Lap and Crash Tour becomes Eliminator
+- [Single Event Mod](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%20Revenge/Single%20Event%20Mod)
 - [APT debug print to PCSX2 logs](https://github.com/Nahelam/PS2-Game-Mods/assets/128867759/182b704b-1a1a-4a4f-a665-8bbf31ba9799)
     - Restored an APT debug print function, it was given args but doing nothing with it. I used scePrintf to print in the PCSX2 logs.
 - Toggleable free camera (R3+UP enable, R3+DOWN disable) **(only one at once)**
