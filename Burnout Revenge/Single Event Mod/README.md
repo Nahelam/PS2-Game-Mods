@@ -29,7 +29,7 @@ Only a few are still hardcoded in english.
 - **Select Rivals**: Choose the vehicle and color of all the opponents *(Yes/No)*
 - **AI Mode**: Choose opponents behavior *(Race/Road Rage)*
 - **Traffic**: Enable or disable traffic *(Yes/No)*
-- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane)*
+- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane, only affects the player when disabled)*
 - **Oncoming**: Enable or disable oncoming boost reward *(Yes/No, always Yes when traffic is enabled)*
 - **Crashbreaker**: Enable or disable the Crashbreaker *(Yes/No)*
 
@@ -41,7 +41,7 @@ Only a few are still hardcoded in english.
 - **Select Rivals**: Choose the vehicle and color of all the opponents *(Yes/No)*
 - **AI Mode**: Choose opponents behavior *(Race/Road Rage)*
 - **Traffic**: Enable or disable traffic *(Yes/No)*
-- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane)*
+- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane, only affects the player when disabled)*
 - **Oncoming**: Enable or disable oncoming boost reward *(Yes/No, always Yes when traffic is enabled)*
 - **Crashbreaker**: Enable or disable the Crashbreaker *(Yes/No)*
 
@@ -53,7 +53,7 @@ Only a few are still hardcoded in english.
 ### Burning Lap
 
 - **Traffic**: Enable or disable traffic *(Yes/No)*
-- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane)*
+- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane, only affects the player when disabled)*
 - **Oncoming**: Enable or disable oncoming boost reward *(Yes/No, always Yes when traffic is enabled)*
 
 ### Eliminator
@@ -62,7 +62,7 @@ Only a few are still hardcoded in english.
 - **Select Rivals**: Choose the vehicle and color of all the opponents *(Yes/No)*
 - **AI Mode**: Choose opponents behavior *(Race/Road Rage)*
 - **Traffic**: Enable or disable traffic *(Yes/No)*
-- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane)*
+- **Traffic Checking**: Enable or disable traffic checking *(Yes/No/Insane, only affects the player when disabled)*
 - **Oncoming**: Enable or disable oncoming boost reward *(Yes/No, always Yes when traffic is enabled)*
 - **Crashbreaker**: Enable or disable the Crashbreaker *(Yes/No)*
 
