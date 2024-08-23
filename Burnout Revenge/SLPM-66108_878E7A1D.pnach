@@ -167,3 +167,11 @@ patch=1,EE,200B4234,extended,50400001
 patch=1,EE,200B4238,extended,27FF001C
 patch=1,EE,200B423C,extended,03E00008
 patch=1,EE,200B4240,extended,3C020048
+
+[Toggle AI Controlled Player]
+author=Nehalem
+description=Toggle the player being AI controlled (L3+UP enable, L3+DOWN disable)
+patch=1,EE,D047CB1C,extended,0100FFED
+patch=1,EE,01E32798,extended,00000001
+patch=1,EE,D047CB1C,extended,0100FFBD
+patch=1,EE,01E32798,extended,00000000
