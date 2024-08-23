@@ -3746,3 +3746,13 @@ patch=1,EE,200B8898,extended,00000000
 patch=1,EE,200B889C,extended,DFBF0000
 patch=1,EE,200B88A0,extended,03E00008
 patch=1,EE,200B88A4,extended,27BD0010
+
+[Single Event Mod Extras\Traffic Magnet (mode 1)]
+author=Nehalem
+description=Fun traffic "magnet" effect accidentally created, to be used with insane traffic checking
+patch=0,EE,201F7868,extended,24020001
+
+[Single Event Mod Extras\Traffic Magnet (mode 2)]
+author=Nehalem
+description=More powerful than mode 1 but traffic won't collide with the player car
+patch=0,EE,201F785C,extended,24020001
