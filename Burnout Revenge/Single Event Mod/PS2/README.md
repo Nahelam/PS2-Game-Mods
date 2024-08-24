@@ -3,7 +3,7 @@
 PS2 port of the Single Event Mod.  
 
 Use the provided **xdelta** file to patch your game iso (there are various patching tools available, such as [Delta Patcher](https://github.com/marco-calautti/DeltaPatcher/releases/latest)),  
-Then use the Mastercode and the Single Event Mod code corresponding to the region of your game.
+Then use the **Mastercode** and the **Single Event Mod code** corresponding to the region of your game.
 
 
 | Region | Mastercode | Single Event Mod code
