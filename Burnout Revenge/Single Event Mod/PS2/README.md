@@ -16,8 +16,8 @@ If you're already using a different Mastercode I recommend using the one listed 
 | Region | Mastercode | Single Event Mod code
 | --- | --- | --- |
 | SLUS-21242 | `90449D08 0C1126EA` | `20255F50 0C042746` |
-| SLES-53506 | `90449E08 0C11272A` | `Coming Soon` |
-| SLES-53507 | `90449E88 0C11274A` | `Coming Soon` |
-| SLPM-66108 | `903E46E8 0C0F9162` | `Coming Soon` |
-| SLKA-25304 | `90449E48 0C11273A` | `Coming Soon` |
-| SLAJ-25066 | `90449D48 0C1126FA` | `Coming Soon` |
+| SLES-53506 | `90449E08 0C11272A` | `20255F68 0C04274C` |
+| SLES-53507 | `90449E88 0C11274A` | `20256010 0C04275E` |
+| SLPM-66108 | `903E46E8 0C0F9162` | `20220070 0C042660` |
+| SLKA-25304 | `90449E48 0C11273A` | `20255FA8 0C042744` |
+| SLAJ-25066 | `90449D48 0C1126FA` | `20255F60 0C042746` |
