@@ -9,6 +9,8 @@ PS2 port of the Single Event Mod.
 - Enable the **Mastercode** and the **Single Event Mod code**
 - Profit
 
+If you're already using a different Mastercode I recommend using the one listed here instead, replacing it won't break your other cheats.
+
 ## Codes
 
 | Region | Mastercode | Single Event Mod code
