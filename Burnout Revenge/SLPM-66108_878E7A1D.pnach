@@ -187,5 +187,6 @@ description=Enable props in Multiplayer/Single Event Road Rage
 patch=0,EE,20122EF4,extended,00000000
 
 [Props\Enable in Traffic Attack (All)]
+author=Nehalem
 description=Enable props in Traffic Attack mode
 patch=0,EE,201206BC,extended,00000000
