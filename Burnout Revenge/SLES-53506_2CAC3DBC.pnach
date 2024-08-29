@@ -187,3 +187,17 @@ patch=1,EE,D04F369C,extended,0100FFED
 patch=1,EE,01EDBE18,extended,00000001
 patch=1,EE,D04F369C,extended,0100FFBD
 patch=1,EE,01EDBE18,extended,00000000
+
+[Props\Enable in Road Rage (World Tour)]
+author=Nehalem
+description=Enable props in World Tour Road Rage
+patch=0,EE,20129F08,extended,00000000
+
+[Props\Enable in Road Rage (Multiplayer/Single Event)]
+author=Nehalem
+description=Enable props in Multiplayer/Single Event Road Rage
+patch=0,EE,2012639C,extended,00000000
+
+[Props\Enable in Traffic Attack (All)]
+description=Enable props in Traffic Attack mode
+patch=0,EE,20123B2C,extended,00000000
