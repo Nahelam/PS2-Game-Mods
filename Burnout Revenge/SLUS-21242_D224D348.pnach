@@ -388,3 +388,33 @@ patch=0,EE,2012648C,extended,00000000
 author=Nehalem
 description=Enable props in Traffic Attack mode
 patch=0,EE,20123C1C,extended,00000000
+
+[Force LOD\Level 1]
+author=Nehalem
+description=Force race cars LOD to 1
+patch=0,EE,202D15E8,extended,03E00008
+patch=0,EE,202D15EC,extended,0000102D
+
+[Force LOD\Level 2]
+author=Nehalem
+description=Force race cars LOD to 2
+patch=0,EE,202D15E8,extended,03E00008
+patch=0,EE,202D15EC,extended,24020001
+
+[Force LOD\Level 3]
+author=Nehalem
+description=Force race cars LOD to 3
+patch=0,EE,202D15E8,extended,03E00008
+patch=0,EE,202D15EC,extended,24020002
+
+[Force LOD\Level 4]
+author=Nehalem
+description=Force race cars LOD to 4
+patch=0,EE,202D15E8,extended,03E00008
+patch=0,EE,202D15EC,extended,24020003
+
+[Force LOD\Level 5]
+author=Nehalem
+description=Force race cars LOD to 5
+patch=0,EE,202D15E8,extended,03E00008
+patch=0,EE,202D15EC,extended,24020004
