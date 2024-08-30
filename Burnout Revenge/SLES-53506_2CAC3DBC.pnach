@@ -232,3 +232,8 @@ author=Nehalem
 description=Force race cars LOD to 5
 patch=0,EE,202D16D0,extended,03E00008
 patch=0,EE,202D16D4,extended,24020004
+
+[Force LOD\Keep reflections]
+author=Nehalem
+description=Prevent race cars reflections from fading further away
+patch=0,EE,202D16CC,extended,E4C30000

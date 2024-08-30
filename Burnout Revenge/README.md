@@ -38,7 +38,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions, please c
 - Third person rear view [\[demo\]](https://i.imgur.com/tVVHGAR.png)
 - Toggle the player being AI controlled (L3+UP enable, L3+DOWN disable)
 - Enable props in Road Rage and Traffic Attack
-- Force a specific LOD for race cars
+- Force a specific LOD for race cars (+ optionally prevent race cars reflections from fading further away)
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
