@@ -54,6 +54,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions.
 - Render extra particles while driving (partial/full)
 - Drive through walls and barriers (also affects AI) [\[demo\]](https://i.imgur.com/peiNZ08.mp4)
 - Third person rear view [\[demo\]](https://i.imgur.com/Rl2KQRy.mp4)
+- Enable props in road rage mode
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
