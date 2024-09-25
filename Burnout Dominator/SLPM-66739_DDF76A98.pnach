@@ -266,7 +266,7 @@ description=Nearby traffic vehicles goes kamikaze
 patch=0,EE,20309AEC,extended,12C0002D
 patch=0,EE,20309BE8,extended,00000000
 patch=0,EE,10309D0A,extended,00001000
-patch=0,EE,20309EC8,extended,00001000
+patch=0,EE,20309EC8,extended,00000000
 
 [Traffic\No out of range removal]
 author=Nehalem
