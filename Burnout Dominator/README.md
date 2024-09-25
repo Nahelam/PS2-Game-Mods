@@ -21,3 +21,5 @@ Various cheats/patches/mods I made/ported for **Burnout Dominator**.
 - Force a specific LOD for race cars (+ optionally prevent race cars reflections from fading further away)
 - Replace extras menu with debug menu
 - Enable debug rendering of traffic lanes
+- Kamikaze traffic
+- Prevent out of range removal of crashing traffic

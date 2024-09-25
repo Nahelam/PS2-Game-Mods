@@ -259,3 +259,16 @@ patch=1,EE,200B40C8,extended,A04061B7
 author=Nehalem
 description=Enable debug rendering of traffic lanes
 patch=0,EE,20219DD8,extended,00000000
+
+[Traffic\Kamikaze]
+author=Nehalem
+description=Nearby traffic vehicles goes kamikaze
+patch=0,EE,20309AEC,extended,12C0002D
+patch=0,EE,20309BE8,extended,00000000
+patch=0,EE,10309D0A,extended,00001000
+patch=0,EE,20309EC8,extended,00001000
+
+[Traffic\No out of range removal]
+author=Nehalem
+description=Prevent the game to remove out of range crashing traffic
+patch=0,EE,00264592,extended,00000000
