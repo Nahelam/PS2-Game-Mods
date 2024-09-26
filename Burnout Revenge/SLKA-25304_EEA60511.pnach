@@ -237,3 +237,16 @@ patch=0,EE,202D1794,extended,24020004
 author=Nehalem
 description=Prevent race cars reflections from fading further away
 patch=0,EE,202D178C,extended,E4C30000
+
+[Traffic\Kamikaze]
+author=Nehalem
+description=Nearby traffic vehicles goes kamikaze
+patch=0,EE,202DFA8C,extended,12C0002D
+patch=0,EE,202DFB88,extended,00000000
+patch=0,EE,102DFCAA,extended,00001000
+patch=0,EE,202DFE68,extended,00000000
+
+[Traffic\No out of range removal]
+author=Nehalem
+description=Prevent the game to remove out of range crashing traffic
+patch=0,EE,001EC8B2,extended,00000000
