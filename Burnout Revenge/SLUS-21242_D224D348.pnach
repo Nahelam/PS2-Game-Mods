@@ -436,3 +436,11 @@ patch=0,EE,202DFD28,extended,00000000
 author=Nehalem
 description=Prevent the game to remove out of range crashing traffic
 patch=0,EE,001EC88A,extended,00000000
+
+[Toggle menus rendering]
+author=Nehalem
+description=Toggle APT (menus) rendering (R3+DPAD LEFT enable, R3+DPAD RIGHT disable)
+patch=1,EE,D04F341C,extended,0100FF7B
+patch=1,EE,01C0F909,extended,00000001
+patch=1,EE,D04F341C,extended,0100FFDB
+patch=1,EE,01C0F909,extended,00000000
