@@ -41,7 +41,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions, please c
 - Force a specific LOD for race cars (+ optionally prevent race cars reflections from fading further away)
 - Kamikaze traffic
 - Prevent out of range removal of crashing traffic
-- Toggle menus rendering
+- Toggle menus rendering (R3+DPAD LEFT enable, R3+DPAD RIGHT disable)
 
 ## Xenia (Xbox 360) Features (.toml file)
 - Replace extras menu with debug menu
