@@ -20,6 +20,10 @@ A lot of function hooks were implemented to make the game handle everything corr
 I wanted to make this patch available for all regions of the game thus I used as much localized strings as possible.  
 Only a few are still hardcoded in english.
 
+## Install
+
+Follow the [install instructions](https://github.com/Nahelam/PS2-Game-Mods/blob/main/README.md) and make sure to delete/disable the previous WIP Single Event patch.
+
 ## New Options
 
 ### Race
@@ -103,7 +107,3 @@ My favorite one, when the **Traffic Checking** option is set to *Insane* you wil
 You can check the same traffic vehicle until it vanishes.  
 Each time you touch a traffic car with enough speed it will count as a check.  
 Opponents are also given that power but they can't take you or other drivers down with traffic.
-
-## Install
-
-Follow the [install instructions](https://github.com/Nahelam/PS2-Game-Mods/blob/main/README.md) and make sure to delete/disable the previous WIP Single Event patch.
