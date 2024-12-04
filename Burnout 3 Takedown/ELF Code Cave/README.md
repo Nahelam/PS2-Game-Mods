@@ -30,7 +30,8 @@ void CB3TrafficVehicle::Remove(CB3TrafficVehicle *this)
 But instead, by looking at the disassembly you'll see that the compiler tried to inline the `Remove` call then inline the remove call into the inlined remove call and so on.
 
 The graph overview of `StartCrashing` looks like this for example:
-![CB3TrafficVehicle::StartCrashing Graph Overview](graph_overview.png)
+![CB3TrafficVehicle::StartCrashing Graph Overview](https://github.com/user-attachments/assets/1d7201e4-ce34-48e6-87f8-864931868c31)
+
 
 In `StartCrashing`, `Remove` can be called at one place only, the nested inlining seems to happen **128** times in it.\
 In `Update`, `Remove` can be called at two different places, the nested inlining seems to happen **256** times in it.\
