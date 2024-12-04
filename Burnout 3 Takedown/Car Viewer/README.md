@@ -1,6 +1,6 @@
 # Car Viewer
 
-![Car Viewer](car_viewer.png)
+![Car Viewer](https://github.com/user-attachments/assets/84ed6499-2097-4e7f-af53-70fc59d4f588)
 
 By using these patches you can start the "Car Viewer" debug feature left in the retail game.\
 I made it accessible by pressing **L2+R2+SQUARE** on the vehicle of your choice in the rewards garage.
