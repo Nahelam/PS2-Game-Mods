@@ -5,7 +5,7 @@ Taking shortcuts in the boot process.
 ## Global
 
 - Selectable default video mode
-- Selectable initial menu with some options
+- Selectable initial menu with some options:
   - Title Screen
   - Main Menu (Profile 1 Autoload)
   - Main Menu (Profile 2 Autoload)
