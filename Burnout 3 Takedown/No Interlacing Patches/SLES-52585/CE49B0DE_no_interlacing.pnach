@@ -1,7 +1,0 @@
-gametitle=Burnout 3: Takedown [SLES-52585] (E)
-comment=No interlacing patch (select 60 Hz mode)
-author=Nehalem
-
-// Replace 60 Hz mode with 480p mode
-patch=0,EE,204373DC,extended,24050001
-patch=0,EE,20437404,extended,24050001

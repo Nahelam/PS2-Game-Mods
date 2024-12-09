@@ -1,5 +1,0 @@
-gametitle=Burnout 3: Takedown [SLUS-21050] (U)
-comment=Always ask for 480p mode during boot
-author=Nehalem
-
-patch=0,EE,20437758,extended,100000F1

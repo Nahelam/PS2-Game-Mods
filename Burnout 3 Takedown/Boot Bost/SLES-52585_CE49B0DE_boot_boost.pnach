@@ -1,0 +1,109 @@
+gametitle=Burnout 3: Takedown (SLES-52585) [PAL]
+
+[Boot Boost (Enable 1 Per Group)\Language\French]
+author=Nehalem
+description=Set default language to French
+patch=0,EE,201338DC,extended,24020004
+
+[Boot Boost (Enable 1 Per Group)\Language\German]
+author=Nehalem
+description=Set default language to German
+patch=0,EE,201338DC,extended,24020003
+
+[Boot Boost (Enable 1 Per Group)\Language\Italian]
+author=Nehalem
+description=Set default language to Italian
+patch=0,EE,201338DC,extended,24020006
+
+[Boot Boost (Enable 1 Per Group)\Video Mode (Default: 50Hz)\60Hz]
+author=Nehalem
+description=Set default video mode to 60Hz
+patch=0,EE,0021B78E,extended,00000080
+patch=0,EE,20228180,extended,0000102D
+
+[Boot Boost (Enable 1 Per Group)\Video Mode (Default: 50Hz)\480p]
+author=Nehalem
+description=Set default video mode to 480p
+patch=0,EE,0021B786,extended,00000083
+patch=0,EE,0021B78E,extended,00000080
+patch=0,EE,20228180,extended,24020001
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Title Screen]
+author=Nehalem
+description=Directly show the title screen after the game has loaded
+patch=0,EE,20321974,extended,3C02004C
+patch=0,EE,20321978,extended,DC455210
+patch=0,EE,2032197C,extended,3C0301E9
+patch=0,EE,20321984,extended,FC6506B0
+patch=0,EE,00343B73,extended,00000010
+patch=0,EE,20438BB4,extended,00000000
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (Profile 1 Autoload)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded and autoload profile 1
+patch=0,EE,2030EA1C,extended,3C0401ED
+patch=0,EE,2030EA20,extended,0000282D
+patch=0,EE,2030EA24,extended,0C108508
+patch=0,EE,2030EA28,extended,2484D9A0
+patch=0,EE,2030EA2C,extended,3C020052
+patch=0,EE,2030EA30,extended,10000031
+patch=0,EE,2030EA34,extended,A040AE18
+patch=0,EE,20437A84,extended,34433FC0
+patch=0,EE,20437A88,extended,3C0235B0
+patch=0,EE,20437A8C,extended,0003183C
+patch=0,EE,20437A90,extended,3442F871
+patch=0,EE,20437A94,extended,00431025
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (Profile 2 Autoload)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded and autoload profile 2
+patch=0,EE,2030EA1C,extended,3C0401ED
+patch=0,EE,2030EA20,extended,24050001
+patch=0,EE,2030EA24,extended,0C108508
+patch=0,EE,2030EA28,extended,2484D9A0
+patch=0,EE,2030EA2C,extended,3C020052
+patch=0,EE,2030EA30,extended,10000031
+patch=0,EE,2030EA34,extended,A040AE18
+patch=0,EE,20437A84,extended,34433FC0
+patch=0,EE,20437A88,extended,3C0235B0
+patch=0,EE,20437A8C,extended,0003183C
+patch=0,EE,20437A90,extended,3442F871
+patch=0,EE,20437A94,extended,00431025
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (Profile 3 Autoload)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded and autoload profile 3
+patch=0,EE,2030EA1C,extended,3C0401ED
+patch=0,EE,2030EA20,extended,24050002
+patch=0,EE,2030EA24,extended,0C108508
+patch=0,EE,2030EA28,extended,2484D9A0
+patch=0,EE,2030EA2C,extended,3C020052
+patch=0,EE,2030EA30,extended,10000031
+patch=0,EE,2030EA34,extended,A040AE18
+patch=0,EE,20437A84,extended,34433FC0
+patch=0,EE,20437A88,extended,3C0235B0
+patch=0,EE,20437A8C,extended,0003183C
+patch=0,EE,20437A90,extended,3442F871
+patch=0,EE,20437A94,extended,00431025
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (No Profile)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded, no profile data will be loaded
+patch=0,EE,00131A3A,extended,00000000
+patch=0,EE,2032197C,extended,3C02004C
+patch=0,EE,20321984,extended,DC454FC0
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (No Profile + All Unlocked)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded, no profile data will be loaded and everything will be unlocked
+patch=0,EE,2030EA1C,extended,0C04D928
+patch=0,EE,2030EA20,extended,3C100052
+patch=0,EE,2030EA24,extended,8E10C41C
+patch=0,EE,2030EA28,extended,0C04E704
+patch=0,EE,2030EA2C,extended,0200202D
+patch=0,EE,2030EA30,extended,0C04E7CC
+patch=0,EE,2030EA34,extended,0200202D
+patch=0,EE,2030EA38,extended,1000002F
+patch=0,EE,2030EA3C,extended,A200AE18
+patch=0,EE,2032197C,extended,3C02004C
+patch=0,EE,20321984,extended,DC454FC0

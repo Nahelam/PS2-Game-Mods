@@ -1,0 +1,15 @@
+gametitle=Burnout 3: Takedown (SLES-52585) [PAL]
+
+[Language Select Menu]
+author=Nehalem
+description=Show the language selection menu at boot (overrides the automatic language detection)
+patch=0,EE,00437498,extended,0000009D
+patch=0,EE,004374B8,extended,0000009E
+patch=0,EE,004374CC,extended,0000009A
+patch=0,EE,004371C8,extended,0000009F
+patch=0,EE,004371E4,extended,000000A0
+patch=0,EE,004371F8,extended,0000009C
+patch=0,EE,0043720C,extended,0000009B
+patch=0,EE,204373DC,extended,24050001
+patch=0,EE,20437404,extended,24050001
+patch=0,EE,00437426,extended,00000085

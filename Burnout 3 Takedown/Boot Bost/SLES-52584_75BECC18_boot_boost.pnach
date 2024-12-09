@@ -1,0 +1,124 @@
+gametitle=Burnout 3: Takedown (SLES-52584) [PAL]
+
+[Boot Boost (Enable 1 Per Group)\Language (Default: English)\Dutch]
+author=Nehalem
+description=Set default language to Dutch
+patch=0,EE,1032195C,extended,0000CD87
+patch=0,EE,10321968,extended,00005AF7
+patch=0,EE,20133928,extended,2402000A
+patch=0,EE,00133936,extended,00000082
+patch=0,EE,10133958,extended,00006078
+patch=0,EE,10133998,extended,000060F0
+
+[Boot Boost (Enable 1 Per Group)\Language (Default: English)\Spanish]
+author=Nehalem
+description=Set default language to Spanish
+patch=0,EE,1032195C,extended,0000CD87
+patch=0,EE,10321968,extended,00005AF7
+patch=0,EE,20133928,extended,24020005
+patch=0,EE,00133936,extended,00000082
+patch=0,EE,10133958,extended,00006098
+patch=0,EE,10133998,extended,00006110
+
+[Boot Boost (Enable 1 Per Group)\Language (Default: English)\Swedish]
+author=Nehalem
+description=Set default language to Swedish
+patch=0,EE,1032195C,extended,0000CD87
+patch=0,EE,10321968,extended,00005AF7
+patch=0,EE,20133928,extended,2402000B
+patch=0,EE,00133936,extended,00000082
+patch=0,EE,10133958,extended,000060B8
+patch=0,EE,10133998,extended,00006130
+
+[Boot Boost (Enable 1 Per Group)\Video Mode (Default: 50Hz)\60Hz]
+author=Nehalem
+description=Set default video mode to 60Hz
+patch=0,EE,0021B77E,extended,00000080
+patch=0,EE,20228170,extended,0000102D
+
+[Boot Boost (Enable 1 Per Group)\Video Mode (Default: 50Hz)\480p]
+author=Nehalem
+description=Set default video mode to 480p
+patch=0,EE,0021B776,extended,00000083
+patch=0,EE,0021B77E,extended,00000080
+patch=0,EE,20228170,extended,24020001
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Title Screen]
+author=Nehalem
+description=Directly show the title screen after the game has loaded
+patch=0,EE,20321964,extended,3C02004C
+patch=0,EE,20321968,extended,DC455310
+patch=0,EE,2032196C,extended,3C0301E9
+patch=0,EE,20321974,extended,FC6507B0
+patch=0,EE,00343B63,extended,00000010
+patch=0,EE,20438D64,extended,00000000
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (Profile 1 Autoload)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded and autoload profile 1
+patch=0,EE,2030EA0C,extended,3C0401ED
+patch=0,EE,2030EA10,extended,0000282D
+patch=0,EE,2030EA14,extended,0C108504
+patch=0,EE,2030EA18,extended,2484DAA0
+patch=0,EE,2030EA1C,extended,3C020052
+patch=0,EE,2030EA20,extended,10000031
+patch=0,EE,2030EA24,extended,A040AF18
+patch=0,EE,20437C34,extended,34433FC0
+patch=0,EE,20437C38,extended,3C0235B0
+patch=0,EE,20437C3C,extended,0003183C
+patch=0,EE,20437C40,extended,3442F871
+patch=0,EE,20437C44,extended,00431025
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (Profile 2 Autoload)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded and autoload profile 2
+patch=0,EE,2030EA0C,extended,3C0401ED
+patch=0,EE,2030EA10,extended,24050001
+patch=0,EE,2030EA14,extended,0C108504
+patch=0,EE,2030EA18,extended,2484DAA0
+patch=0,EE,2030EA1C,extended,3C020052
+patch=0,EE,2030EA20,extended,10000031
+patch=0,EE,2030EA24,extended,A040AF18
+patch=0,EE,20437C34,extended,34433FC0
+patch=0,EE,20437C38,extended,3C0235B0
+patch=0,EE,20437C3C,extended,0003183C
+patch=0,EE,20437C40,extended,3442F871
+patch=0,EE,20437C44,extended,00431025
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (Profile 3 Autoload)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded and autoload profile 3
+patch=0,EE,2030EA0C,extended,3C0401ED
+patch=0,EE,2030EA10,extended,24050002
+patch=0,EE,2030EA14,extended,0C108504
+patch=0,EE,2030EA18,extended,2484DAA0
+patch=0,EE,2030EA1C,extended,3C020052
+patch=0,EE,2030EA20,extended,10000031
+patch=0,EE,2030EA24,extended,A040AF18
+patch=0,EE,20437C34,extended,34433FC0
+patch=0,EE,20437C38,extended,3C0235B0
+patch=0,EE,20437C3C,extended,0003183C
+patch=0,EE,20437C40,extended,3442F871
+patch=0,EE,20437C44,extended,00431025
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (No Profile)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded, no profile data will be loaded
+patch=0,EE,00131A8A,extended,00000000
+patch=0,EE,2032196C,extended,3C02004C
+patch=0,EE,20321974,extended,DC4550C0
+
+[Boot Boost (Enable 1 Per Group)\Initial Menu\Main Menu (No Profile + All Unlocked)]
+author=Nehalem
+description=Enter the main menu directly after the game has loaded, no profile data will be loaded and everything will be unlocked
+patch=0,EE,2030EA0C,extended,0C04D928
+patch=0,EE,2030EA10,extended,3C100052
+patch=0,EE,2030EA14,extended,8E10C51C
+patch=0,EE,2030EA18,extended,0C04E704
+patch=0,EE,2030EA1C,extended,0200202D
+patch=0,EE,2030EA20,extended,0C04E7CC
+patch=0,EE,2030EA24,extended,0200202D
+patch=0,EE,2030EA28,extended,1000002F
+patch=0,EE,2030EA2C,extended,A200AF18
+patch=0,EE,2032196C,extended,3C02004C
+patch=0,EE,20321974,extended,DC4550C0

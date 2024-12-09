@@ -1,8 +1,6 @@
 # Burnout Revenge Mods
 
-Various cheats/patches/mods I made/ported for **Burnout Revenge**.
-
-### Note
+Various mods I made for **Burnout Revenge**.\
 PCSX2/PS2 features listed below aren't fully available for all regions, please check the `.pnach` file of your game region for a definitive list.
 
 ## PCSX2/PS2 Features

@@ -1,8 +1,6 @@
-# Various Game Modifications
+# Various Mods
 
-These folders contains various cheats/patches/mods I made for Burnout 3: Takedown.
-
-### Note
+These folders contains various mods I made for **Burnout 3: Takedown**.\
 PCSX2/PS2 features listed below aren't fully available for all regions.
 
 ## Features
@@ -55,6 +53,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions.
 - Drive through walls and barriers (also affects AI) [\[demo\]](https://i.imgur.com/peiNZ08.mp4)
 - Third person rear view [\[demo\]](https://i.imgur.com/Rl2KQRy.mp4)
 - Enable props in road rage mode
+- Show the language selection menu at boot (overrides the automatic language detection)
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.
