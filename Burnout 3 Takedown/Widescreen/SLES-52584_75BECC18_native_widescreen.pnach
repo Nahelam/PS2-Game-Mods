@@ -1,5 +1,5 @@
 gametitle=Burnout 3: Takedown (SLES-52584) [PAL]
-comment=Force native widescreen
 author=Nehalem
+description=Force native widescreen
 
 patch=0,EE,204369E4,extended,00000000
