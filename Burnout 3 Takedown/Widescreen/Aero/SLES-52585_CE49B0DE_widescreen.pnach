@@ -1,6 +1,8 @@
 gametitle=Burnout 3: Takedown [SLES-52585] (E)
-comment=Widescreen Fix, SLES-52585 conversion by Nehalem
-author=Aero_
+[Widescreen 16:9]
+gsaspectratio=16:9
+comment=Corrects the aspect ratio of the FOV, HUD, and FMVs for 16:9.
+author=Aero_ (core), Nehalem (port)
 
 // FOV (16:9)
 patch=1,EE,0066634D,byte,01 // enables widescreen FOV values
