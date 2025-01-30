@@ -1,6 +1,6 @@
 # Network Play
 
-These patches are bringing back network play by connecting to [/dev/ghostline](https://gitlab.com/gh0stl1ne)'s server emulator.
+These patches are bringing back online mode by redirecting network traffic to /dev/ghostline's [server emulator](https://gitlab.com/gh0stl1ne/eaps).
 
 ## What's new?
 
