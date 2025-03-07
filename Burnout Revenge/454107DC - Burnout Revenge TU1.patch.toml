@@ -26,7 +26,7 @@ hash = [
     [[patch.be16]]
         address = 0x820fb164
         value = 0x4800
-		
+
 [[patch]]
    name = "Ignore road rage event timer"
     desc = "Prevent game ending when the timer reaches 0 in road rage events"
@@ -36,8 +36,8 @@ hash = [
     [[patch.be16]]
         address = 0x82141d2c
         value = 0x4800
-		
-	# Disable road rage timer display
+
+    # Disable road rage timer display
     [[patch.be32]]
         address = 0x821a8b84
         value = 0x60000000
