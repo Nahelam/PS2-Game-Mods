@@ -61,3 +61,25 @@ hash = [
     [[patch.be32]]
         address = 0x821a842c
         value = 0x60000000
+
+[[patch]]
+   name = "Offline standing start"
+    desc = "Standing start instead of rolling start in offline modes, boost start enabled for Race, Burning Lap & Eliminator"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be8]]
+        address = 0x82122851
+        value = 0x63
+    [[patch.be32]]
+        address = 0x82138730
+        value = 0x38600000
+    [[patch.be32]]
+        address = 0x82138774
+        value = 0x3fe08201
+    [[patch.be32]]
+        address = 0x82138778
+        value = 0xc01f76b0
+    [[patch.be32]]
+        address = 0x8213877C
+        value = 0x4800004c

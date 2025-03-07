@@ -1,9 +1,11 @@
-# Burnout Revenge Mods
+# Burnout Revenge PS2 Mods (PCSX2)
 
-Various mods I made for **Burnout Revenge**.\
-PCSX2/PS2 features listed below aren't fully available for all regions, please check the `.pnach` file of your game region for a definitive list.
+Mods I made for the PlayStation 2 version of **Burnout Revenge**.\
+The mods listed below aren't fully available for all regions, please check the `.pnach` file of your game region for a definitive list.
+For Xbox 360 mods go to the [XB360](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%20Revenge/XB360) folder.
 
-## PCSX2/PS2 Features
+## Mod List
+- [Single Event Mod](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%20Revenge/Single%20Event%20Mod)
 - Native widescreen
 - Always show the progressive scan menu
 - Replace extras menu with debug menu
@@ -20,7 +22,6 @@ PCSX2/PS2 features listed below aren't fully available for all regions, please c
   - Total time version (no reset between laps)
 - Race events lap modifier
 - Disable HUD
-- [Single Event Mod](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%20Revenge/Single%20Event%20Mod)
 - [APT debug print to PCSX2 logs](https://github.com/Nahelam/PS2-Game-Mods/assets/128867759/182b704b-1a1a-4a4f-a665-8bbf31ba9799)
     - Restored an APT debug print function, it was given args but doing nothing with it. I used scePrintf to print in the PCSX2 logs.
 - Toggleable free camera (R3+UP enable, R3+DOWN disable) **(only one at once)**
@@ -40,10 +41,3 @@ PCSX2/PS2 features listed below aren't fully available for all regions, please c
 - Kamikaze traffic
 - Prevent out of range removal of crashing traffic
 - Toggle menus rendering (R3+DPAD LEFT enable, R3+DPAD RIGHT disable)
-
-## Xenia (Xbox 360) Features (.toml file)
-- Replace extras menu with debug menu
-- Selectable crash vehicles in all modes
-- Ignore road rage event timer (also disables timer HUD display)
-- Disable game mode HUD
-- Disable rating HUD
