@@ -1,0 +1,63 @@
+title_name = "Burnout Revenge"
+title_id = "454107DC" # TQ-2001
+
+hash = [
+    "D629EA67090E3137" # default.xex (Title Update 0)
+]
+
+#media_id = "223759FA" # Disc (USA, Europe)
+
+[[patch]]
+   name = "Debug menu"
+    desc = "Replaces the extras menu"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x820394bc
+        value = 0x82206500
+
+[[patch]]
+   name = "Crash vehicles in all modes"
+    desc = "Selectable crash vehicles in all modes"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be16]]
+        address = 0x820fb1ac
+        value = 0x4800
+		
+[[patch]]
+   name = "Ignore road rage event timer"
+    desc = "Prevent game ending when the timer reaches 0 in road rage events"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be16]]
+        address = 0x82141e04
+        value = 0x4800
+		
+	# Disable road rage timer display
+    [[patch.be32]]
+        address = 0x821a8c4c
+        value = 0x60000000
+
+[[patch]]
+   name = "Disable game mode HUD"
+    desc = "Prevent the game to display the game mode HUD component"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x821a4090
+        value = 0x4e800020
+
+[[patch]]
+   name = "Disable rating HUD"
+    desc = "Prevent the game to display the rating HUD component"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x821a842c
+        value = 0x60000000
