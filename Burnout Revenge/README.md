@@ -1,7 +1,7 @@
 # Burnout Revenge PS2 Mods (PCSX2)
 
 Mods I made for the PlayStation 2 version of **Burnout Revenge**.\
-The mods listed below aren't fully available for all regions, please check the `.pnach` file of your game region for a definitive list.
+The mods listed below aren't fully available for all regions, please check the `.pnach` file of your game region for a definitive list.\
 For Xbox 360 mods go to the [XB360](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%20Revenge/XB360) folder.
 
 ## Mod List

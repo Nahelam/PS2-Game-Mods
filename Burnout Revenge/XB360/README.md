@@ -1,6 +1,6 @@
 # Burnout Revenge XB360 Mods (Xenia)
 
-Mods I made for the Xbox 360 version of **Burnout Revenge**.\
+Mods I made for the Xbox 360 version of **Burnout Revenge**.
 
 ## Mod List
 - Replace extras menu with debug menu
