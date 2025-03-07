@@ -81,5 +81,15 @@ hash = [
         address = 0x82138698
         value = 0xc01f76b0
     [[patch.be32]]
-        address = 0x8213869C
+        address = 0x8213869c
         value = 0x4800004c
+
+[[patch]]
+   name = "Disable camera speed shake"
+    desc = "Prevent the camera from shaking while driving at high speeds"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x822fcf98
+        value = 0x4e800020
