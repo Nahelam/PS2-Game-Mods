@@ -1,6 +1,8 @@
 # Burnout Revenge XB360 Mods (Xenia)
 
 Mods I made for the Xbox 360 version of **Burnout Revenge**.
+Use the **TU0** file if you're using the base version of the game (most common).\
+If you installed the game update use the **TU1** file instead.
 
 ## Mod List
 - Replace extras menu with debug menu
