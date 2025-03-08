@@ -79,7 +79,12 @@ hash = [
         value = 0x3fe08201
     [[patch.be32]]
         address = 0x82138778
-        value = 0xc01f76b0
+        value = 0xc01f76b0    # 3 seconds countdown
+#       value = 0xc01f76b4    # 5 seconds countdown
+#       value = 0xc01f76c0    # 10 seconds countdown
+#       value = 0xc01f76bc    # 15 seconds countdown
+#       value = 0xc01f771c    # 30 seconds countdown
+#       value = 0xc01f7d60    # 60 seconds countdown
     [[patch.be32]]
         address = 0x8213877c
         value = 0x4800004c
