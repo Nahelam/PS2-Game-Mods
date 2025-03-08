@@ -16,4 +16,4 @@ To enable or disable a patch as you wish, change its `is_enabled` value to `true
 - Disable game mode HUD
 - Disable rating HUD
 - Standing start instead of rolling start in offline modes (boost start enabled for Race, Burning Lap & Eliminator)
-- Camera speed shake (disable, super, hyper, uber); use one at once
+- Camera speed shake (disable, super, hyper, uber) **(only one at once)**
