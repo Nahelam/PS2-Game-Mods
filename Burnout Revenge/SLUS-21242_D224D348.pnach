@@ -28,11 +28,6 @@ description=No lap limit in Burning Lap mode
 patch=0,EE,101258CC,extended,0000FFFF
 patch=0,EE,1012564E,extended,00001000
 
-[No camera speed shake]
-author=Nehalem
-description=Disable camera speed shake
-patch=0,EE,2027EBF0,extended,03E00008
-
 [Crash mode vehicles always available]
 author=Nehalem
 description=Selectable crash vehicles in all modes
@@ -444,3 +439,26 @@ patch=1,EE,D04F341C,extended,0100FF7B
 patch=1,EE,01C0F909,extended,00000001
 patch=1,EE,D04F341C,extended,0100FFDB
 patch=1,EE,01C0F909,extended,00000000
+
+[Camera Speed Shake (Enable 1 At Once)\Disable]
+author=Nehalem
+description=Prevent the camera from shaking while driving at high speeds
+patch=0,EE,2027EBF0,extended,03E00008
+
+[Camera Speed Shake (Enable 1 At Once)\Super Shake]
+author=Nehalem
+description=ShaAaAaAake
+patch=0,EE,20466C48,extended,40A00000
+patch=0,EE,20466C60,extended,40A00000
+
+[Camera Speed Shake (Enable 1 At Once)\Hyper Shake]
+author=Nehalem
+description=SHAAAAAAKE
+patch=0,EE,20466C48,extended,41A00000
+patch=0,EE,20466C60,extended,41A00000
+
+[Camera Speed Shake (Enable 1 At Once)\Uber Shake]
+author=Nehalem
+description="YEAAAHHHHHHH"
+patch=0,EE,20466C48,extended,42C80000
+patch=0,EE,20466C60,extended,42C80000

@@ -93,3 +93,42 @@ hash = [
     [[patch.be32]]
         address = 0x822fcf58
         value = 0x4e800020
+
+[[patch]]
+   name = "Super camera speed shake"
+    desc = "ShaAaAaAake"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x82694cbc
+        value = 0x40a00000
+    [[patch.be32]]
+        address = 0x82694cd4
+        value = 0x40a00000
+
+[[patch]]
+   name = "Hyper camera speed shake"
+    desc = "SHAAAAAAKE"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x82694cbc
+        value = 0x41a00000
+    [[patch.be32]]
+        address = 0x82694cd4
+        value = 0x41a00000
+        
+[[patch]]
+   name = "Uber camera speed shake"
+    desc = "YEAAAHHHHHHH"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be32]]
+        address = 0x82694cbc
+        value = 0x42c80000
+    [[patch.be32]]
+        address = 0x82694cd4
+        value = 0x42c80000
