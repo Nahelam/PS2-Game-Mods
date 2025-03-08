@@ -2,6 +2,9 @@
 
 Taking shortcuts in the boot process.
 
+Allows you to land directly on the title screen or the main menu after the game loading screen, no intro videos, no refresh rate/language select.\
+Default video mode, initial menu and language (if your game supports multiple languages) are selectable in the cheat list.
+
 ## Global
 
 - Selectable default video mode
