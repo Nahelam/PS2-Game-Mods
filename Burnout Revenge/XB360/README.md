@@ -27,7 +27,7 @@ If the patches aren't applied at game start, it is probably because your game is
   1. Quickly launch and exit the game
   2. In your Xenia folder, look for the file `xenia.log` and open it with a text editor
   3. Search for the line containing `Module Hash:`
-  4. Copy the hash and add it to the patch file
+  4. Copy the hash and add it to the patch file (you can also replace the current one if you don’t need the file to be compatible with multiple regions)
   6. Done
 
 [Example of a patch file containing multiple hashes](<https://github.com/xenia-canary/game-patches/blob/main/patches/454107D9%20-%20Need%20for%20Speed%20Most%20Wanted%20(2005).patch.toml#L3-L8>)
