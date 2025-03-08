@@ -25,7 +25,7 @@ Currently, the provided patch files only contain the hash of the US game version
 If the patches aren't applied at game start, it is probably because your game is from a different region or has been modded.
 ### Fix
   1. Quickly launch and exit the game
-  2. In your xenia folder, look for the file `xenia.log` and open it with a text editor
+  2. In your Xenia folder, look for the file `xenia.log` and open it with a text editor
   3. Search for the line containing `Module Hash:`
   4. Copy the hash and add it to the patch file
   6. Done
