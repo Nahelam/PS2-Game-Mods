@@ -7,7 +7,7 @@ If you installed the game update use the **TU1** file instead.
 
 ## Enabling/Disabling patches
 
-To enable or disable a patch as you wish, change its `is_enabled` value to `true` or `false`.
+To enable or disable a patch, change its `is_enabled` value to `true` or `false`.
 
 ## Mod List
 - Replace extras menu with debug menu
