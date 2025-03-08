@@ -11,7 +11,7 @@ For Xbox 360 mods go to the [XB360](https://github.com/Nahelam/PS2-Game-Mods/tre
 - Replace extras menu with debug menu
 - Speedometer HUD unit patch (MPH->KPH)
 - No lap limit in Burning Lap mode
-- Camera speed shake (disable, super, hyper, uber); use one at once
+- Camera speed shake (disable, super, hyper, uber) **(only one at once)**
 - Selectable crash vehicles in all modes
 - Allow online games to be started even you're the only player in the lobby (Solonline)
 - Offline car air control
