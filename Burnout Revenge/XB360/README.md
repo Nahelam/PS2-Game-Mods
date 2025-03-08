@@ -21,7 +21,7 @@ To enable or disable a patch, change its `is_enabled` value to `true` or `false`
 
 ## Troubleshooting
 
-Currently, the provided patch files only contains the hash of the US game version.\
+Currently, the provided patch files only contain the hash of the US game version.\
 If the patches aren't applied at game start, it is probably because your game is from a different region or has been modded.
 ### Fix
   1. Quickly launch and exit the game
