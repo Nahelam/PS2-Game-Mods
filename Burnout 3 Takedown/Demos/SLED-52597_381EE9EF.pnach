@@ -1,0 +1,22 @@
+gametitle=Burnout 3: Takedown (SLED-52597) [PAL] [Demo]
+
+[Disable Demo Mode]
+author=Nehalem
+description=Disable the demo mode to allow landing on the main menu
+patch=0,EE,20130C40,extended,0000282D
+
+[Green Text Track Selection Menu]
+author=Nehalem
+description=Avoid the broken Crash Nav track selection menu
+patch=0,EE,002A313A,extended,00000000
+
+[480p]
+author=Nehalem
+description=Set default video mode to 480p
+patch=0,EE,201DACD4,extended,24030001
+patch=0,EE,001D0C66,extended,00000080
+
+[Manual Transmission]
+author=Nehalem
+description=Enable manual transmission (L2 downshift, R2 upshift)
+patch=0,EE,20182298,extended,A2221558
