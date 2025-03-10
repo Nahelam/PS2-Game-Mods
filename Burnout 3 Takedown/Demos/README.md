@@ -1,6 +1,6 @@
 # Burnout 3: Takedown PS2 Demos Mods (PCSX2)
 
-Mods I made for the PlayStation 2 demo versions of **Burnout 3: Takedown**.\
+Mods I made for the PlayStation 2 demo versions of **Burnout 3: Takedown**.
 
 ## Mod List
 - Disable "demo" mode (brings back replays, 3 laps races, and probably more)
