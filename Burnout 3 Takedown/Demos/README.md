@@ -1,4 +1,4 @@
-# Burnout 3: Takedown PS2 Demos Mods (PCSX2)
+# Burnout 3: Takedown PS2 Demo Mods (PCSX2)
 
 Mods I made for the PlayStation 2 demo versions of **Burnout 3: Takedown**.
 
