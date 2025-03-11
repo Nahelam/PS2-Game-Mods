@@ -7,3 +7,4 @@ Mods I made for the PlayStation 2 demo versions of **Burnout 3: Takedown**.
 - Green text track selection menu (to avoid the broken Crash Nav track selection menu)
 - 480p video mode
 - Manual transmission (L2 downshift, R2 upshift)
+- Disable time and/or lap limit(s) in Road Rage mode

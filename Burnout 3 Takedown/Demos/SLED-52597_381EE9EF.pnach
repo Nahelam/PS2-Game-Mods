@@ -20,3 +20,36 @@ patch=0,EE,001D0C66,extended,00000080
 author=Nehalem
 description=Enable manual transmission (L2 downshift, R2 upshift)
 patch=0,EE,20182298,extended,A2221558
+
+[Road Rage\Disable Time Limit]
+author=Nehalem
+description=Disable the time limit in Road Rage mode
+patch=0,EE,20165260,extended,00000000
+patch=0,EE,201655BC,extended,00000000
+patch=0,EE,202FA4A0,extended,00000000
+
+[Road Rage\Disable Lap Limit]
+author=Nehalem
+description=Disable the lap limit in Road Rage mode
+patch=0,EE,20147AF0,extended,0805713A
+patch=0,EE,2015C4E8,extended,27BDFFF0
+patch=0,EE,2015C4EC,extended,FFBF0000
+patch=0,EE,2015C4F0,extended,1040000F
+patch=0,EE,2015C4F4,extended,00000000
+patch=0,EE,2015C4F8,extended,3C02003C
+patch=0,EE,2015C4FC,extended,8C423E28
+patch=0,EE,2015C500,extended,8C4401B4
+patch=0,EE,2015C504,extended,5080000A
+patch=0,EE,2015C508,extended,24020001
+patch=0,EE,2015C50C,extended,8C820000
+patch=0,EE,2015C510,extended,8C42008C
+patch=0,EE,2015C514,extended,0040F809
+patch=0,EE,2015C518,extended,00000000
+patch=0,EE,2015C51C,extended,10400004
+patch=0,EE,2015C520,extended,24020001
+patch=0,EE,2015C524,extended,3C03004F
+patch=0,EE,2015C528,extended,8C633874
+patch=0,EE,2015C52C,extended,AC6003B0
+patch=0,EE,2015C530,extended,DFBF0000
+patch=0,EE,2015C534,extended,03E00008
+patch=0,EE,2015C538,extended,27BD0010
