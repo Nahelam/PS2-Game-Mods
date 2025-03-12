@@ -52,3 +52,11 @@ patch=0,EE,2015C67C,extended,AC6003B0
 patch=0,EE,2015C680,extended,DFBF0000
 patch=0,EE,2015C684,extended,03E00008
 patch=0,EE,2015C688,extended,27BD0010
+
+[Single Race -> Eliminator (Hold L2)]
+author=Nehalem
+description=Start Eliminator mode instead of Single Race mode (hold L2 while selecting car)
+patch=1,EE,D03A519C,extended,0300FEFF
+patch=1,EE,D03C4F08,extended,02000006
+patch=1,EE,D03C46C4,extended,01004A60
+patch=1,EE,003C46C4,extended,000000C8
