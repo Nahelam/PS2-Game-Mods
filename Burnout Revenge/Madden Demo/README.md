@@ -29,7 +29,7 @@ It will appear in your game list, have its own configurable properties and fixes
    ```
 - Now your temporary folder contains two files, `SLUS_212.42` and `SYSTEM.CNF`
 - [Create a new iso file](https://github.com/Nahelam/PCSX2-HostFS-Patches/tree/main/Criterion%20Games#additional-steps-optional) based on your temporary folder (it is the equivalent of the `whatever` folder in the video)
-- Copy the new iso file into the `B4` folder we created earlier (you can now remove the temporary folder if you want to)
+- Copy the new iso file into the `B4` folder we extracted earlier (you can now remove the temporary folder if you want to)
 
 ### Add iso to PCSX2
 
