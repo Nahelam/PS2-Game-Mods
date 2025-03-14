@@ -15,7 +15,7 @@ Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available
 ## HostFS Repack
 
 Repacking the game demo to a standalone and host filesystem compatible version is the most convenient way to play it on emulator.\
-The game will have its own configurable properties and game fixes (no black skybox etc.) will be applied correctly.
+It will appear in your game list, have its own configurable properties and fixes (no black skybox etc.) will be applied correctly.
 
 ### Create iso
 
