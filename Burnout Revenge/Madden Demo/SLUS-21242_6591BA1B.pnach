@@ -96,19 +96,6 @@ patch=0,EE,20102C24,extended,100000A4
 [Main Menu QUIT -> Debug Menu]
 author=Nehalem
 description=The main menu "QUIT" option now opens the debug (quick start) menu
-patch=0,EE,2010A930,extended,24020003
-patch=0,EE,2010A934,extended,14A20009
-patch=0,EE,2010A938,extended,3C0301C3
-patch=0,EE,2010A93C,extended,3402A611
-patch=0,EE,2010A940,extended,00021438
-patch=0,EE,2010A944,extended,3442B390
-patch=0,EE,2010A948,extended,00021438
-patch=0,EE,2010A94C,extended,3442ED94
-patch=0,EE,2010A950,extended,000213B8
-patch=0,EE,2010A954,extended,34423A5C
-patch=0,EE,2010A958,extended,FC62E068
-patch=0,EE,2010A95C,extended,08057760
-patch=0,EE,2010A960,extended,00000000
 patch=0,EE,2016099C,extended,3C05962C
 patch=0,EE,201609A0,extended,3403B0B4
 patch=0,EE,201609A4,extended,34A5720D
@@ -116,7 +103,6 @@ patch=0,EE,201609A8,extended,00031C38
 patch=0,EE,201609AC,extended,0005283C
 patch=0,EE,201609B0,extended,3463C738
 patch=0,EE,201609B4,extended,00652825
-patch=0,EE,203C0354,extended,0010A930
 
 [Pause Menu QUIT -> Main Menu]
 author=Nehalem
@@ -138,7 +124,8 @@ patch=0,EE,20160D18,extended,24A50848
 patch=0,EE,20160D1C,extended,1000001F
 patch=0,EE,20160D20,extended,00000000
 
-[3 Laps Races]
+[Default Single Race Mode]
 author=Nehalem
-description=Set lap limit to 3 in Single Race mode
-patch=0,EE,203BCB5C,extended,0010FDB8
+description=No "demo" settings tweak for Single Race mode
+patch=0,EE,20159B84,extended,10000087
+patch=0,EE,20159B88,extended,26843E58
