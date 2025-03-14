@@ -1,0 +1,144 @@
+gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C] [Madden Demo]
+
+[480p]
+author=Nehalem
+description=Set default video mode to 480p
+patch=0,EE,00109192,extended,00000065
+patch=0,EE,20132108,extended,24020001
+
+[Native Widescreen]
+author=Nehalem
+description=Force native widescreen (16:9)
+patch=0,EE,201D188C,extended,0260202D
+
+[Host Filesystem]
+author=Nehalem
+description=Enable host filesystem
+patch=0,EE,2010A560,extended,00000000
+patch=0,EE,0010A698,extended,00000005
+patch=0,EE,201D1840,extended,A2800000
+patch=0,EE,203C9DB0,extended,74736F68
+patch=0,EE,203C9DB4,extended,504F493A
+patch=0,EE,203C9DB8,extended,4F49532F
+patch=0,EE,203C9DBC,extended,4E414D32
+patch=0,EE,203C9DC0,extended,5852492E
+patch=0,EE,203C9DC4,extended,00000000
+patch=0,EE,203C9DC8,extended,00000000
+patch=0,EE,203C9DD0,extended,74736F68
+patch=0,EE,203C9DD4,extended,504F493A
+patch=0,EE,203C9DD8,extended,4F49532F
+patch=0,EE,203C9DDC,extended,492E4432
+patch=0,EE,203C9DE0,extended,00005852
+patch=0,EE,203C9DE4,extended,00000000
+patch=0,EE,203C9DE8,extended,74736F68
+patch=0,EE,203C9DEC,extended,504F493A
+patch=0,EE,203C9DF0,extended,4342442F
+patch=0,EE,203C9DF4,extended,2E4E414D
+patch=0,EE,203C9DF8,extended,00585249
+patch=0,EE,203C9DFC,extended,00000000
+patch=0,EE,203C9E08,extended,74736F68
+patch=0,EE,203C9E0C,extended,504F493A
+patch=0,EE,203C9E10,extended,3253442F
+patch=0,EE,203C9E14,extended,52492E4F
+patch=0,EE,203C9E18,extended,00000058
+patch=0,EE,203C9E1C,extended,00000000
+patch=0,EE,203C9E20,extended,74736F68
+patch=0,EE,203C9E24,extended,504F493A
+patch=0,EE,203C9E28,extended,32434D2F
+patch=0,EE,203C9E2C,extended,2E31535F
+patch=0,EE,203C9E30,extended,00585249
+patch=0,EE,203C9E34,extended,00000000
+patch=0,EE,203C9E40,extended,74736F68
+patch=0,EE,203C9E44,extended,504F493A
+patch=0,EE,203C9E48,extended,42494C2F
+patch=0,EE,203C9E4C,extended,492E4453
+patch=0,EE,203C9E50,extended,00005852
+patch=0,EE,203C9E54,extended,00000000
+patch=0,EE,203C9E58,extended,74736F68
+patch=0,EE,203C9E5C,extended,504F493A
+patch=0,EE,203C9E60,extended,4157522F
+patch=0,EE,203C9E64,extended,5852492E
+patch=0,EE,203C9E68,extended,00000000
+patch=0,EE,203C9E6C,extended,00000000
+patch=0,EE,203C9E70,extended,74736F68
+patch=0,EE,203C9E74,extended,504F493A
+patch=0,EE,203C9E78,extended,5234422F
+patch=0,EE,203C9E7C,extended,4554554F
+patch=0,EE,203C9E80,extended,5852492E
+patch=0,EE,203C9E84,extended,00000000
+patch=0,EE,203C9E88,extended,00000000
+patch=0,EE,203C9E90,extended,74736F68
+patch=0,EE,203C9E94,extended,504F493A
+patch=0,EE,203C9E98,extended,4654472F
+patch=0,EE,203C9E9C,extended,534F4853
+patch=0,EE,203C9EA0,extended,52492E54
+patch=0,EE,203C9EA4,extended,00000058
+patch=0,EE,203C9EA8,extended,00000000
+patch=0,EE,203C9EB8,extended,74736F68
+patch=0,EE,203C9EBC,extended,0000003A
+patch=0,EE,003C9ECB,extended,0000002F
+patch=0,EE,003C9EF3,extended,0000002F
+patch=0,EE,103C9EFC,extended,00000000
+patch=0,EE,003C9F23,extended,0000002F
+patch=0,EE,103C9F2D,extended,00000000
+
+[No Boot Error]
+author=Nehalem
+description=Prevent boot TLB miss errors
+patch=0,EE,201D1850,extended,00000000
+patch=0,EE,201D185C,extended,00000000
+
+[Remove Idle Time Limit]
+author=Nehalem
+description=Remove the demo in-game idle time limit
+patch=0,EE,20102C24,extended,100000A4
+
+[Main Menu QUIT -> Debug Menu]
+author=Nehalem
+description=The main menu "QUIT" option now opens the debug (quick start) menu
+patch=0,EE,2010A930,extended,24020003
+patch=0,EE,2010A934,extended,14A20009
+patch=0,EE,2010A938,extended,3C0301C3
+patch=0,EE,2010A93C,extended,3402A611
+patch=0,EE,2010A940,extended,00021438
+patch=0,EE,2010A944,extended,3442B390
+patch=0,EE,2010A948,extended,00021438
+patch=0,EE,2010A94C,extended,3442ED94
+patch=0,EE,2010A950,extended,000213B8
+patch=0,EE,2010A954,extended,34423A5C
+patch=0,EE,2010A958,extended,FC62E068
+patch=0,EE,2010A95C,extended,08057760
+patch=0,EE,2010A960,extended,00000000
+patch=0,EE,2016099C,extended,3C05962C
+patch=0,EE,201609A0,extended,3403B0B4
+patch=0,EE,201609A4,extended,34A5720D
+patch=0,EE,201609A8,extended,00031C38
+patch=0,EE,201609AC,extended,0005283C
+patch=0,EE,201609B0,extended,3463C738
+patch=0,EE,201609B4,extended,00652825
+patch=0,EE,203C0354,extended,0010A930
+
+[Pause Menu QUIT -> Main Menu]
+author=Nehalem
+description=The pause menu "QUIT" option now goes back to the main menu
+patch=0,EE,20160CE4,extended,3C059626
+patch=0,EE,20160CE8,extended,3C033A3C
+patch=0,EE,20160CEC,extended,34A50DA0
+patch=0,EE,20160CF0,extended,3463FFFF
+patch=0,EE,20160CF4,extended,0005283C
+patch=0,EE,20160CF8,extended,00652825
+patch=0,EE,20160CFC,extended,3C040045
+patch=0,EE,20160D00,extended,0C0406C6
+patch=0,EE,20160D04,extended,24840848
+patch=0,EE,20160D08,extended,2690DE90
+patch=0,EE,20160D0C,extended,3C050045
+patch=0,EE,20160D10,extended,26A414C0
+patch=0,EE,20160D14,extended,0C040D7C
+patch=0,EE,20160D18,extended,24A50848
+patch=0,EE,20160D1C,extended,1000001F
+patch=0,EE,20160D20,extended,00000000
+
+[3 Laps Races]
+author=Nehalem
+description=Set lap limit to 3 in Single Race mode
+patch=0,EE,203BCB5C,extended,0010FDB8
