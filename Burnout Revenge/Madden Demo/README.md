@@ -14,7 +14,7 @@ Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available
 
 ### Note
 
-If you want to use the debug menu without the default Single Race mode enabled (wtf is wrong with you?), you must at least start one game from the demo menu or it won't load properly (implies the pause menu code).
+If you want to start a Single Race from the debug menu without the default stage data patch enabled (wtf is wrong with you?), you must at least start one game from the demo menu or it won't load properly (implies the pause menu code).
 
 ## HostFS Repack
 
