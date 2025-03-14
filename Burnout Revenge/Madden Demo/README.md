@@ -1,6 +1,6 @@
 # Burnout Revenge Madden Demo PS2 Mods (PCSX2)
 
-Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available in Madden NFL 06).\
+Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available in Madden NFL 06).
 
 ## Mod List
 - 480p video mode
