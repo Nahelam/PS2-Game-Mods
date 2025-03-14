@@ -1,16 +1,5 @@
 gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C] [Madden Demo]
 
-[480p]
-author=Nehalem
-description=Set default video mode to 480p
-patch=0,EE,00109192,extended,00000065
-patch=0,EE,20132108,extended,24020001
-
-[Native Widescreen]
-author=Nehalem
-description=Force native widescreen (16:9)
-patch=0,EE,201D188C,extended,0260202D
-
 [Host Filesystem]
 author=Nehalem
 description=Enable host filesystem
@@ -81,6 +70,17 @@ patch=0,EE,003C9EF3,extended,0000002F
 patch=0,EE,103C9EFC,extended,00000000
 patch=0,EE,003C9F23,extended,0000002F
 patch=0,EE,103C9F2D,extended,00000000
+
+[480p]
+author=Nehalem
+description=Set default video mode to 480p
+patch=0,EE,00109192,extended,00000065
+patch=0,EE,20132108,extended,24020001
+
+[Native Widescreen]
+author=Nehalem
+description=Force native widescreen (16:9)
+patch=0,EE,201D188C,extended,0260202D
 
 [No Boot Error]
 author=Nehalem
