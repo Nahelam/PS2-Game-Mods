@@ -126,6 +126,6 @@ patch=0,EE,20160D20,extended,00000000
 
 [Default Single Race Mode]
 author=Nehalem
-description=No "demo" settings tweak for Single Race mode
+description=Load default stage data for Single Race mode (no 1 lap limit etc.)
 patch=0,EE,20159B84,extended,10000087
 patch=0,EE,20159B88,extended,26843E58
