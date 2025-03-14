@@ -1,6 +1,6 @@
 gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C] [Madden Demo]
 
-[Host Filesystem]
+[HostFS]
 author=Nehalem
 description=Enable host filesystem
 patch=0,EE,2010A560,extended,00000000
