@@ -10,7 +10,7 @@ Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available
 - No in-game idle time limit
 - Main menu "QUIT" option opens the debug (quick start) menu
 - Pause menu "QUIT" option goes back to the main menu
-- 3 laps Single Race mode
+- No "demo" settings tweak for Single Race mode
 
 ## HostFS Repack
 
