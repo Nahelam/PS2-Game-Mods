@@ -11,6 +11,10 @@ Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available
 - Main menu "QUIT" option opens the debug (quick start) menu
 - Pause menu "QUIT" option goes back to the main menu
 - Load default stage data for Single Race mode (no 1 lap limit etc.)
+- Fix traffic attack stage data not being loaded
+- Prevent the game from quitting/crashing after letting the intro sequence play entirely
+- Directly go back to the title screen once an event is finished (no demo end sequence)
+- Patches attempting to make the demo read Alpha 7 tracks & vehicle data correctly (includes playable Crash mode)
 
 ### Note
 
