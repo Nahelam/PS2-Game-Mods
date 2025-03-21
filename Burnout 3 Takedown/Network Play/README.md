@@ -32,5 +32,5 @@ If you want to prevent the game from using UPnP.
 
 ### Disable Buddy System
 
-The current server emulator has a known issue causing a lot of pre-game timeouts when using the buddy system .\
+The current server emulator has a known issue causing a lot of pre-game timeouts when using the buddy system.\
 Preventing the game from communcating with the buddy server avoids this issue, please note that **ALL** players must have it enabled.
