@@ -3,7 +3,7 @@
 Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available in the US version of **Madden NFL 06**).
 
 ## Mod List
-- Host filesystem (easy file swaps/additions)
+- [Host filesystem](https://github.com/Nahelam/PCSX2-HostFS-Patches/tree/main/Criterion%20Games#setting-up-pcsx2) (easy file swaps/additions)
 - 480p video mode
 - Native widescreen (16:9)
 - Prevent boot TLB miss errors
