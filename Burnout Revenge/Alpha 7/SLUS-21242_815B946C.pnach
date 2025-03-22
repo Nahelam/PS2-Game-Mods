@@ -178,3 +178,25 @@ patch=0,EE,20110FC4,extended,27BD0030
 author=Nehalem
 description=Replace extras menu with debug menu
 patch=0,EE,10480D84,extended,0000AA90
+
+[Free camera\Basic]
+author=Nehalem
+description=Toggleable free camera (R3+UP enable, R3+DOWN disable)
+patch=1,EE,D04D089C,extended,0200FFEB
+patch=1,EE,204F4A00,extended,00000002
+patch=1,EE,004F4A30,extended,00000001
+patch=1,EE,D04D089C,extended,0200FFBB
+patch=1,EE,204F4A00,extended,00000200
+patch=1,EE,004F4A30,extended,00000009
+
+[Free camera\No HUD]
+author=Nehalem
+description=Toggleable free camera & HUD (R3+UP enable, R3+DOWN disable)
+patch=1,EE,D04D089C,extended,0300FFEB
+patch=1,EE,204F4A00,extended,00000002
+patch=1,EE,004F4A30,extended,00000001
+patch=1,EE,01C29B4B,extended,00000000
+patch=1,EE,D04D089C,extended,0300FFBB
+patch=1,EE,204F4A00,extended,00000200
+patch=1,EE,004F4A30,extended,00000009
+patch=1,EE,01C29B4B,extended,00000001

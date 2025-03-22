@@ -8,3 +8,6 @@ Mods I made for the PlayStation 2 Alpha 7 version of **Burnout Revenge**.
 - Native widescreen (16:9)
 - Enable all options of the main menu
 - Extras Menu -> Debug Menu
+- Toggleable free camera (R3+UP enable, R3+DOWN disable) **(only one at once)**
+  - Basic version
+  - No HUD version
