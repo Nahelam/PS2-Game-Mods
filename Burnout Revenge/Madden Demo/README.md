@@ -15,10 +15,8 @@ Mods I made for the PlayStation 2 demo version of **Burnout Revenge** (available
 - Prevent the game from quitting/crashing after letting the intro sequence play entirely
 - Directly go back to the title screen once an event is finished (no demo end sequence)
 - Patches attempting to make the demo read Alpha 7 tracks & vehicle data correctly (includes playable Crash mode)
-
-### Note
-
-If you want to start a Single Race from the debug menu without the default stage data patch enabled (wtf is wrong with you?), you must at least start one game from the demo menu or it won't load properly (implies the pause menu patch).
+  - Must use HostFS
+  - From Alpha 7 copy the whole PVEH folder & TLIST.BIN + AS, EU, US folders of the TRACKS directory to the demo directory
 
 ## HostFS Repack
 
