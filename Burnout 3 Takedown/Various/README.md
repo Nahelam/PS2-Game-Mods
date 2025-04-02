@@ -54,6 +54,7 @@ PCSX2/PS2 features listed below aren't fully available for all regions.
 - Third person rear view [\[demo\]](https://i.imgur.com/Rl2KQRy.mp4)
 - Enable props in road rage mode
 - Show the language selection menu at boot (overrides the automatic language detection)
+- Enable DJ dialogues in Single Event mode
 
 ## Notes
 - "Heavyweights always available" is **required** to get heavyweights online working.

@@ -1,0 +1,8 @@
+gametitle=Burnout 3: Takedown (SLAJ-25053) [NTSC-J]
+
+[Single Event DJ]
+author=Nehalem
+description=Enable DJ dialogues in Single Event mode
+patch=0,EE,203F8D6C,extended,00000000
+patch=0,EE,203F9AF8,extended,00000000
+patch=0,EE,203FA104,extended,00000000
