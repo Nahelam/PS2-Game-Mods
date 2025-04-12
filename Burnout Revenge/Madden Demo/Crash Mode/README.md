@@ -1,6 +1,6 @@
 # Burnout Revenge [Madden Demo] PS2 - Crash Mode (PCSX2)
 
-Playbale & configurable Crash mode for the Madden Demo version of Burnout Revenge.\
+Playable & configurable Crash mode for the Madden Demo version of Burnout Revenge.\
 *(This game mode is by default unplayable, don't expect much stability)*
 
 [![Burnout Revenge \[Madden Demo\] - Crash Mode](https://github.com/user-attachments/assets/89fd2c79-6ba0-4c29-aa66-74b6164a8949)](https://youtu.be/JRvQByE6E2g "Burnout Revenge \[Madden Demo\] - Crash Mode")
