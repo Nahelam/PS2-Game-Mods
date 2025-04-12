@@ -6,7 +6,7 @@ Playbale & configurable Crash mode for the Madden Demo version of Burnout Reveng
 [![Burnout Revenge \[Madden Demo\] - Crash Mode](https://github.com/user-attachments/assets/89fd2c79-6ba0-4c29-aa66-74b6164a8949)](https://youtu.be/JRvQByE6E2g "Burnout Revenge \[Madden Demo\] - Crash Mode")
 
 ## Features
-- New debug menu (for Crash mode setup)
+- New debug menu for Crash mode setup (select "RACE")
 - Alpha 7 tracks compatibility
 - Retail/Alpha 7 vehicles compatibility (vehicle stats included)
 - Car Selection
