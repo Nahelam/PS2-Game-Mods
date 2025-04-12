@@ -28,7 +28,7 @@ Playbale & configurable Crash mode for the Madden Demo version of Burnout Reveng
   - `TRACKS/AS` *(whole folder)*
   - `TRACKS/EU` *(whole folder)*
   - `TRACKS/US` *(whole folder)*
-  - `LANGUAGE/STRINGS/MAINUS.BIN` (file)
+  - `LANGUAGE/STRINGS/MAINUS.BIN` *(file)*
  
 - Replace the following from **Retail** or **Alpha 7** (I'd suggest Retail)
   - `PVEH` *(whole folder)*
