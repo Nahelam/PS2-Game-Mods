@@ -1,11 +1,10 @@
 title_name = "Burnout Revenge"
-title_id = "454107DC" # TQ-2001
+title_id = "454107DC" # EA-2012
 
-hash = [
-    "D629EA67090E3137" # default.xex (Title Update 0)
+hash = [ # default.xex (Title Update 0)
+    "D629EA67090E3137", # NTSC/U         [223759FA]
+    "A8E66470DEF2A623"  # PAL (FR/DE/IT) [213B2D4C]
 ]
-
-#media_id = "223759FA" # Disc (USA, Europe)
 
 [[patch]]
    name = "Debug menu"
