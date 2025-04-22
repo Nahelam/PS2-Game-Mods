@@ -14,7 +14,7 @@
 
 - Always show the Progressive Scan menu at boot
 
-# 60 FPS
+## 60 FPS
 
 - 60 FPS Menus (including FMVs playback)
 - 60 FPS Crashes
