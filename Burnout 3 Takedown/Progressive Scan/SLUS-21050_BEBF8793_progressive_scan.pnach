@@ -1,6 +1,0 @@
-gametitle=Burnout 3: Takedown (SLUS-21050) [NTSC-U/C]
-
-[Graphics\Progressive Scan Menu]
-author=Nehalem
-description=Always show the Progressive Scan menu at boot
-patch=0,EE,20437758,extended,100000F1

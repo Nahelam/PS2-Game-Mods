@@ -1,5 +1,0 @@
-gametitle=Burnout 3: Takedown [SLES-52585] (E)
-comment=Enable 60 FPS in menus only
-author=Nehalem
-
-patch=0,EE,201D3F2C,extended,1000000A

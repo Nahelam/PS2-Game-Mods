@@ -1,5 +1,0 @@
-gametitle=Burnout 3: Takedown (SLPM-65719) [NTSC-J]
-author=Nehalem
-description=Force native widescreen
-
-patch=0,EE,20436DC4,extended,00000000

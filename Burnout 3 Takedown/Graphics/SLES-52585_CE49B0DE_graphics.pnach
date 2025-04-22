@@ -1,5 +1,10 @@
 gametitle=Burnout 3: Takedown (SLES-52585) [PAL]
 
+[Graphics\Native Widescreen]
+author=Nehalem
+description=Force native widescreen
+patch=0,EE,204369F4,extended,00000000
+
 [Graphics\Progressive Scan Menu]
 author=Nehalem
 description=Show the Progressive Scan (480p) menu instead of the Interlacing (50Hz/60Hz) menu
@@ -13,3 +18,18 @@ patch=0,EE,0043720C,extended,0000009B
 patch=0,EE,204373DC,extended,24050001
 patch=0,EE,20437404,extended,24050001
 patch=0,EE,00437426,extended,00000085
+
+[Graphics\60 FPS Menus]
+author=Nehalem
+description=Make menus run at 60 FPS
+patch=0,EE,20130DD8,extended,C7958074
+patch=0,EE,20130DDC,extended,3C084000
+patch=0,EE,20130DE0,extended,4488A000
+patch=0,EE,20130DE4,extended,4614AD03
+patch=0,EE,20130DE8,extended,00000000
+patch=0,EE,201D3F2C,extended,1000000A
+
+[Graphics\60 FPS Crashes]
+author=Nehalem
+description=No half frame rate during crashes
+patch=0,EE,201320E8,extended,1000004B
