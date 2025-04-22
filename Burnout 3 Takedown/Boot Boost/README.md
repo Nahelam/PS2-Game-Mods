@@ -1,6 +1,6 @@
 # Boot Boost
 
-Taking shortcuts in the boot process.
+*Taking shortcuts in the boot process.*
 
 Allows you to land directly on the title screen or the main menu after the game loading screen, no intro videos, no refresh rate/language select.\
 Default video mode, initial menu and language (if your game supports multiple languages) are selectable in the cheat list.
@@ -16,6 +16,6 @@ Default video mode, initial menu and language (if your game supports multiple la
   - Main Menu (No Profile)
   - Main Menu (No Profile + All Unlocked)
 
-## SLES-52584, SLES-52585
+## SLES
 
 - Selectable default language
