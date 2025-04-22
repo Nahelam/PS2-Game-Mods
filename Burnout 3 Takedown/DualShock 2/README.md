@@ -1,4 +1,4 @@
-# DualShock 2 PS2 stuff
+# DualShock 2 (for real consoles)
 
 Only use one of the following at once.
 
