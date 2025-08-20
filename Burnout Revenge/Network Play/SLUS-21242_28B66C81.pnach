@@ -1,0 +1,73 @@
+gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C]
+
+[Network\Short Timeout Delay]
+author=Nehalem
+description=Reduce the server connection timeout delay to 10 seconds (default is 2 minutes)
+patch=0,EE,203BD36C,extended,24032710
+
+[Network\Solonline]
+author=Nehalem
+description=Allow online races to be started even you're the only player in the lobby
+patch=0,EE,2019E7B0,extended,00000000
+patch=0,EE,201D5318,extended,00000000
+
+[Network\Online Track Select Fix]
+author=Nehalem
+description=Temporary null pointer fix when the selected track differs from default
+patch=0,EE,201D60E0,extended,3C02004E
+patch=0,EE,201D60E4,extended,244246A0
+
+[Network\Disable Buddy System]
+author=Nehalem
+description=Prevent the game from connecting to the buddy server
+patch=0,EE,20188EE0,extended,00000000
+patch=0,EE,1018D9C6,extended,00001000
+patch=0,EE,2018DD88,extended,1000000D
+patch=0,EE,2019CB8C,extended,0C129D48
+patch=0,EE,201AAFF8,extended,0C129D48
+patch=0,EE,201D4C90,extended,00000000
+patch=0,EE,201D552C,extended,00000000
+patch=0,EE,204A7520,extended,24C3FFF2
+patch=0,EE,204A7524,extended,2C610003
+patch=0,EE,204A7528,extended,10200003
+patch=0,EE,204A752C,extended,0000102D
+patch=0,EE,204A7530,extended,08067114
+patch=0,EE,204A7534,extended,00000000
+patch=0,EE,204A7538,extended,03E00008
+patch=0,EE,204A753C,extended,00000000
+
+[Network\Verifying Account Fix]
+author=Nehalem
+description=Temporary fix for the hanging account verification screen
+patch=0,EE,20310EA4,extended,0C129D40
+patch=0,EE,204A7500,extended,50800003
+patch=0,EE,204A7504,extended,27FF0120
+patch=0,EE,204A7508,extended,080F071A
+patch=0,EE,204A750C,extended,00000000
+patch=0,EE,204A7510,extended,3C057365
+patch=0,EE,204A7514,extended,8E240004
+patch=0,EE,204A7518,extended,080EF504
+patch=0,EE,204A751C,extended,34A57276
+
+[Network\Force Online Error (L3+R3)]
+author=Nehalem
+description=Force the timed out error to escape softlocks
+patch=0,EE,2049F8FC,extended,004A7540
+patch=0,EE,204A7540,extended,24020004
+patch=0,EE,204A7544,extended,14450009
+patch=0,EE,204A7548,extended,3C02004F
+patch=0,EE,204A754C,extended,2403FFF9
+patch=0,EE,204A7550,extended,8442341C
+patch=0,EE,204A7554,extended,14430005
+patch=0,EE,204A7558,extended,3C0201C1
+patch=0,EE,204A755C,extended,8C446F34
+patch=0,EE,204A7560,extended,3C057365
+patch=0,EE,204A7564,extended,080EF504
+patch=0,EE,204A7568,extended,34A57276
+patch=0,EE,204A756C,extended,0806205A
+patch=0,EE,204A7570,extended,00000000
+
+[Network\Disable Drag Coeff]
+author=Nehalem
+description=Disable the adaptative drag coefficient based on distance away from other players
+patch=0,EE,202071AC,extended,00000000

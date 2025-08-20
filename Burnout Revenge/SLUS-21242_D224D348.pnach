@@ -33,12 +33,6 @@ author=Nehalem
 description=Selectable crash vehicles in all modes
 patch=0,EE,20135A30,extended,00000000
 
-[Solonline]
-author=Nehalem
-description=Allow online games to be started even you're the only player in the lobby
-patch=0,EE,2019E7B0,extended,00000000
-patch=0,EE,201D5318,extended,00000000
-
 [Driving air control]
 author=Nehalem
 description=Enables aftertouch air control in offline modes
