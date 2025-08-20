@@ -3,7 +3,7 @@
 ### Some patches for the online mode:
 
 - Short Timeout Delay
-  + Reduce the server connection timeout delay to 10 seconds (default is 2 minutes)
+  + 10 seconds timeout delay while stuck on server connection (default is 2 minutes)
 
 + Solonline
   - Allow online races to be started even you're the only player in the lobby

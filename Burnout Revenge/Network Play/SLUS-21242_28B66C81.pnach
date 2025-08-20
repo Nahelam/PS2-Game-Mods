@@ -2,7 +2,7 @@ gametitle=Burnout Revenge (SLUS-21242) [NTSC-U/C]
 
 [Network\Short Timeout Delay]
 author=Nehalem
-description=Reduce the server connection timeout delay to 10 seconds (default is 2 minutes)
+description=10 seconds timeout delay while stuck on server connection (default is 2 minutes)
 patch=0,EE,203BD36C,extended,24032710
 
 [Network\Solonline]
