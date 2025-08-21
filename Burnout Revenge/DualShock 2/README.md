@@ -1,7 +1,5 @@
 # DualShock 2 (for real consoles)
 
-Only use one of the following at once.
-
 ## Disable buttons analog
 
 This cheat disables the analog feature of the buttons, no more pressure sensitivity checks.
@@ -24,3 +22,4 @@ Disable buttons analog
 20301B1C 00000000
 20301B8C 00000000
 ```
+
