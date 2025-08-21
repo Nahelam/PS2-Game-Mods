@@ -23,5 +23,5 @@
 - Disable Drag Coeff
   + Disable the adaptative drag coefficient based on distance away from other players
 
-* Traffic Attack (Hold L1+R1)
+* [Traffic Attack](https://youtu.be/NcqHtDWkt1U) (Hold L1+R1)
   * Hold L1+R1 in game options and press continue to set the game mode to Traffic Attack
