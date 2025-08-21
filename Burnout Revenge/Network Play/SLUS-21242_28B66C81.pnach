@@ -51,7 +51,7 @@ patch=0,EE,204A751C,extended,34A57276
 
 [Network\Force Online Error (L3+R3)]
 author=Nehalem
-description=Force the timed out error to escape softlocks
+description=Force the timed out error to escape softlocks (in online menus only)
 patch=0,EE,2049F8FC,extended,004A7540
 patch=0,EE,204A7540,extended,24020004
 patch=0,EE,204A7544,extended,14450009
@@ -71,3 +71,16 @@ patch=0,EE,204A7570,extended,00000000
 author=Nehalem
 description=Disable the adaptative drag coefficient based on distance away from other players
 patch=0,EE,202071AC,extended,00000000
+
+[Network\Traffic Attack (Hold L1+R1)]
+author=Nehalem
+description=Hold L1+R1 in game options and press continue to set the game mode to Traffic Attack
+patch=0,EE,2019E2A4,extended,0C129D60
+patch=0,EE,204A7580,extended,3C02004F
+patch=0,EE,204A7584,extended,8C42341C
+patch=0,EE,204A7588,extended,30420C00
+patch=0,EE,204A758C,extended,14400002
+patch=0,EE,204A7590,extended,24020005
+patch=0,EE,204A7594,extended,ACA20000
+patch=0,EE,204A7598,extended,080628A4
+patch=0,EE,204A759C,extended,00000000
