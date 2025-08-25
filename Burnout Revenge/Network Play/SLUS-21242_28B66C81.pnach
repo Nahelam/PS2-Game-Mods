@@ -84,3 +84,20 @@ patch=0,EE,204A7590,extended,24020005
 patch=0,EE,204A7594,extended,ACA20000
 patch=0,EE,204A7598,extended,080628A4
 patch=0,EE,204A759C,extended,00000000
+
+[Network\Online Race Breaker]
+author=Nehalem
+description=Enable Crash Breaker in online races
+patch=0,EE,20118024,extended,A2020071
+patch=0,EE,2011802C,extended,7BB00010
+patch=0,EE,20118030,extended,03E00008
+patch=0,EE,20118034,extended,27BD0020
+patch=0,EE,20205374,extended,0C129D76
+patch=0,EE,204A75D8,extended,3C0201C3
+patch=0,EE,204A75DC,extended,90426F41
+patch=0,EE,204A75E0,extended,10400003
+patch=0,EE,204A75E4,extended,00000000
+patch=0,EE,204A75E8,extended,03E00008
+patch=0,EE,204A75EC,extended,00000000
+patch=0,EE,204A75F0,extended,00600008
+patch=0,EE,204A75F4,extended,00000000
