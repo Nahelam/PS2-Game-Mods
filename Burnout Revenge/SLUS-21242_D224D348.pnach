@@ -456,3 +456,22 @@ author=Nehalem
 description="YEAAAHHHHHHH"
 patch=0,EE,20466C48,extended,42C80000
 patch=0,EE,20466C60,extended,42C80000
+
+[Force Car Crash (SELECT)]
+author=Nehalem
+description=Press SELECT to force the player car to crash
+patch=0,EE,20204BAC,extended,0C129D68
+patch=0,EE,204A75A0,extended,27BDFFF0
+patch=0,EE,204A75A4,extended,FFBF0000
+patch=0,EE,204A75A8,extended,0C0444A0
+patch=0,EE,204A75AC,extended,24050009
+patch=0,EE,204A75B0,extended,10400004
+patch=0,EE,204A75B4,extended,A2027222
+patch=0,EE,204A75B8,extended,3C013F80
+patch=0,EE,204A75BC,extended,10000003
+patch=0,EE,204A75C0,extended,44810000
+patch=0,EE,204A75C4,extended,0C044696
+patch=0,EE,204A75C8,extended,0240202D
+patch=0,EE,204A75CC,extended,DFBF0000
+patch=0,EE,204A75D0,extended,03E00008
+patch=0,EE,204A75D4,extended,27BD0010

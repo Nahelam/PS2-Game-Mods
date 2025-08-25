@@ -41,3 +41,4 @@ For Xbox 360 mods go to the [XB360](https://github.com/Nahelam/PS2-Game-Mods/tre
 - Kamikaze traffic
 - Prevent out of range removal of crashing traffic
 - Toggle menus rendering (R3+DPAD LEFT enable, R3+DPAD RIGHT disable)
+- Press SELECT to force the player car to crash
