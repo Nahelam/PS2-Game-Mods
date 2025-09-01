@@ -8,8 +8,8 @@
 + Solonline
   - Allow online races to be started even you're the only player in the lobby
 
-- Online Track Select Fix
-  + Temporary null pointer fix when the selected track differs from default
+- Temp Crash Fix
+  + Temporary patch to work around new issues after server update
 
 + Disable Buddy System
   - Prevent the game from connecting to the buddy server
