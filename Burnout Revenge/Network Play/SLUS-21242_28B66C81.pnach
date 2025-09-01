@@ -11,11 +11,17 @@ description=Allow online races to be started even you're the only player in the 
 patch=0,EE,2019E7B0,extended,00000000
 patch=0,EE,201D5318,extended,00000000
 
-[Network\Online Track Select Fix]
+[Network\Temp Crash Fix]
 author=Nehalem
-description=Temporary null pointer fix when the selected track differs from default
-patch=0,EE,201D60E0,extended,3C02004E
-patch=0,EE,201D60E4,extended,244246A0
+description=Temporary patch to work around new issues after server update
+patch=0,EE,201D5E48,extended,10000010
+patch=0,EE,001D5E8C,extended,00000006
+patch=0,EE,201D6298,extended,1000000D
+patch=0,EE,203150E8,extended,03E00008
+patch=0,EE,203150EC,extended,00000000
+patch=0,EE,20315468,extended,03E00008
+patch=0,EE,2031546C,extended,00000000
+patch=0,EE,204B6E00,extended,00189448
 
 [Network\Disable Buddy System]
 author=Nehalem
