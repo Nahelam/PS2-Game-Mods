@@ -1,0 +1,64 @@
+gametitle=Burnout 3: Takedown (SLES-52584) [PAL]
+
+[Online\Disable UPnP]
+author=Nehalem
+description=Prevent the game from using UPnP
+patch=0,EE,204BB448,extended,00230AA0
+
+[Online\Ensure SSL]
+author=Nehalem
+description=Prevent the game from falling back to insecure mode (can sometimes happen and cause errors)
+patch=0,EE,20407298,extended,1000002A
+patch=0,EE,2040729C,extended,8E8710A8
+
+[Online\Server URL (bosrv.org)]
+author=Nehalem
+description=Replace the original server URL in order to connect to /dev/ghostline's server emulator
+patch=0,EE,204C73F0,extended,736F622A
+patch=0,EE,204C73F4,extended,6F2E7672
+patch=0,EE,204C73F8,extended,00006772
+
+[Online\Bypass DNAS]
+author=Nehalem
+description=Fully bypass the DNAS sequence
+patch=0,EE,20271558,extended,AC4129E8
+patch=0,EE,1034BF84,extended,0000BC10
+patch=0,EE,003532E8,extended,00000038
+patch=0,EE,003532FA,extended,00000000
+patch=0,EE,203532FC,extended,24010009
+patch=0,EE,203534E0,extended,10000084
+patch=0,EE,20353720,extended,0C0D2970
+patch=0,EE,20353724,extended,249072D0
+patch=0,EE,2035372C,extended,A2000008
+patch=0,EE,20353730,extended,1000003A
+patch=0,EE,20353734,extended,AC9009B0
+
+[Online\Buddies\Disable Module]
+author=Nehalem
+description=Disable the Buddies module (which is currently causing pre-game timeouts)
+patch=0,EE,20360BC4,extended,00000000
+patch=0,EE,103412F6,extended,00001000
+patch=0,EE,203608D0,extended,03E00008
+patch=0,EE,203608D4,extended,00000000
+patch=0,EE,20419C08,extended,03E00008
+patch=0,EE,20419C0C,extended,0000102D
+patch=0,EE,20419AF8,extended,03E00008
+patch=0,EE,20419AFC,extended,0000102D
+
+[Online\Lobby\Allow Single Player]
+author=Nehalem
+description=Set the minimum number of players required to start a match to 1
+patch=0,EE,20312A58,extended,00000000
+patch=0,EE,00312BE8,extended,00000001
+patch=0,EE,00314B10,extended,00000001
+
+[Online\Lobby\Heavyweights Globally Available]
+author=Nehalem
+description=Allow heavyweights to be selectable in the garage regardless of the chosen game mode
+patch=0,EE,2030EEF8,extended,24070001
+patch=0,EE,0031207C,extended,00000007
+
+[Online\In-Game\Hide Lost Connection Message]
+author=Nehalem
+description=Hide the "Lost connection to other players" error message (useful while playing alone)
+patch=0,EE,201A31E0,extended,00000000

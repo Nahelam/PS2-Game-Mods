@@ -6,8 +6,6 @@ PCSX2/PS2 features listed below aren't fully available for all regions.
 ## Features
 - Speedometer HUD unit patches (mph->kph & kph->mph) [\[demo\]](https://i.imgur.com/PbpCkr6.png)
 - Heavyweights class always available in garage (ported, original SLUS patch made by [escape209](https://github.com/escape209))
-- Allow heavyweights class to be chosen in all online game modes (all players must enable it)
-- Allow online games to be started even you're the only player in the lobby  [\[demo\]](https://i.imgur.com/H1bmaBl.mp4)
 - AI road rage behavior in normal races [\[demo\]](https://i.imgur.com/RLtPeuw.mp4)
 - Turn all cars (except traffic) into tuk-tuks
 - Enable non-takedown burnout points in road rage mode
@@ -57,7 +55,6 @@ PCSX2/PS2 features listed below aren't fully available for all regions.
 - Enable DJ dialogues in Single Event mode
 
 ## Notes
-- "Heavyweights always available" is **required** to get heavyweights online working.
 - "Rivals number in road rage options" is also included in "Select rivals cars in garage".
 - **DO NOT** use "Enable lap timer in race mode" and "Enable lap timer in road rage mode" together.
 - Disable the takedown camera if you don't want the game to bring you back car controls while using the AI controlled patch

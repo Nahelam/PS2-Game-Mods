@@ -1,5 +1,0 @@
-gametitle=Burnout 3: Takedown [SLKA-25206] (K)
-comment=Allow heavyweights class to be chosen in all online game modes (all players must enable it)
-author=Nehalem
-
-patch=0,EE,20311CF8,extended,10000082
