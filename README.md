@@ -8,7 +8,7 @@ Non-exhaustive list of my most notable mods:
 - [HostFS](https://github.com/Nahelam/PCSX2-HostFS-Patches/tree/main) *(All PS2 Criterion games)*
 - [Crash Breaker Expansion](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Crash%20Breaker%20Expansion) *(Burnout 3: Takedown)*
 - [Single Event Mod](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%20Revenge/Single%20Event%20Mod) *(Burnout Revenge)*
-- [Network Play](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Network%20Play) *(Burnout 3: Takedown)*
+- [Burnout Online](https://github.com/Nahelam/PS2-Game-Mods/tree/main/Burnout%203%20Takedown/Online)
 
 ## Usage
 
