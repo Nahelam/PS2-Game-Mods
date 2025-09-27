@@ -1,1 +1,1 @@
-# [->BURNOUT ONLINE<-](https://nahelam.github.io/bops2/)
+# [Burnout Online - PlayStation 2](https://nahelam.github.io/bops2/)
