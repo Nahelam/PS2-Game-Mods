@@ -475,3 +475,18 @@ patch=0,EE,204A75C8,extended,0240202D
 patch=0,EE,204A75CC,extended,DFBF0000
 patch=0,EE,204A75D0,extended,03E00008
 patch=0,EE,204A75D4,extended,27BD0010
+
+[Profile\Unlock All]
+author=Nehalem
+description=Set profile progression to 100% (persistent after save + Dominator Assassin & Madden Challenge Bus unlocked)
+patch=0,EE,0011087E,extended,00000082
+patch=0,EE,00110882,extended,00000082
+patch=0,EE,0011088A,extended,00000082
+patch=0,EE,20133930,extended,24100001
+patch=0,EE,10133936,extended,0000A230
+patch=0,EE,10133942,extended,0000A230
+patch=0,EE,20133984,extended,24020001
+patch=0,EE,201339BC,extended,24020001
+patch=0,EE,20133A20,extended,24040003
+patch=0,EE,20133A60,extended,24040004
+patch=0,EE,20133AC0,extended,24030009

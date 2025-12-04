@@ -1,0 +1,149 @@
+gametitle=Burnout Revenge (SLAJ-25066) [NTSC-J]
+
+[Online\Disable UPnP]
+author=Nehalem
+description=Prevent the game from using UPnP
+patch=0,EE,204D5058,extended,0030E904
+
+[Online\Ensure SSL]
+author=Nehalem
+description=Prevent the game from falling back to insecure (no SSL) mode
+patch=0,EE,203BCD58,extended,1000000D
+patch=0,EE,203BCD5C,extended,8E271840
+
+[Online\Server URL (bosrv.org)]
+author=Nehalem
+description=Replace the original server URL in order to connect to /dev/ghostline's server emulator
+patch=0,EE,204C2DA8,extended,736F622A
+patch=0,EE,204C2DAC,extended,6F2E7672
+patch=0,EE,204C2DB0,extended,00006772
+
+[Online\Bypass DNAS]
+author=Nehalem
+description=Fully bypass the DNAS sequence
+patch=0,EE,001A1F66,extended,00000080
+patch=0,EE,201C62E8,extended,24020001
+
+[Online\Buddies\Disable Module]
+author=Nehalem
+description=Disable the Buddies module
+patch=0,EE,1018D9D6,extended,00001000
+patch=0,EE,201D4CA0,extended,00000000
+patch=0,EE,201D553C,extended,00000000
+patch=0,EE,2019DB70,extended,03E00008
+patch=0,EE,2019DB74,extended,0000102D
+patch=0,EE,2019C4CC,extended,2642FFF2
+patch=0,EE,2019C4D0,extended,2C420003
+patch=0,EE,2019C4D4,extended,10400115
+patch=0,EE,2019C4D8,extended,00000000
+patch=0,EE,2019C4DC,extended,00800008
+patch=0,EE,2019C4E0,extended,00000000
+
+[Online\Lobby\Reduce Server Connection Timeout]
+author=Nehalem
+description=Reduce the timeout delay of the connecting screen to 10 seconds before throwing an error when the server is unresponsive (default is 2 minutes)
+patch=0,EE,203BD3CC,extended,24032710
+
+[Online\Lobby\Allow Single Player]
+author=Nehalem
+description=Set the minimum number of players required to start a game to 1
+patch=0,EE,2019E7C0,extended,00000000
+patch=0,EE,2019E7EC,extended,00000000
+patch=0,EE,201D5328,extended,00000000
+patch=0,EE,101D5396,extended,00001000
+
+[Online\Lobby\Show Logout Popup (L3+R3)]
+author=Nehalem
+description=Press L3+R3 for an attempt to show the logout popup (might help in case of softlocks, etc.)
+patch=0,EE,2049F97C,extended,004A7580
+patch=0,EE,204A7580,extended,3C02004F
+patch=0,EE,204A7584,extended,2403FFF9
+patch=0,EE,204A7588,extended,8442349C
+patch=0,EE,204A758C,extended,10430003
+patch=0,EE,204A7590,extended,00000000
+patch=0,EE,204A7594,extended,0806205E
+patch=0,EE,204A7598,extended,00000000
+patch=0,EE,204A759C,extended,0806264A
+patch=0,EE,204A75A0,extended,24050031
+
+[Online\Lobby\Traffic Attack (Hold L1+R1)]
+author=Nehalem
+description=Hold L1+R1 in game options and press continue to set the game mode to Traffic Attack
+patch=0,EE,2019E2B4,extended,0C129D6A
+patch=0,EE,204A75A8,extended,3C02004F
+patch=0,EE,204A75AC,extended,8C42349C
+patch=0,EE,204A75B0,extended,30420C00
+patch=0,EE,204A75B4,extended,14400002
+patch=0,EE,204A75B8,extended,24020005
+patch=0,EE,204A75BC,extended,ACA20000
+patch=0,EE,204A75C0,extended,080628A8
+patch=0,EE,204A75C4,extended,00000000
+
+[Online\Lobby\Revenge Racer By Default]
+author=Nehalem
+description=Directly focus on the Revenge Racer (when available) after entering the car select menu
+patch=0,EE,202B1524,extended,2413FFFF
+patch=0,EE,202B15F0,extended,AFB30000
+patch=0,EE,202B15F4,extended,26F30408
+patch=0,EE,202B1660,extended,0C129D96
+patch=0,EE,202B16AC,extended,0C129D9C
+patch=0,EE,204A7658,extended,3C04004D
+patch=0,EE,204A765C,extended,DC840AA8
+patch=0,EE,204A7660,extended,50900001
+patch=0,EE,204A7664,extended,AFA30000
+patch=0,EE,204A7668,extended,03E00008
+patch=0,EE,204A766C,extended,24630001
+patch=0,EE,204A7670,extended,8FA20000
+patch=0,EE,204A7674,extended,04420002
+patch=0,EE,204A7678,extended,8E420BA4
+patch=0,EE,204A767C,extended,24420001
+patch=0,EE,204A7680,extended,03E00008
+patch=0,EE,204A7684,extended,2442FFFF
+
+[Online\In-Game\Disable Drag Coeff]
+author=Nehalem
+description=Disable the adaptative drag coefficient based on distance away from other players
+patch=0,EE,202071BC,extended,00000000
+
+[Online\In-Game\Enable Crashbreaker]
+author=Nehalem
+description=Enable Crashbreaker in online games
+patch=0,EE,20118A6C,extended,0C129D72
+patch=0,EE,20205384,extended,0C129D78
+patch=0,EE,204A75C8,extended,3C0201C3
+patch=0,EE,204A75CC,extended,90426FC1
+patch=0,EE,204A75D0,extended,54400001
+patch=0,EE,204A75D4,extended,A2220071
+patch=0,EE,204A75D8,extended,08041410
+patch=0,EE,204A75DC,extended,00000000
+patch=0,EE,204A75E0,extended,3C0201C3
+patch=0,EE,204A75E4,extended,90426FC1
+patch=0,EE,204A75E8,extended,54400001
+patch=0,EE,204A75EC,extended,03E0182D
+patch=0,EE,204A75F0,extended,00600008
+patch=0,EE,204A75F4,extended,00000000
+
+[Online\Temporary Fixes\Account Verification]
+author=Nehalem
+description=Prevent the "verifying account" game crash
+patch=0,EE,20310F0C,extended,0C129D7E
+patch=0,EE,204A75F8,extended,50800003
+patch=0,EE,204A75FC,extended,27FF0120
+patch=0,EE,204A7600,extended,080F0732
+patch=0,EE,204A7604,extended,00000000
+patch=0,EE,204A7608,extended,3C057365
+patch=0,EE,204A760C,extended,8E240004
+patch=0,EE,204A7610,extended,080EF51C
+patch=0,EE,204A7614,extended,34A57276
+
+[Online\Temporary Fixes\Rankings]
+author=Nehalem
+description=Disable some rankings-related logic to prevent game crashes
+patch=0,EE,201D5E58,extended,10000010
+patch=0,EE,001D5E9C,extended,00000006
+patch=0,EE,201D62A8,extended,1000000D
+patch=0,EE,20315150,extended,03E00008
+patch=0,EE,20315154,extended,00000000
+patch=0,EE,203154D0,extended,03E00008
+patch=0,EE,203154D4,extended,00000000
+patch=0,EE,204B6E80,extended,00189458

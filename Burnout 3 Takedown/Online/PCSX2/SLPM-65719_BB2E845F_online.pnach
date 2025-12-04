@@ -7,7 +7,7 @@ patch=0,EE,204DF3C8,extended,00230970
 
 [Online\Ensure SSL]
 author=Nehalem
-description=Prevent the game from falling back to insecure mode (can sometimes happen and cause errors)
+description=Prevent the game from falling back to insecure (no SSL) mode (can sometimes happen and cause errors)
 patch=0,EE,20407638,extended,1000002A
 patch=0,EE,2040763C,extended,8E8710A8
 
@@ -47,7 +47,7 @@ patch=0,EE,20419E9C,extended,0000102D
 
 [Online\Lobby\Allow Single Player]
 author=Nehalem
-description=Set the minimum number of players required to start a match to 1
+description=Set the minimum number of players required to start a game to 1
 patch=0,EE,20312878,extended,00000000
 patch=0,EE,00312A08,extended,00000001
 patch=0,EE,00314930,extended,00000001

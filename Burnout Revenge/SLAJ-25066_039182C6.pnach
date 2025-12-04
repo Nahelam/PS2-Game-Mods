@@ -256,3 +256,18 @@ patch=0,EE,202DFD90,extended,00000000
 author=Nehalem
 description=Prevent the game to remove out of range crashing traffic
 patch=0,EE,001EC89A,extended,00000000
+
+[Profile\Unlock All]
+author=Nehalem
+description=Set profile progression to 100% (persistent after save + Dominator Assassin & Madden Challenge Bus unlocked)
+patch=0,EE,0011087E,extended,00000082
+patch=0,EE,00110882,extended,00000082
+patch=0,EE,0011088A,extended,00000082
+patch=0,EE,20133940,extended,24100001
+patch=0,EE,10133946,extended,0000A230
+patch=0,EE,10133952,extended,0000A230
+patch=0,EE,20133994,extended,24020001
+patch=0,EE,201339CC,extended,24020001
+patch=0,EE,20133A30,extended,24040003
+patch=0,EE,20133A70,extended,24040004
+patch=0,EE,20133AD0,extended,24030009
