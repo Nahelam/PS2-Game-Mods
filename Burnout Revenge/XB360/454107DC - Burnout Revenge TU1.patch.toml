@@ -135,3 +135,37 @@ hash = [ # default.xex (Title Update 1)
     [[patch.be32]]
         address = 0x82694d24
         value = 0x42c80000
+
+[[patch]]
+   name = "Unlock All"
+    desc = "Set profile progression to 100% (persistent after save + bonus vehicles unlocked)"
+    author = "Nehalem"
+    is_enabled = true
+
+    [[patch.be16]]
+        address = 0x820fb1dc
+        value = 0x4800
+    [[patch.be16]]
+        address = 0x821011f4
+        value = 0x4800
+    [[patch.be16]]
+        address = 0x8210120C
+        value = 0x4800
+    [[patch.be16]]
+        address = 0x82101240
+        value = 0x4800
+    [[patch.be16]]
+        address = 0x821012ec
+        value = 0x4800
+    [[patch.be32]]
+        address = 0x82101344
+        value = 0x39000003
+    [[patch.be32]]
+        address = 0x82101380
+        value = 0x38800004
+    [[patch.be32]]
+        address = 0x821013cc
+        value = 0x3880000B
+    [[patch.be8]]
+        address = 0x8210afe0
+        value = 0x01
